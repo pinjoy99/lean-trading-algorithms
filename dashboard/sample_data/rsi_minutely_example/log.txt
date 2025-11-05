@@ -1,0 +1,221 @@
+2025-11-03T20:21:39.6837515Z TRACE:: Engine.Main(): LEAN ALGORITHMIC TRADING ENGINE v2.5.0.0 Mode: DEBUG (64bit) Host: ASUS
+2025-11-03T20:21:39.6948225Z TRACE:: Engine.Main(): Started 8:21 PM
+2025-11-03T20:21:39.6988090Z TRACE:: Config.Get(): Configuration key not found. Key: lean-manager-type - Using default value: LocalLeanManager
+2025-11-03T20:21:39.7146779Z TRACE:: JobQueue.NextJob(): Selected /LeanCLI/main.py
+2025-11-03T20:21:39.7540039Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-capacity - Using default value: 120
+2025-11-03T20:21:39.7540794Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-time-interval-minutes - Using default value: 1440
+2025-11-03T20:21:39.7541020Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-refill-amount - Using default value: 18
+2025-11-03T20:21:39.7546142Z TRACE:: Config.GetValue(): storage-limit - Using default value: 10737418240
+2025-11-03T20:21:39.7553726Z TRACE:: Config.GetValue(): storage-permissions - Using default value: Read=True Write=True Delete=True
+2025-11-03T20:21:39.7555784Z TRACE:: Config.Get(): Configuration key not found. Key: optimization-id - Using default value: 
+2025-11-03T20:21:39.7556328Z TRACE:: Config.Get(): Configuration key not found. Key: backtest-name - Using default value: local
+2025-11-03T20:21:39.7572080Z TRACE:: Config.Get(): Configuration key not found. Key: data-channel - Using default value: 
+2025-11-03T20:21:39.7574571Z TRACE:: Config.Get(): Configuration key not found. Key: python-venv - Using default value: 
+2025-11-03T20:21:39.7575829Z TRACE:: Config.Get(): Configuration key not found. Key: out-of-sample-max-end-date - Using default value: 
+2025-11-03T20:21:39.7576334Z TRACE:: Config.GetValue(): out-of-sample-days - Using default value: 0
+2025-11-03T20:21:39.7584041Z TRACE:: Config.Get(): Configuration key not found. Key: data-permission-manager - Using default value: DataPermissionManager
+2025-11-03T20:21:39.7584534Z TRACE:: Config.Get(): Configuration key not found. Key: data-monitor - Using default value: QuantConnect.Data.DataMonitor
+2025-11-03T20:21:39.7636267Z TRACE:: Config.GetValue(): initialization-timeout - Using default value: 300
+2025-11-03T20:21:39.7638824Z TRACE:: Config.GetValue(): algorithm-creation-timeout - Using default value: 90
+2025-11-03T20:21:39.7713000Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-11-03T20:21:39.7730913Z TRACE:: Config.Get(): Configuration key not found. Key: fundamental-data-provider - Using default value: CoarseFundamentalDataProvider
+2025-11-03T20:21:39.7753684Z TRACE:: AlgorithmManager.CreateTokenBucket(): Initializing LeakyBucket: Capacity: 120 RefillAmount: 18 TimeInterval: 1440
+2025-11-03T20:21:39.7758796Z TRACE:: Config.GetValue(): algorithm-manager-time-loop-maximum - Using default value: 20
+2025-11-03T20:21:39.7803154Z TRACE:: Config.GetValue(): downloader-data-update-period - Using default value: 7
+2025-11-03T20:21:39.7832647Z TRACE:: Engine.Run(): Resource limits '0' CPUs. 2147483647 MB RAM.
+2025-11-03T20:21:39.7838352Z TRACE:: TextSubscriptionDataSourceReader.SetCacheSize(): Setting cache size to 71582788 items
+2025-11-03T20:21:40.4138488Z TRACE:: PythonInitializer.Initialize(): start...
+2025-11-03T20:21:40.6283943Z TRACE:: PythonInitializer.Initialize(): ended
+2025-11-03T20:21:40.6295873Z TRACE:: AlgorithmPythonWrapper(): Python version 3.11.13 (main, Jun  5 2025, 13:26:26) [GCC 11.2.0]: Importing python module main
+2025-11-03T20:21:43.0043593Z TRACE:: AlgorithmPythonWrapper(): main successfully imported.
+2025-11-03T20:21:43.0107718Z TRACE:: AlgorithmPythonWrapper(): Creating IAlgorithm instance.
+2025-11-03T20:21:43.0205117Z TRACE:: Config.Get(): Configuration key not found. Key: databases-refresh-period - Using default value: 1.00:00:00
+2025-11-03T20:21:43.1848550Z TRACE:: Config.GetValue(): mute-python-library-logging - Using default value: True
+2025-11-03T20:21:43.1886172Z TRACE:: LocalObjectStore.Initialize(): Storage Root: /Storage. StorageFileCount 9999999. StorageLimit 10240MB. StoragePermissions Read=True Write=True Delete=True
+2025-11-03T20:21:43.1946369Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-11-03T20:21:43.1985283Z TRACE:: HistoryProviderManager.Initialize(): history providers [SubscriptionDataReaderHistoryProvider]
+2025-11-03T20:21:43.2015315Z TRACE:: BaseSetupHandler.Setup(LocalPlatform): UID: 353226, PID: -123456789, Version: 2.5.0.0, Source: WebIDE
+2025-11-03T20:21:43.2045089Z TRACE:: Config.Get(): Configuration key not found. Key: security-data-feeds - Using default value: 
+2025-11-03T20:21:43.3281098Z TRACE:: BaseSetupHandler.SetupCurrencyConversions():
+Account Type: Margin
+
+Symbol      Quantity    Conversion = Value in USD
+USD: $      100000.00 @       1.00 = $100000
+-------------------------------------------------
+CashBook Total Value:                $100000
+
+2025-11-03T20:21:43.3293977Z TRACE:: Total margin information: TotalMarginUsed: 0.00, MarginRemaining: 100000.00
+2025-11-03T20:21:43.3298836Z TRACE:: SetUp Backtesting: User: 353226 ProjectId: -123456789 AlgoId: 1983772575
+2025-11-03T20:21:43.3313381Z TRACE:: Dates: Start: 01/01/2023 End: 01/31/2023 Cash: ¤100,000.00 MaximumRuntime: 100.00:00:00 MaxOrders: 2147483647
+2025-11-03T20:21:43.3351500Z TRACE:: BacktestingResultHandler(): Sample Period Set: 11.16
+2025-11-03T20:21:43.3354225Z TRACE:: Config.GetValue(): forward-console-messages - Using default value: True
+2025-11-03T20:21:43.3357273Z TRACE:: JOB HANDLERS:
+         DataFeed:             QuantConnect.Lean.Engine.DataFeeds.FileSystemDataFeed
+         Setup:                QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler
+         RealTime:             QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler
+         Results:              QuantConnect.Lean.Engine.Results.BacktestingResultHandler
+         Transactions:         QuantConnect.Lean.Engine.TransactionHandlers.BacktestingTransactionHandler
+         Object Store:         QuantConnect.Lean.Engine.Storage.LocalObjectStore
+         History Provider:     QuantConnect.Lean.Engine.HistoricalData.HistoryProviderManager
+         Brokerage:            QuantConnect.Brokerages.Backtesting.BacktestingBrokerage
+         Data Provider:        QuantConnect.Lean.Engine.DataFeeds.DefaultDataProvider
+
+2025-11-03T20:21:43.3596041Z TRACE:: Event Name "Daily Sampling", scheduled to run.
+2025-11-03T20:21:43.3605408Z TRACE:: AlgorithmManager.Run(): Begin DataStream - Start: 1/1/2023 12:00:00 AM Stop: 1/31/2023 11:59:59 PM Time: 1/1/2023 12:00:00 AM Warmup: False
+2025-11-03T20:21:43.3847307Z TRACE:: Debug: Launching analysis for 1983772575 with LEAN Engine v2.5.0.0
+2025-11-03T20:21:43.3870211Z TRACE:: Config.GetValue(): data-feed-workers-count - Using default value: 16
+2025-11-03T20:21:43.3875453Z TRACE:: Config.GetValue(): data-feed-max-work-weight - Using default value: 400
+2025-11-03T20:21:43.3875920Z TRACE:: WeightedWorkScheduler(): will use 16 workers and MaxWorkWeight is 400
+2025-11-03T20:21:43.4478126Z TRACE:: UniverseSelection.AddPendingInternalDataFeeds(): Adding internal benchmark data feed SPY,#0,SPY,Hour,TradeBar,Trade,Adjusted,OpenInterest,Internal
+2025-11-03T20:21:43.6869521Z TRACE:: Debug: Minutely RSI Strategy initialized
+2025-11-03T20:21:43.6870249Z TRACE:: Debug: RSI Period: 14
+2025-11-03T20:21:43.6870477Z TRACE:: Debug: Oversold: 30, Overbought: 70
+2025-11-03T20:21:43.6870577Z TRACE:: Debug: Stop Loss: 2.0%, Take Profit: 4.0%
+2025-11-03T20:21:43.6870661Z TRACE:: Debug: Accurate daily end-times now enabled by default. See more at https://qnt.co/3YHaWHL. To disable it and use legacy daily bars set self.settings.daily_precise_end_time = False.
+2025-11-03T20:21:43.6870978Z TRACE:: Debug: Usage of QCAlgorithm.OnEndOfDay() without a symbol will be deprecated August 2021. Always use a symbol when overriding this method: OnEndOfDay(symbol)
+2025-11-03T20:21:43.7373457Z TRACE:: Debug: BUY #1 - Time: 2023-01-03 10:19:00, Price: $380.56, RSI: 29.5, Quantity: 249, Stop Loss: $372.95, Take Profit: $395.78
+2025-11-03T20:21:43.7875596Z TRACE:: Debug: SELL #2 - Time: 2023-01-03 13:27:00, Price: $379.54, RSI: 71.2, Quantity: 249, P&L: $-253.98
+2025-11-03T20:21:43.7876446Z TRACE:: Debug: BUY #3 - Time: 2023-01-03 14:33:00, Price: $378.32, RSI: 28.4, Quantity: 250, Stop Loss: $370.75, Take Profit: $393.45
+2025-11-03T20:21:43.7876911Z TRACE:: Debug: SELL #4 - Time: 2023-01-03 14:46:00, Price: $380.45, RSI: 77.7, Quantity: 250, P&L: $532.50
+2025-11-03T20:21:43.7877087Z TRACE:: Debug: End of Day - 2023-01-03 - Price: $380.84, RSI: 51.8, Portfolio: $100261.45, Daily P&L: 0.3%, Cash: $100261.45
+2025-11-03T20:21:43.8379831Z TRACE:: Debug: BUY #5 - Time: 2023-01-04 12:58:00, Price: $384.56, RSI: 27.1, Quantity: 247, Stop Loss: $376.87, Take Profit: $399.95
+2025-11-03T20:21:43.8380587Z TRACE:: Debug: SELL #6 - Time: 2023-01-04 15:02:00, Price: $383.84, RSI: 70.4, Quantity: 247, P&L: $-179.10
+2025-11-03T20:21:43.8380771Z TRACE:: Debug: BUY #7 - Time: 2023-01-04 15:36:00, Price: $381.83, RSI: 28.0, Quantity: 248, Stop Loss: $374.20, Take Profit: $397.11
+2025-11-03T20:21:43.8380886Z TRACE:: Debug: SELL #8 - Time: 2023-01-04 15:58:00, Price: $383.40, RSI: 71.1, Quantity: 248, P&L: $388.12
+2025-11-03T20:21:43.8381197Z TRACE:: Debug: End of Day - 2023-01-04 - Price: $383.74, RSI: 74.9, Portfolio: $100455.65, Daily P&L: 0.2%, Cash: $100455.65
+2025-11-03T20:21:43.8381420Z TRACE:: Debug: BUY #9 - Time: 2023-01-05 09:34:00, Price: $380.32, RSI: 29.3, Quantity: 250, Stop Loss: $372.71, Take Profit: $395.53
+2025-11-03T20:21:43.8381514Z TRACE:: Debug: SELL #10 - Time: 2023-01-05 13:22:00, Price: $380.25, RSI: 73.0, Quantity: 250, P&L: $-17.50
+2025-11-03T20:21:43.8497357Z TRACE:: Config.GetValue(): portfolio-margin-series-count - Using default value: 40
+2025-11-03T20:21:43.8883506Z TRACE:: Debug: BUY #11 - Time: 2023-01-05 15:03:00, Price: $380.44, RSI: 29.6, Quantity: 250, Stop Loss: $372.83, Take Profit: $395.66
+2025-11-03T20:21:43.8884165Z TRACE:: Debug: End of Day - 2023-01-05 - Price: $379.40, RSI: 48.9, Portfolio: $100164.40, Daily P&L: -0.3%, Unrealized P&L: $-266.25
+2025-11-03T20:21:43.8884311Z TRACE:: Debug: SELL #12 - Time: 2023-01-06 09:31:00, Price: $382.26, RSI: 80.6, Quantity: 250, P&L: $455.03
+2025-11-03T20:21:43.9397362Z TRACE:: Debug: BUY #13 - Time: 2023-01-06 15:56:00, Price: $388.00, RSI: 29.4, Quantity: 246, Stop Loss: $380.24, Take Profit: $403.51
+2025-11-03T20:21:43.9398160Z TRACE:: Debug: End of Day - 2023-01-06 - Price: $388.03, RSI: 36.4, Portfolio: $100884.30, Daily P&L: 0.7%, Unrealized P&L: $6.15
+2025-11-03T20:21:43.9398367Z TRACE:: Debug: SELL #14 - Time: 2023-01-09 09:31:00, Price: $390.30, RSI: 77.9, Quantity: 246, P&L: $567.03
+2025-11-03T20:21:43.9398825Z TRACE:: Debug: BUY #15 - Time: 2023-01-09 12:37:00, Price: $392.07, RSI: 29.2, Quantity: 245, Stop Loss: $384.23, Take Profit: $407.75
+2025-11-03T20:21:43.9399045Z TRACE:: Debug: End of Day - 2023-01-09 - Price: $387.87, RSI: 41.3, Portfolio: $100407.76, Daily P&L: -0.5%, Unrealized P&L: $-1035.12
+2025-11-03T20:21:43.9399174Z TRACE:: Debug: SELL #16 - Time: 2023-01-10 10:17:00, Price: $389.97, RSI: 70.9, Quantity: 245, P&L: $-514.50
+2025-11-03T20:21:43.9902570Z TRACE:: Debug: BUY #17 - Time: 2023-01-10 10:32:00, Price: $387.15, RSI: 28.2, Quantity: 247, Stop Loss: $379.41, Take Profit: $402.64
+2025-11-03T20:21:43.9903257Z TRACE:: Debug: SELL #18 - Time: 2023-01-10 12:40:00, Price: $389.17, RSI: 73.2, Quantity: 247, P&L: $498.94
+2025-11-03T20:21:43.9903409Z TRACE:: Debug: BUY #19 - Time: 2023-01-10 15:07:00, Price: $388.89, RSI: 27.2, Quantity: 247, Stop Loss: $381.11, Take Profit: $404.45
+2025-11-03T20:21:43.9903559Z TRACE:: Debug: SELL #20 - Time: 2023-01-10 15:52:00, Price: $390.22, RSI: 72.6, Quantity: 247, P&L: $328.51
+2025-11-03T20:21:43.9903699Z TRACE:: Debug: End of Day - 2023-01-10 - Price: $390.63, RSI: 71.8, Portfolio: $101727.33, Daily P&L: 1.3%, Cash: $101727.33
+2025-11-03T20:21:44.0406316Z TRACE:: Debug: End of Day - 2023-01-11 - Price: $395.50, RSI: 80.6, Portfolio: $101727.33, Daily P&L: 0.0%, Cash: $101727.33
+2025-11-03T20:21:44.0406956Z TRACE:: Debug: BUY #21 - Time: 2023-01-12 09:45:00, Price: $393.35, RSI: 29.9, Quantity: 245, Stop Loss: $385.48, Take Profit: $409.08
+2025-11-03T20:21:44.0407091Z TRACE:: Debug: SELL #22 - Time: 2023-01-12 10:13:00, Price: $396.64, RSI: 71.9, Quantity: 245, P&L: $806.05
+2025-11-03T20:21:44.0407349Z TRACE:: Debug: BUY #23 - Time: 2023-01-12 13:27:00, Price: $397.15, RSI: 28.7, Quantity: 245, Stop Loss: $389.21, Take Profit: $413.04
+2025-11-03T20:21:44.0918438Z TRACE:: Debug: SELL #24 - Time: 2023-01-12 13:55:00, Price: $398.22, RSI: 71.2, Quantity: 245, P&L: $262.15
+2025-11-03T20:21:44.0919137Z TRACE:: Debug: End of Day - 2023-01-12 - Price: $396.94, RSI: 58.0, Portfolio: $102789.56, Daily P&L: 1.0%, Cash: $102789.56
+2025-11-03T20:21:44.0919283Z TRACE:: Debug: BUY #25 - Time: 2023-01-13 09:31:00, Price: $394.09, RSI: 21.7, Quantity: 247, Stop Loss: $386.21, Take Profit: $409.85
+2025-11-03T20:21:44.0919414Z TRACE:: Debug: SELL #26 - Time: 2023-01-13 13:41:00, Price: $397.14, RSI: 70.5, Quantity: 247, P&L: $753.35
+2025-11-03T20:21:44.0919590Z TRACE:: Debug: End of Day - 2023-01-13 - Price: $398.47, RSI: 50.0, Portfolio: $103537.97, Daily P&L: 0.7%, Cash: $103537.97
+2025-11-03T20:21:44.0919692Z TRACE:: Debug: BUY #27 - Time: 2023-01-17 10:41:00, Price: $398.25, RSI: 25.0, Quantity: 246, Stop Loss: $390.28, Take Profit: $414.18
+2025-11-03T20:21:44.1445490Z TRACE:: Debug: SELL #28 - Time: 2023-01-17 13:40:00, Price: $398.71, RSI: 71.3, Quantity: 246, P&L: $113.16
+2025-11-03T20:21:44.1446148Z TRACE:: Debug: BUY #29 - Time: 2023-01-17 14:16:00, Price: $397.77, RSI: 24.2, Quantity: 247, Stop Loss: $389.81, Take Profit: $413.68
+2025-11-03T20:21:44.1446287Z TRACE:: Debug: End of Day - 2023-01-17 - Price: $397.76, RSI: 51.7, Portfolio: $103637.60, Daily P&L: 0.1%, Unrealized P&L: $-6.15
+2025-11-03T20:21:44.1446372Z TRACE:: Debug: SELL #30 - Time: 2023-01-18 09:31:00, Price: $399.36, RSI: 80.2, Quantity: 247, P&L: $392.73
+2025-11-03T20:21:44.1446454Z TRACE:: Debug: BUY #31 - Time: 2023-01-18 10:44:00, Price: $397.71, RSI: 27.5, Quantity: 248, Stop Loss: $389.76, Take Profit: $413.62
+2025-11-03T20:21:44.1446532Z TRACE:: Debug: SELL #32 - Time: 2023-01-18 13:47:00, Price: $393.98, RSI: 70.9, Quantity: 248, P&L: $-925.04
+2025-11-03T20:21:44.1446659Z TRACE:: Debug: BUY #33 - Time: 2023-01-18 15:02:00, Price: $392.89, RSI: 28.3, Quantity: 249, Stop Loss: $385.04, Take Profit: $408.61
+2025-11-03T20:21:44.1948769Z TRACE:: Debug: End of Day - 2023-01-18 - Price: $391.54, RSI: 35.8, Portfolio: $102762.74, Daily P&L: -0.8%, Unrealized P&L: $-341.00
+2025-11-03T20:21:44.1949370Z TRACE:: Debug: SELL #34 - Time: 2023-01-19 12:02:00, Price: $388.27, RSI: 70.0, Quantity: 249, P&L: $-1150.38
+2025-11-03T20:21:44.1949493Z TRACE:: Debug: BUY #35 - Time: 2023-01-19 15:54:00, Price: $389.07, RSI: 27.5, Quantity: 248, Stop Loss: $381.29, Take Profit: $404.64
+2025-11-03T20:21:44.1949566Z TRACE:: Debug: End of Day - 2023-01-19 - Price: $388.68, RSI: 24.1, Portfolio: $101850.10, Daily P&L: -0.9%, Unrealized P&L: $-100.44
+2025-11-03T20:21:44.1949640Z TRACE:: Debug: SELL #36 - Time: 2023-01-20 10:09:00, Price: $390.72, RSI: 71.4, Quantity: 248, P&L: $407.96
+2025-11-03T20:21:44.1949706Z TRACE:: Debug: BUY #37 - Time: 2023-01-20 13:12:00, Price: $391.39, RSI: 29.0, Quantity: 248, Stop Loss: $383.56, Take Profit: $407.05
+2025-11-03T20:21:44.1949767Z TRACE:: Debug: SELL #38 - Time: 2023-01-20 13:38:00, Price: $392.84, RSI: 73.1, Quantity: 248, P&L: $358.53
+2025-11-03T20:21:44.2452425Z TRACE:: Debug: End of Day - 2023-01-20 - Price: $395.83, RSI: 62.0, Portfolio: $102703.06, Daily P&L: 0.8%, Cash: $102703.06
+2025-11-03T20:21:44.2453085Z TRACE:: Debug: BUY #39 - Time: 2023-01-23 12:10:00, Price: $400.41, RSI: 27.6, Quantity: 243, Stop Loss: $392.40, Take Profit: $416.43
+2025-11-03T20:21:44.2453223Z TRACE:: Debug: SELL #40 - Time: 2023-01-23 13:01:00, Price: $401.59, RSI: 70.8, Quantity: 243, P&L: $286.72
+2025-11-03T20:21:44.2453312Z TRACE:: Debug: BUY #41 - Time: 2023-01-23 14:04:00, Price: $401.40, RSI: 27.5, Quantity: 243, Stop Loss: $393.38, Take Profit: $417.46
+2025-11-03T20:21:44.2453388Z TRACE:: Debug: End of Day - 2023-01-23 - Price: $400.59, RSI: 57.7, Portfolio: $102782.04, Daily P&L: 0.1%, Unrealized P&L: $-200.47
+2025-11-03T20:21:44.2955218Z TRACE:: Debug: SELL #42 - Time: 2023-01-24 10:57:00, Price: $400.52, RSI: 71.5, Quantity: 243, P&L: $-215.05
+2025-11-03T20:21:44.2955897Z TRACE:: Debug: BUY #43 - Time: 2023-01-24 14:02:00, Price: $400.07, RSI: 29.7, Quantity: 244, Stop Loss: $392.07, Take Profit: $416.07
+2025-11-03T20:21:44.2956383Z TRACE:: Debug: End of Day - 2023-01-24 - Price: $400.17, RSI: 52.9, Portfolio: $102784.46, Daily P&L: 0.0%, Unrealized P&L: $23.09
+2025-11-03T20:21:44.2956605Z TRACE:: Debug: SELL #44 - Time: 2023-01-25 11:20:00, Price: $395.88, RSI: 70.0, Quantity: 244, P&L: $-1022.36
+2025-11-03T20:21:44.3461904Z TRACE:: Debug: End of Day - 2023-01-25 - Price: $400.36, RSI: 67.0, Portfolio: $101765.08, Daily P&L: -1.0%, Cash: $101765.08
+2025-11-03T20:21:44.3462589Z TRACE:: Debug: BUY #45 - Time: 2023-01-26 10:55:00, Price: $400.68, RSI: 28.4, Quantity: 241, Stop Loss: $392.67, Take Profit: $416.71
+2025-11-03T20:21:44.3462725Z TRACE:: Debug: SELL #46 - Time: 2023-01-26 12:10:00, Price: $402.45, RSI: 71.9, Quantity: 241, P&L: $426.57
+2025-11-03T20:21:44.3462808Z TRACE:: Debug: End of Day - 2023-01-26 - Price: $404.71, RSI: 69.3, Portfolio: $102187.48, Daily P&L: 0.4%, Cash: $102187.48
+2025-11-03T20:21:44.3462892Z TRACE:: Debug: BUY #47 - Time: 2023-01-27 10:47:00, Price: $404.56, RSI: 29.1, Quantity: 239, Stop Loss: $396.47, Take Profit: $420.74
+2025-11-03T20:21:44.3462971Z TRACE:: Debug: SELL #48 - Time: 2023-01-27 11:33:00, Price: $405.47, RSI: 70.1, Quantity: 239, P&L: $217.49
+2025-11-03T20:21:44.3987930Z TRACE:: Debug: BUY #49 - Time: 2023-01-27 13:18:00, Price: $405.71, RSI: 29.9, Quantity: 239, Stop Loss: $397.60, Take Profit: $421.94
+2025-11-03T20:21:44.3988650Z TRACE:: Debug: SELL #50 - Time: 2023-01-27 14:20:00, Price: $407.08, RSI: 70.5, Quantity: 239, P&L: $327.43
+2025-11-03T20:21:44.3988823Z TRACE:: Debug: BUY #51 - Time: 2023-01-27 15:48:00, Price: $406.68, RSI: 29.2, Quantity: 239, Stop Loss: $398.55, Take Profit: $422.95
+2025-11-03T20:21:44.3988917Z TRACE:: Debug: End of Day - 2023-01-27 - Price: $405.68, RSI: 27.3, Portfolio: $102482.65, Daily P&L: 0.3%, Unrealized P&L: $-237.81
+2025-11-03T20:21:44.3988998Z TRACE:: Debug: SELL #52 - Time: 2023-01-30 13:19:00, Price: $402.97, RSI: 71.1, Quantity: 239, P&L: $-886.69
+2025-11-03T20:21:44.3989110Z TRACE:: Debug: End of Day - 2023-01-30 - Price: $400.63, RSI: 45.1, Portfolio: $101831.37, Daily P&L: -0.6%, Cash: $101831.37
+2025-11-03T20:21:44.4108956Z TRACE:: Synchronizer.GetEnumerator(): Exited thread.
+2025-11-03T20:21:44.4114842Z TRACE:: AlgorithmManager.Run(): Firing On End Of Algorithm...
+2025-11-03T20:21:44.4132936Z TRACE:: Engine.Run(): Exiting Algorithm Manager
+2025-11-03T20:21:44.4173072Z TRACE:: StopSafely(): Waiting for 'Isolator Thread' thread to stop...
+2025-11-03T20:21:44.4180412Z TRACE:: FileSystemDataFeed.Exit(): Start. Setting cancellation token...
+2025-11-03T20:21:44.4195242Z TRACE:: FileSystemDataFeed.Exit(): Exit Finished.
+2025-11-03T20:21:44.4198829Z TRACE:: BacktestingResultHandler.Exit(): starting...
+2025-11-03T20:21:44.4200522Z TRACE:: BacktestingResultHandler.Exit(): Saving logs...
+2025-11-03T20:21:44.4212329Z TRACE:: Debug: === FINAL ALGORITHM RESULTS ===
+2025-11-03T20:21:44.4212685Z TRACE:: Debug: Total Signals Generated: 52
+2025-11-03T20:21:44.4212742Z TRACE:: StopSafely(): Waiting for 'Result Thread' thread to stop...
+2025-11-03T20:21:44.4212792Z TRACE:: Debug: Initial Portfolio Value: $100,000.00
+2025-11-03T20:21:44.4212901Z TRACE:: Debug: Final Portfolio Value: $101831.37
+2025-11-03T20:21:44.4212962Z TRACE:: Debug: Total Return: 1.83%
+2025-11-03T20:21:44.4213059Z TRACE:: Debug: Total Fees Paid: $63.82
+2025-11-03T20:21:44.4213411Z TRACE:: Debug: RSI Period Used: 14
+2025-11-03T20:21:44.4213612Z TRACE:: Debug: Oversold/Overbought Thresholds: 30/70
+2025-11-03T20:21:44.4213762Z TRACE:: Debug: Stop Loss/Take Profit: 2.0%/4.0%
+2025-11-03T20:21:44.4213867Z TRACE:: Debug: Strategy execution completed.
+2025-11-03T20:21:44.4214024Z TRACE:: Debug: Algorithm Id:(1983772575) completed in 1.08 seconds at 14k data points per second. Processing total of 15,601 data points.
+2025-11-03T20:21:44.4214453Z TRACE:: Debug: Your log was successfully created and can be retrieved from: /Results/1983772575-log.txt
+2025-11-03T20:21:44.4214624Z TRACE:: BacktestingResultHandler.Run(): Ending Thread...
+2025-11-03T20:21:44.5864967Z TRACE:: 
+STATISTICS:: Total Orders 52
+STATISTICS:: Average Win 0.41%
+STATISTICS:: Average Loss -0.56%
+STATISTICS:: Compounding Annual Return 24.110%
+STATISTICS:: Drawdown 2.600%
+STATISTICS:: Expectancy 0.127
+STATISTICS:: Start Equity 100000
+STATISTICS:: End Equity 101831.37
+STATISTICS:: Net Profit 1.831%
+STATISTICS:: Sharpe Ratio 1.48
+STATISTICS:: Sortino Ratio 2.884
+STATISTICS:: Probabilistic Sharpe Ratio 61.689%
+STATISTICS:: Loss Rate 35%
+STATISTICS:: Win Rate 65%
+STATISTICS:: Profit-Loss Ratio 0.72
+STATISTICS:: Alpha 0
+STATISTICS:: Beta 0
+STATISTICS:: Annual Standard Deviation 0.083
+STATISTICS:: Annual Variance 0.007
+STATISTICS:: Information Ratio 2.019
+STATISTICS:: Tracking Error 0.083
+STATISTICS:: Treynor Ratio 0
+STATISTICS:: Total Fees $63.82
+STATISTICS:: Estimated Strategy Capacity $30000000.00
+STATISTICS:: Lowest Capacity Asset SPY R735QTJ8XC9X
+STATISTICS:: Portfolio Turnover 158.69%
+STATISTICS:: Drawdown Recovery 1
+STATISTICS:: OrderListHash 0a7b449b6ea0a58496c89a3ac3403219
+2025-11-03T20:21:44.5865424Z TRACE:: BacktestingResultHandler.SendAnalysisResult(): Processed final packet
+2025-11-03T20:21:44.5868262Z TRACE:: Engine.Run(): Disconnecting from brokerage...
+2025-11-03T20:21:44.5869157Z TRACE:: Engine.Run(): Disposing of setup handler...
+2025-11-03T20:21:44.5869664Z TRACE:: Engine.Main(): Analysis Completed and Results Posted.
+2025-11-03T20:21:44.5871499Z TRACE:: DataMonitor.Exit(): start...
+2025-11-03T20:21:44.5872096Z TRACE:: StopSafely(): Waiting for '' thread to stop...
+2025-11-03T20:21:44.5887225Z TRACE:: DataMonitor.GenerateReport():
+DATA USAGE:: Total data requests 42
+DATA USAGE:: Succeeded data requests 42
+DATA USAGE:: Failed data requests 0
+DATA USAGE:: Failed data requests percentage 0%
+DATA USAGE:: Total universe data requests 0
+DATA USAGE:: Succeeded universe data requests 0
+DATA USAGE:: Failed universe data requests 0
+DATA USAGE:: Failed universe data requests percentage 0%
+2025-11-03T20:21:44.5919902Z TRACE:: DataMonitor.Exit(): end
+2025-11-03T20:21:44.5946189Z TRACE:: Engine.Main(): Packet removed from queue: 1983772575
+2025-11-03T20:21:44.5947421Z TRACE:: LeanEngineSystemHandlers.Dispose(): start...
+2025-11-03T20:21:44.5952179Z TRACE:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+2025-11-03T20:21:44.5953726Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): start...
+2025-11-03T20:21:44.5955512Z TRACE:: LocalObjectStore.Dispose(): start...
+2025-11-03T20:21:44.5958121Z TRACE:: LocalObjectStore.Dispose(): end
+2025-11-03T20:21:44.5960348Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.

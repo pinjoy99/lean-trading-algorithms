@@ -1,0 +1,304 @@
+2025-11-02T22:09:46.9688799Z TRACE:: Engine.Main(): LEAN ALGORITHMIC TRADING ENGINE v2.5.0.0 Mode: DEBUG (64bit) Host: ASUS
+2025-11-02T22:09:46.9739274Z TRACE:: Engine.Main(): Started 10:09 PM
+2025-11-02T22:09:46.9774971Z TRACE:: Config.Get(): Configuration key not found. Key: lean-manager-type - Using default value: LocalLeanManager
+2025-11-02T22:09:46.9933495Z TRACE:: JobQueue.NextJob(): Selected /LeanCLI/main.py
+2025-11-02T22:09:46.9989982Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-capacity - Using default value: 120
+2025-11-02T22:09:46.9990438Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-time-interval-minutes - Using default value: 1440
+2025-11-02T22:09:46.9990573Z TRACE:: Config.GetValue(): scheduled-event-leaky-bucket-refill-amount - Using default value: 18
+2025-11-02T22:09:46.9999104Z TRACE:: Config.GetValue(): storage-limit - Using default value: 10737418240
+2025-11-02T22:09:47.0006954Z TRACE:: Config.GetValue(): storage-permissions - Using default value: Read=True Write=True Delete=True
+2025-11-02T22:09:47.0030381Z TRACE:: Config.Get(): Configuration key not found. Key: data-channel - Using default value: 
+2025-11-02T22:09:47.0033949Z TRACE:: Config.Get(): Configuration key not found. Key: python-venv - Using default value: 
+2025-11-02T22:09:47.0035423Z TRACE:: Config.Get(): Configuration key not found. Key: out-of-sample-max-end-date - Using default value: 
+2025-11-02T22:09:47.0035781Z TRACE:: Config.GetValue(): out-of-sample-days - Using default value: 0
+2025-11-02T22:09:47.0046030Z TRACE:: Config.Get(): Configuration key not found. Key: data-permission-manager - Using default value: DataPermissionManager
+2025-11-02T22:09:47.0046360Z TRACE:: Config.Get(): Configuration key not found. Key: data-monitor - Using default value: QuantConnect.Data.DataMonitor
+2025-11-02T22:09:47.0189086Z TRACE:: Config.GetValue(): initialization-timeout - Using default value: 300
+2025-11-02T22:09:47.0190521Z TRACE:: Config.GetValue(): algorithm-creation-timeout - Using default value: 90
+2025-11-02T22:09:47.0256791Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-11-02T22:09:47.0274029Z TRACE:: Config.Get(): Configuration key not found. Key: fundamental-data-provider - Using default value: CoarseFundamentalDataProvider
+2025-11-02T22:09:47.0296243Z TRACE:: AlgorithmManager.CreateTokenBucket(): Initializing LeakyBucket: Capacity: 120 RefillAmount: 18 TimeInterval: 1440
+2025-11-02T22:09:47.0302812Z TRACE:: Config.GetValue(): algorithm-manager-time-loop-maximum - Using default value: 20
+2025-11-02T22:09:47.0351068Z TRACE:: Config.GetValue(): downloader-data-update-period - Using default value: 7
+2025-11-02T22:09:47.0386975Z TRACE:: Engine.Run(): Resource limits '0' CPUs. 2147483647 MB RAM.
+2025-11-02T22:09:47.0392371Z TRACE:: TextSubscriptionDataSourceReader.SetCacheSize(): Setting cache size to 71582788 items
+2025-11-02T22:09:47.8260599Z TRACE:: PythonInitializer.Initialize(): start...
+2025-11-02T22:09:48.0817886Z TRACE:: PythonInitializer.Initialize(): ended
+2025-11-02T22:09:48.0833499Z TRACE:: AlgorithmPythonWrapper(): Python version 3.11.13 (main, Jun  5 2025, 13:26:26) [GCC 11.2.0]: Importing python module main
+2025-11-02T22:09:53.0728302Z TRACE:: AlgorithmPythonWrapper(): main successfully imported.
+2025-11-02T22:09:53.0818326Z TRACE:: AlgorithmPythonWrapper(): Creating IAlgorithm instance.
+2025-11-02T22:09:53.0948816Z TRACE:: Config.Get(): Configuration key not found. Key: databases-refresh-period - Using default value: 1.00:00:00
+2025-11-02T22:09:53.2295863Z TRACE:: Config.GetValue(): mute-python-library-logging - Using default value: True
+2025-11-02T22:09:53.2341418Z TRACE:: LocalObjectStore.Initialize(): Storage Root: /Storage. StorageFileCount 9999999. StorageLimit 10240MB. StoragePermissions Read=True Write=True Delete=True
+2025-11-02T22:09:53.2427555Z TRACE:: Config.GetValue(): zip-data-cache-provider - Using default value: 10
+2025-11-02T22:09:53.2470719Z TRACE:: HistoryProviderManager.Initialize(): history providers [SubscriptionDataReaderHistoryProvider]
+2025-11-02T22:09:53.2506039Z TRACE:: BaseSetupHandler.Setup(LocalPlatform): UID: 353226, PID: -928486186, Version: 2.5.0.0, Source: WebIDE
+2025-11-02T22:09:53.2532153Z TRACE:: Config.Get(): Configuration key not found. Key: security-data-feeds - Using default value: 
+2025-11-02T22:09:53.4044511Z TRACE:: BaseSetupHandler.SetupCurrencyConversions():
+Account Type: Margin
+
+Symbol      Quantity    Conversion = Value in USD
+USD: $      100000.00 @       1.00 = $100000
+-------------------------------------------------
+CashBook Total Value:                $100000
+
+2025-11-02T22:09:53.4066281Z TRACE:: Total margin information: TotalMarginUsed: 0.00, MarginRemaining: 100000.00
+2025-11-02T22:09:53.4073016Z TRACE:: SetUp Backtesting: User: 353226 ProjectId: -928486186 AlgoId: 5efc8390-9190-4ac7-abb8-b88d3dd891b7
+2025-11-02T22:09:53.4094015Z TRACE:: Dates: Start: 10/07/2013 End: 10/11/2013 Cash: ¤100,000.00 MaximumRuntime: 100.00:00:00 MaxOrders: 2147483647
+2025-11-02T22:09:53.4161906Z TRACE:: BacktestingResultHandler(): Sample Period Set: 04.00
+2025-11-02T22:09:53.4165680Z TRACE:: Config.GetValue(): forward-console-messages - Using default value: True
+2025-11-02T22:09:53.4170026Z TRACE:: JOB HANDLERS:
+         DataFeed:             QuantConnect.Lean.Engine.DataFeeds.FileSystemDataFeed
+         Setup:                QuantConnect.Lean.Engine.Setup.BacktestingSetupHandler
+         RealTime:             QuantConnect.Lean.Engine.RealTime.BacktestingRealTimeHandler
+         Results:              QuantConnect.Lean.Engine.Results.BacktestingResultHandler
+         Transactions:         QuantConnect.Lean.Engine.TransactionHandlers.BacktestingTransactionHandler
+         Object Store:         QuantConnect.Lean.Engine.Storage.LocalObjectStore
+         History Provider:     QuantConnect.Lean.Engine.HistoricalData.HistoryProviderManager
+         Brokerage:            QuantConnect.Brokerages.Backtesting.BacktestingBrokerage
+         Data Provider:        QuantConnect.Lean.Engine.DataFeeds.DefaultDataProvider
+
+2025-11-02T22:09:53.4481867Z TRACE:: Event Name "Daily Sampling", scheduled to run.
+2025-11-02T22:09:53.4502633Z TRACE:: AlgorithmManager.Run(): Begin DataStream - Start: 10/7/2013 12:00:00 AM Stop: 10/11/2013 11:59:59 PM Time: 10/7/2013 12:00:00 AM Warmup: False
+2025-11-02T22:09:53.4877840Z TRACE:: Config.GetValue(): data-feed-workers-count - Using default value: 16
+2025-11-02T22:09:53.4881763Z TRACE:: Config.GetValue(): data-feed-max-work-weight - Using default value: 400
+2025-11-02T22:09:53.4881989Z TRACE:: WeightedWorkScheduler(): will use 16 workers and MaxWorkWeight is 400
+2025-11-02T22:09:53.4936295Z TRACE:: Debug: Launching analysis for 5efc8390-9190-4ac7-abb8-b88d3dd891b7 with LEAN Engine v2.5.0.0
+2025-11-02T22:09:53.5695844Z TRACE:: UniverseSelection.AddPendingInternalDataFeeds(): Adding internal benchmark data feed SPY,#0,SPY,Hour,TradeBar,Trade,Adjusted,OpenInterest,Internal
+2025-11-02T22:09:53.8995773Z TRACE:: Debug: SMA Crossover Strategy initialized with minute data
+2025-11-02T22:09:53.8996263Z TRACE:: Debug: Accurate daily end-times now enabled by default. See more at https://qnt.co/3YHaWHL. To disable it and use legacy daily bars set self.settings.daily_precise_end_time = False.
+2025-11-02T22:09:53.8996407Z TRACE:: Debug: Usage of QCAlgorithm.OnEndOfDay() without a symbol will be deprecated August 2021. Always use a symbol when overriding this method: OnEndOfDay(symbol)
+2025-11-02T22:09:54.0554771Z TRACE:: Debug: BUY #1 - Time: 2013-10-07 10:08:00, Price: $145.22, Fast SMA: $145.05, Slow SMA: $145.02
+2025-11-02T22:09:54.0555629Z TRACE:: Debug: SELL #2 - Time: 2013-10-07 10:37:00, Price: $145.38, Fast SMA: $145.45, Slow SMA: $145.47
+2025-11-02T22:09:54.0555769Z TRACE:: Debug: BUY #3 - Time: 2013-10-07 10:50:00, Price: $145.40, Fast SMA: $145.40, Slow SMA: $145.39
+2025-11-02T22:09:54.0556213Z TRACE:: Debug: SELL #4 - Time: 2013-10-07 11:01:00, Price: $145.40, Fast SMA: $145.41, Slow SMA: $145.43
+2025-11-02T22:09:54.0556396Z TRACE:: Debug: BUY #5 - Time: 2013-10-07 11:13:00, Price: $145.38, Fast SMA: $145.34, Slow SMA: $145.33
+2025-11-02T22:09:54.0556500Z TRACE:: Debug: SELL #6 - Time: 2013-10-07 11:18:00, Price: $145.26, Fast SMA: $145.30, Slow SMA: $145.31
+2025-11-02T22:09:54.0556800Z TRACE:: Debug: BUY #7 - Time: 2013-10-07 11:26:00, Price: $145.31, Fast SMA: $145.30, Slow SMA: $145.30
+2025-11-02T22:09:54.0556947Z TRACE:: Debug: SELL #8 - Time: 2013-10-07 11:58:00, Price: $145.49, Fast SMA: $145.49, Slow SMA: $145.49
+2025-11-02T22:09:54.0557024Z TRACE:: Debug: BUY #9 - Time: 2013-10-07 12:11:00, Price: $145.42, Fast SMA: $145.43, Slow SMA: $145.42
+2025-11-02T22:09:54.0557154Z TRACE:: Debug: SELL #10 - Time: 2013-10-07 12:19:00, Price: $145.40, Fast SMA: $145.41, Slow SMA: $145.41
+2025-11-02T22:09:54.0557241Z TRACE:: Debug: BUY #11 - Time: 2013-10-07 12:20:00, Price: $145.42, Fast SMA: $145.42, Slow SMA: $145.41
+2025-11-02T22:09:54.0557351Z TRACE:: Debug: SELL #12 - Time: 2013-10-07 12:22:00, Price: $145.34, Fast SMA: $145.40, Slow SMA: $145.41
+2025-11-02T22:09:54.0557424Z TRACE:: Debug: BUY #13 - Time: 2013-10-07 12:44:00, Price: $145.21, Fast SMA: $145.19, Slow SMA: $145.18
+2025-11-02T22:09:54.0557501Z TRACE:: Debug: SELL #14 - Time: 2013-10-07 12:58:00, Price: $145.15, Fast SMA: $145.24, Slow SMA: $145.25
+2025-11-02T22:09:54.0557576Z TRACE:: Debug: BUY #15 - Time: 2013-10-07 13:12:00, Price: $145.32, Fast SMA: $145.21, Slow SMA: $145.19
+2025-11-02T22:09:54.0557657Z TRACE:: Debug: SELL #16 - Time: 2013-10-07 13:27:00, Price: $145.32, Fast SMA: $145.33, Slow SMA: $145.33
+2025-11-02T22:09:54.0557732Z TRACE:: Debug: BUY #17 - Time: 2013-10-07 13:34:00, Price: $145.34, Fast SMA: $145.34, Slow SMA: $145.33
+2025-11-02T22:09:54.0557851Z TRACE:: Debug: SELL #18 - Time: 2013-10-07 13:39:00, Price: $145.24, Fast SMA: $145.30, Slow SMA: $145.31
+2025-11-02T22:09:54.0557944Z TRACE:: Debug: BUY #19 - Time: 2013-10-07 13:49:00, Price: $145.31, Fast SMA: $145.28, Slow SMA: $145.27
+2025-11-02T22:09:54.0558039Z TRACE:: Debug: SELL #20 - Time: 2013-10-07 14:09:00, Price: $145.35, Fast SMA: $145.44, Slow SMA: $145.45
+2025-11-02T22:09:54.0558138Z TRACE:: Debug: BUY #21 - Time: 2013-10-07 14:23:00, Price: $145.40, Fast SMA: $145.41, Slow SMA: $145.40
+2025-11-02T22:09:54.0558242Z TRACE:: Debug: SELL #22 - Time: 2013-10-07 14:26:00, Price: $145.40, Fast SMA: $145.40, Slow SMA: $145.40
+2025-11-02T22:09:54.0558312Z TRACE:: Debug: BUY #23 - Time: 2013-10-07 14:27:00, Price: $145.39, Fast SMA: $145.40, Slow SMA: $145.40
+2025-11-02T22:09:54.0558628Z TRACE:: Debug: SELL #24 - Time: 2013-10-07 14:28:00, Price: $145.34, Fast SMA: $145.39, Slow SMA: $145.39
+2025-11-02T22:09:54.0558791Z TRACE:: Debug: BUY #25 - Time: 2013-10-07 14:31:00, Price: $145.42, Fast SMA: $145.40, Slow SMA: $145.40
+2025-11-02T22:09:54.1061918Z TRACE:: Debug: SELL #26 - Time: 2013-10-07 14:43:00, Price: $145.38, Fast SMA: $145.43, Slow SMA: $145.44
+2025-11-02T22:09:54.1062519Z TRACE:: Debug: BUY #27 - Time: 2013-10-07 14:52:00, Price: $145.40, Fast SMA: $145.41, Slow SMA: $145.40
+2025-11-02T22:09:54.1062660Z TRACE:: Debug: SELL #28 - Time: 2013-10-07 15:06:00, Price: $145.42, Fast SMA: $145.44, Slow SMA: $145.44
+2025-11-02T22:09:54.1062741Z TRACE:: Debug: BUY #29 - Time: 2013-10-07 15:14:00, Price: $145.44, Fast SMA: $145.44, Slow SMA: $145.44
+2025-11-02T22:09:54.1062871Z TRACE:: Debug: SELL #30 - Time: 2013-10-07 15:17:00, Price: $145.40, Fast SMA: $145.42, Slow SMA: $145.43
+2025-11-02T22:09:54.1062943Z TRACE:: Debug: End of Day - 2013-10-07 - Price: $144.76, Portfolio Value: $99727.91, Cash: $99727.91
+2025-11-02T22:09:54.1063017Z TRACE:: Debug: BUY #31 - Time: 2013-10-08 09:46:00, Price: $144.81, Fast SMA: $144.67, Slow SMA: $144.64
+2025-11-02T22:09:54.1063095Z TRACE:: Debug: SELL #32 - Time: 2013-10-08 09:54:00, Price: $144.61, Fast SMA: $144.63, Slow SMA: $144.66
+2025-11-02T22:09:54.1063211Z TRACE:: Debug: BUY #33 - Time: 2013-10-08 09:57:00, Price: $144.84, Fast SMA: $144.75, Slow SMA: $144.72
+2025-11-02T22:09:54.1063273Z TRACE:: Debug: SELL #34 - Time: 2013-10-08 10:04:00, Price: $144.61, Fast SMA: $144.73, Slow SMA: $144.73
+2025-11-02T22:09:54.1063338Z TRACE:: Debug: BUY #35 - Time: 2013-10-08 10:16:00, Price: $144.69, Fast SMA: $144.66, Slow SMA: $144.65
+2025-11-02T22:09:54.1063635Z TRACE:: Debug: SELL #36 - Time: 2013-10-08 10:31:00, Price: $144.72, Fast SMA: $144.76, Slow SMA: $144.76
+2025-11-02T22:09:54.1063699Z TRACE:: Debug: BUY #37 - Time: 2013-10-08 10:46:00, Price: $144.65, Fast SMA: $144.61, Slow SMA: $144.61
+2025-11-02T22:09:54.1063782Z TRACE:: Debug: SELL #38 - Time: 2013-10-08 10:47:00, Price: $144.51, Fast SMA: $144.60, Slow SMA: $144.60
+2025-11-02T22:09:54.1063845Z TRACE:: Debug: BUY #39 - Time: 2013-10-08 11:10:00, Price: $144.18, Fast SMA: $144.12, Slow SMA: $144.10
+2025-11-02T22:09:54.1063904Z TRACE:: Debug: SELL #40 - Time: 2013-10-08 11:20:00, Price: $144.11, Fast SMA: $144.14, Slow SMA: $144.16
+2025-11-02T22:09:54.1064041Z TRACE:: Debug: BUY #41 - Time: 2013-10-08 11:28:00, Price: $144.11, Fast SMA: $144.16, Slow SMA: $144.16
+2025-11-02T22:09:54.1064102Z TRACE:: Debug: SELL #42 - Time: 2013-10-08 11:29:00, Price: $144.08, Fast SMA: $144.14, Slow SMA: $144.15
+2025-11-02T22:09:54.1064163Z TRACE:: Debug: BUY #43 - Time: 2013-10-08 11:56:00, Price: $143.77, Fast SMA: $143.76, Slow SMA: $143.74
+2025-11-02T22:09:54.1064232Z TRACE:: Debug: SELL #44 - Time: 2013-10-08 12:05:00, Price: $143.78, Fast SMA: $143.74, Slow SMA: $143.76
+2025-11-02T22:09:54.1064299Z TRACE:: Debug: BUY #45 - Time: 2013-10-08 12:40:00, Price: $143.59, Fast SMA: $143.56, Slow SMA: $143.54
+2025-11-02T22:09:54.1064367Z TRACE:: Debug: SELL #46 - Time: 2013-10-08 12:55:00, Price: $143.64, Fast SMA: $143.69, Slow SMA: $143.70
+2025-11-02T22:09:54.1064610Z TRACE:: Debug: BUY #47 - Time: 2013-10-08 13:01:00, Price: $143.79, Fast SMA: $143.74, Slow SMA: $143.73
+2025-11-02T22:09:54.1064678Z TRACE:: Debug: SELL #48 - Time: 2013-10-08 13:08:00, Price: $143.69, Fast SMA: $143.73, Slow SMA: $143.73
+2025-11-02T22:09:54.1064738Z TRACE:: Debug: BUY #49 - Time: 2013-10-08 13:27:00, Price: $143.68, Fast SMA: $143.61, Slow SMA: $143.60
+2025-11-02T22:09:54.1064797Z TRACE:: Debug: SELL #50 - Time: 2013-10-08 13:38:00, Price: $143.61, Fast SMA: $143.66, Slow SMA: $143.67
+2025-11-02T22:09:54.1566521Z TRACE:: Debug: BUY #51 - Time: 2013-10-08 13:58:00, Price: $143.62, Fast SMA: $143.55, Slow SMA: $143.54
+2025-11-02T22:09:54.1567025Z TRACE:: Debug: SELL #52 - Time: 2013-10-08 14:02:00, Price: $143.40, Fast SMA: $143.48, Slow SMA: $143.50
+2025-11-02T22:09:54.1567104Z TRACE:: Debug: BUY #53 - Time: 2013-10-08 14:15:00, Price: $143.37, Fast SMA: $143.38, Slow SMA: $143.36
+2025-11-02T22:09:54.1567183Z TRACE:: Debug: SELL #54 - Time: 2013-10-08 14:18:00, Price: $143.35, Fast SMA: $143.34, Slow SMA: $143.35
+2025-11-02T22:09:54.1567288Z TRACE:: Debug: BUY #55 - Time: 2013-10-08 14:25:00, Price: $143.50, Fast SMA: $143.34, Slow SMA: $143.34
+2025-11-02T22:09:54.1567352Z TRACE:: Debug: SELL #56 - Time: 2013-10-08 14:37:00, Price: $143.38, Fast SMA: $143.43, Slow SMA: $143.48
+2025-11-02T22:09:54.1567413Z TRACE:: Debug: BUY #57 - Time: 2013-10-08 15:00:00, Price: $143.46, Fast SMA: $143.35, Slow SMA: $143.34
+2025-11-02T22:09:54.1567476Z TRACE:: Debug: SELL #58 - Time: 2013-10-08 15:11:00, Price: $143.37, Fast SMA: $143.41, Slow SMA: $143.43
+2025-11-02T22:09:54.1567542Z TRACE:: Debug: BUY #59 - Time: 2013-10-08 15:21:00, Price: $143.46, Fast SMA: $143.38, Slow SMA: $143.37
+2025-11-02T22:09:54.1567598Z TRACE:: Debug: SELL #60 - Time: 2013-10-08 15:36:00, Price: $143.47, Fast SMA: $143.59, Slow SMA: $143.63
+2025-11-02T22:09:54.1567665Z TRACE:: Debug: End of Day - 2013-10-08 - Price: $143.08, Portfolio Value: $98783.77, Cash: $98783.77
+2025-11-02T22:09:54.1567736Z TRACE:: Debug: BUY #61 - Time: 2013-10-09 09:35:00, Price: $143.16, Fast SMA: $143.26, Slow SMA: $143.24
+2025-11-02T22:09:54.1567803Z TRACE:: Debug: SELL #62 - Time: 2013-10-09 09:37:00, Price: $143.24, Fast SMA: $143.21, Slow SMA: $143.22
+2025-11-02T22:09:54.1567877Z TRACE:: Debug: BUY #63 - Time: 2013-10-09 09:39:00, Price: $143.26, Fast SMA: $143.23, Slow SMA: $143.22
+2025-11-02T22:09:54.1567939Z TRACE:: Debug: SELL #64 - Time: 2013-10-09 09:43:00, Price: $142.97, Fast SMA: $143.16, Slow SMA: $143.21
+2025-11-02T22:09:54.1568003Z TRACE:: Debug: BUY #65 - Time: 2013-10-09 09:58:00, Price: $143.12, Fast SMA: $143.03, Slow SMA: $143.01
+2025-11-02T22:09:54.1568203Z TRACE:: Debug: SELL #66 - Time: 2013-10-09 10:06:00, Price: $142.94, Fast SMA: $143.01, Slow SMA: $143.04
+2025-11-02T22:09:54.1568280Z TRACE:: Debug: BUY #67 - Time: 2013-10-09 10:18:00, Price: $142.98, Fast SMA: $143.00, Slow SMA: $143.00
+2025-11-02T22:09:54.1568353Z TRACE:: Debug: SELL #68 - Time: 2013-10-09 10:22:00, Price: $142.97, Fast SMA: $143.00, Slow SMA: $143.01
+2025-11-02T22:09:54.1568410Z TRACE:: Debug: BUY #69 - Time: 2013-10-09 10:23:00, Price: $143.17, Fast SMA: $143.04, Slow SMA: $143.01
+2025-11-02T22:09:54.1568480Z TRACE:: Debug: SELL #70 - Time: 2013-10-09 10:37:00, Price: $143.10, Fast SMA: $143.22, Slow SMA: $143.23
+2025-11-02T22:09:54.1568539Z TRACE:: Debug: BUY #71 - Time: 2013-10-09 11:06:00, Price: $142.79, Fast SMA: $142.80, Slow SMA: $142.79
+2025-11-02T22:09:54.1568618Z TRACE:: Debug: SELL #72 - Time: 2013-10-09 11:09:00, Price: $142.63, Fast SMA: $142.73, Slow SMA: $142.76
+2025-11-02T22:09:54.1568676Z TRACE:: Debug: BUY #73 - Time: 2013-10-09 11:29:00, Price: $142.45, Fast SMA: $142.41, Slow SMA: $142.41
+2025-11-02T22:09:54.1568738Z TRACE:: Debug: SELL #74 - Time: 2013-10-09 11:43:00, Price: $142.54, Fast SMA: $142.57, Slow SMA: $142.58
+2025-11-02T22:09:54.1568794Z TRACE:: Debug: BUY #75 - Time: 2013-10-09 11:47:00, Price: $142.78, Fast SMA: $142.66, Slow SMA: $142.63
+2025-11-02T22:09:54.1568853Z TRACE:: Debug: SELL #76 - Time: 2013-10-09 12:08:00, Price: $142.78, Fast SMA: $142.80, Slow SMA: $142.82
+2025-11-02T22:09:54.1568906Z TRACE:: Debug: BUY #77 - Time: 2013-10-09 12:14:00, Price: $142.88, Fast SMA: $142.84, Slow SMA: $142.83
+2025-11-02T22:09:54.1568960Z TRACE:: Debug: SELL #78 - Time: 2013-10-09 12:24:00, Price: $142.82, Fast SMA: $142.83, Slow SMA: $142.85
+2025-11-02T22:09:54.1569013Z TRACE:: Debug: BUY #79 - Time: 2013-10-09 12:34:00, Price: $142.86, Fast SMA: $142.83, Slow SMA: $142.82
+2025-11-02T22:09:54.1569068Z TRACE:: Debug: SELL #80 - Time: 2013-10-09 12:44:00, Price: $142.84, Fast SMA: $142.87, Slow SMA: $142.88
+2025-11-02T22:09:54.1569140Z TRACE:: Debug: BUY #81 - Time: 2013-10-09 12:58:00, Price: $142.76, Fast SMA: $142.77, Slow SMA: $142.77
+2025-11-02T22:09:54.1813534Z TRACE:: Config.GetValue(): portfolio-margin-series-count - Using default value: 40
+2025-11-02T22:09:54.2073311Z TRACE:: Debug: SELL #82 - Time: 2013-10-09 13:36:00, Price: $143.34, Fast SMA: $143.39, Slow SMA: $143.39
+2025-11-02T22:09:54.2073726Z TRACE:: Debug: BUY #83 - Time: 2013-10-09 13:46:00, Price: $143.42, Fast SMA: $143.37, Slow SMA: $143.36
+2025-11-02T22:09:54.2073811Z TRACE:: Debug: SELL #84 - Time: 2013-10-09 13:52:00, Price: $143.37, Fast SMA: $143.35, Slow SMA: $143.35
+2025-11-02T22:09:54.2073880Z TRACE:: Debug: BUY #85 - Time: 2013-10-09 13:54:00, Price: $143.47, Fast SMA: $143.39, Slow SMA: $143.37
+2025-11-02T22:09:54.2074302Z TRACE:: Debug: SELL #86 - Time: 2013-10-09 14:02:00, Price: $143.36, Fast SMA: $143.39, Slow SMA: $143.39
+2025-11-02T22:09:54.2074403Z TRACE:: Debug: BUY #87 - Time: 2013-10-09 14:08:00, Price: $143.59, Fast SMA: $143.47, Slow SMA: $143.42
+2025-11-02T22:09:54.2074466Z TRACE:: Debug: SELL #88 - Time: 2013-10-09 14:16:00, Price: $143.45, Fast SMA: $143.43, Slow SMA: $143.44
+2025-11-02T22:09:54.2074594Z TRACE:: Debug: BUY #89 - Time: 2013-10-09 14:30:00, Price: $143.50, Fast SMA: $143.41, Slow SMA: $143.39
+2025-11-02T22:09:54.2074733Z TRACE:: Debug: SELL #90 - Time: 2013-10-09 14:42:00, Price: $143.52, Fast SMA: $143.52, Slow SMA: $143.53
+2025-11-02T22:09:54.2075109Z TRACE:: Debug: BUY #91 - Time: 2013-10-09 14:52:00, Price: $143.49, Fast SMA: $143.50, Slow SMA: $143.50
+2025-11-02T22:09:54.2075226Z TRACE:: Debug: SELL #92 - Time: 2013-10-09 15:08:00, Price: $143.51, Fast SMA: $143.59, Slow SMA: $143.60
+2025-11-02T22:09:54.2075295Z TRACE:: Debug: BUY #93 - Time: 2013-10-09 15:32:00, Price: $143.57, Fast SMA: $143.51, Slow SMA: $143.51
+2025-11-02T22:09:54.2075359Z TRACE:: Debug: SELL #94 - Time: 2013-10-09 15:40:00, Price: $143.44, Fast SMA: $143.54, Slow SMA: $143.54
+2025-11-02T22:09:54.2075540Z TRACE:: Debug: BUY #95 - Time: 2013-10-09 15:58:00, Price: $143.29, Fast SMA: $143.24, Slow SMA: $143.21
+2025-11-02T22:09:54.2075898Z TRACE:: Debug: End of Day - 2013-10-09 - Price: $143.16, Portfolio Value: $98185.95, Unrealized P&L: $-87.42
+2025-11-02T22:09:54.2076029Z TRACE:: Debug: SELL #96 - Time: 2013-10-10 09:52:00, Price: $144.93, Fast SMA: $144.93, Slow SMA: $144.94
+2025-11-02T22:09:54.2076112Z TRACE:: Debug: BUY #97 - Time: 2013-10-10 09:54:00, Price: $145.08, Fast SMA: $144.97, Slow SMA: $144.96
+2025-11-02T22:09:54.2076176Z TRACE:: Debug: SELL #98 - Time: 2013-10-10 10:11:00, Price: $145.07, Fast SMA: $145.08, Slow SMA: $145.09
+2025-11-02T22:09:54.2076235Z TRACE:: Debug: BUY #99 - Time: 2013-10-10 10:23:00, Price: $145.06, Fast SMA: $145.02, Slow SMA: $145.01
+2025-11-02T22:09:54.2076294Z TRACE:: Debug: SELL #100 - Time: 2013-10-10 10:55:00, Price: $145.22, Fast SMA: $145.31, Slow SMA: $145.32
+2025-11-02T22:09:54.2076355Z TRACE:: Debug: BUY #101 - Time: 2013-10-10 11:15:00, Price: $145.07, Fast SMA: $145.03, Slow SMA: $145.02
+2025-11-02T22:09:54.2076420Z TRACE:: Debug: SELL #102 - Time: 2013-10-10 12:07:00, Price: $145.61, Fast SMA: $145.60, Slow SMA: $145.61
+2025-11-02T22:09:54.2080551Z TRACE:: Debug: BUY #103 - Time: 2013-10-10 12:08:00, Price: $145.64, Fast SMA: $145.62, Slow SMA: $145.61
+2025-11-02T22:09:54.2080635Z TRACE:: Debug: SELL #104 - Time: 2013-10-10 12:12:00, Price: $145.53, Fast SMA: $145.59, Slow SMA: $145.60
+2025-11-02T22:09:54.2080691Z TRACE:: Debug: BUY #105 - Time: 2013-10-10 12:18:00, Price: $145.61, Fast SMA: $145.60, Slow SMA: $145.60
+2025-11-02T22:09:54.2080771Z TRACE:: Debug: SELL #106 - Time: 2013-10-10 12:22:00, Price: $145.54, Fast SMA: $145.58, Slow SMA: $145.59
+2025-11-02T22:09:54.2582929Z TRACE:: Debug: BUY #107 - Time: 2013-10-10 12:28:00, Price: $145.59, Fast SMA: $145.59, Slow SMA: $145.58
+2025-11-02T22:09:54.2583627Z TRACE:: Debug: SELL #108 - Time: 2013-10-10 12:43:00, Price: $145.61, Fast SMA: $145.62, Slow SMA: $145.63
+2025-11-02T22:09:54.2583733Z TRACE:: Debug: BUY #109 - Time: 2013-10-10 12:54:00, Price: $145.64, Fast SMA: $145.63, Slow SMA: $145.62
+2025-11-02T22:09:54.2583826Z TRACE:: Debug: SELL #110 - Time: 2013-10-10 12:59:00, Price: $145.60, Fast SMA: $145.62, Slow SMA: $145.63
+2025-11-02T22:09:54.2583916Z TRACE:: Debug: BUY #111 - Time: 2013-10-10 13:14:00, Price: $145.56, Fast SMA: $145.55, Slow SMA: $145.53
+2025-11-02T22:09:54.2583994Z TRACE:: Debug: SELL #112 - Time: 2013-10-10 13:20:00, Price: $145.49, Fast SMA: $145.51, Slow SMA: $145.52
+2025-11-02T22:09:54.2584077Z TRACE:: Debug: BUY #113 - Time: 2013-10-10 13:34:00, Price: $145.51, Fast SMA: $145.48, Slow SMA: $145.48
+2025-11-02T22:09:54.2584201Z TRACE:: Debug: SELL #114 - Time: 2013-10-10 13:41:00, Price: $145.46, Fast SMA: $145.48, Slow SMA: $145.48
+2025-11-02T22:09:54.2584639Z TRACE:: Debug: BUY #115 - Time: 2013-10-10 13:42:00, Price: $145.50, Fast SMA: $145.48, Slow SMA: $145.48
+2025-11-02T22:09:54.2584724Z TRACE:: Debug: SELL #116 - Time: 2013-10-10 14:06:00, Price: $145.49, Fast SMA: $145.55, Slow SMA: $145.57
+2025-11-02T22:09:54.2584792Z TRACE:: Debug: BUY #117 - Time: 2013-10-10 14:25:00, Price: $145.46, Fast SMA: $145.45, Slow SMA: $145.43
+2025-11-02T22:09:54.2584871Z TRACE:: Debug: SELL #118 - Time: 2013-10-10 14:33:00, Price: $145.42, Fast SMA: $145.44, Slow SMA: $145.44
+2025-11-02T22:09:54.2584938Z TRACE:: Debug: BUY #119 - Time: 2013-10-10 14:37:00, Price: $145.51, Fast SMA: $145.47, Slow SMA: $145.46
+2025-11-02T22:09:54.2585006Z TRACE:: Debug: SELL #120 - Time: 2013-10-10 14:51:00, Price: $145.50, Fast SMA: $145.52, Slow SMA: $145.52
+2025-11-02T22:09:54.2585085Z TRACE:: Debug: BUY #121 - Time: 2013-10-10 14:56:00, Price: $145.53, Fast SMA: $145.53, Slow SMA: $145.53
+2025-11-02T22:09:54.2585161Z TRACE:: Debug: SELL #122 - Time: 2013-10-10 15:24:00, Price: $146.15, Fast SMA: $146.14, Slow SMA: $146.14
+2025-11-02T22:09:54.2585482Z TRACE:: Debug: BUY #123 - Time: 2013-10-10 15:30:00, Price: $146.17, Fast SMA: $146.17, Slow SMA: $146.16
+2025-11-02T22:09:54.2585763Z TRACE:: Debug: SELL #124 - Time: 2013-10-10 15:33:00, Price: $146.09, Fast SMA: $146.15, Slow SMA: $146.15
+2025-11-02T22:09:54.3114144Z TRACE:: Debug: BUY #125 - Time: 2013-10-10 15:46:00, Price: $146.17, Fast SMA: $146.10, Slow SMA: $146.08
+2025-11-02T22:09:54.3114951Z TRACE:: Debug: SELL #126 - Time: 2013-10-10 15:49:00, Price: $145.97, Fast SMA: $146.06, Slow SMA: $146.06
+2025-11-02T22:09:54.3115042Z TRACE:: Debug: BUY #127 - Time: 2013-10-10 15:58:00, Price: $146.09, Fast SMA: $146.07, Slow SMA: $146.06
+2025-11-02T22:09:54.3115111Z TRACE:: Debug: End of Day - 2013-10-10 - Price: $146.33, Portfolio Value: $99764.88, Unrealized P&L: $97.31
+2025-11-02T22:09:54.3115194Z TRACE:: Debug: SELL #128 - Time: 2013-10-11 09:34:00, Price: $146.02, Fast SMA: $146.06, Slow SMA: $146.06
+2025-11-02T22:09:54.3115275Z TRACE:: Debug: BUY #129 - Time: 2013-10-11 09:39:00, Price: $146.16, Fast SMA: $146.09, Slow SMA: $146.08
+2025-11-02T22:09:54.3115354Z TRACE:: Debug: SELL #130 - Time: 2013-10-11 10:13:00, Price: $146.53, Fast SMA: $146.57, Slow SMA: $146.58
+2025-11-02T22:09:54.3115539Z TRACE:: Debug: BUY #131 - Time: 2013-10-11 10:18:00, Price: $146.59, Fast SMA: $146.58, Slow SMA: $146.58
+2025-11-02T22:09:54.3115602Z TRACE:: Debug: SELL #132 - Time: 2013-10-11 10:20:00, Price: $146.50, Fast SMA: $146.56, Slow SMA: $146.57
+2025-11-02T22:09:54.3115677Z TRACE:: Debug: BUY #133 - Time: 2013-10-11 10:30:00, Price: $146.53, Fast SMA: $146.53, Slow SMA: $146.52
+2025-11-02T22:09:54.3115750Z TRACE:: Debug: SELL #134 - Time: 2013-10-11 10:35:00, Price: $146.47, Fast SMA: $146.49, Slow SMA: $146.50
+2025-11-02T22:09:54.3115823Z TRACE:: Debug: BUY #135 - Time: 2013-10-11 10:58:00, Price: $146.34, Fast SMA: $146.29, Slow SMA: $146.28
+2025-11-02T22:09:54.3116114Z TRACE:: Debug: SELL #136 - Time: 2013-10-11 11:19:00, Price: $146.36, Fast SMA: $146.42, Slow SMA: $146.42
+2025-11-02T22:09:54.3116313Z TRACE:: Debug: BUY #137 - Time: 2013-10-11 11:27:00, Price: $146.46, Fast SMA: $146.43, Slow SMA: $146.41
+2025-11-02T22:09:54.3447562Z TRACE:: Synchronizer.GetEnumerator(): Exited thread.
+2025-11-02T22:09:54.3454570Z TRACE:: AlgorithmManager.Run(): Firing On End Of Algorithm...
+2025-11-02T22:09:54.3465994Z TRACE:: Engine.Run(): Exiting Algorithm Manager
+2025-11-02T22:09:54.3497672Z TRACE:: StopSafely(): Waiting for 'Isolator Thread' thread to stop...
+2025-11-02T22:09:54.3538732Z TRACE:: FileSystemDataFeed.Exit(): Start. Setting cancellation token...
+2025-11-02T22:09:54.3564654Z TRACE:: FileSystemDataFeed.Exit(): Exit Finished.
+2025-11-02T22:09:54.3567491Z TRACE:: BacktestingResultHandler.Exit(): starting...
+2025-11-02T22:09:54.3577143Z TRACE:: BacktestingResultHandler.Exit(): Saving logs...
+2025-11-02T22:09:54.3595167Z TRACE:: Debug: SELL #138 - Time: 2013-10-11 12:30:00, Price: $147.07, Fast SMA: $147.13, Slow SMA: $147.13
+2025-11-02T22:09:54.3595919Z TRACE:: Debug: BUY #139 - Time: 2013-10-11 12:42:00, Price: $147.12, Fast SMA: $147.10, Slow SMA: $147.09
+2025-11-02T22:09:54.3596181Z TRACE:: Debug: SELL #140 - Time: 2013-10-11 12:53:00, Price: $147.11, Fast SMA: $147.10, Slow SMA: $147.11
+2025-11-02T22:09:54.3596854Z TRACE:: Debug: BUY #141 - Time: 2013-10-11 12:57:00, Price: $147.15, Fast SMA: $147.13, Slow SMA: $147.12
+2025-11-02T22:09:54.3597599Z TRACE:: Debug: SELL #142 - Time: 2013-10-11 13:04:00, Price: $147.10, Fast SMA: $147.11, Slow SMA: $147.12
+2025-11-02T22:09:54.3598541Z TRACE:: Debug: BUY #143 - Time: 2013-10-11 13:08:00, Price: $147.21, Fast SMA: $147.14, Slow SMA: $147.13
+2025-11-02T22:09:54.3598940Z TRACE:: Debug: SELL #144 - Time: 2013-10-11 13:17:00, Price: $147.01, Fast SMA: $147.13, Slow SMA: $147.15
+2025-11-02T22:09:54.3599549Z TRACE:: Debug: BUY #145 - Time: 2013-10-11 13:29:00, Price: $147.01, Fast SMA: $147.02, Slow SMA: $147.01
+2025-11-02T22:09:54.3599796Z TRACE:: Debug: SELL #146 - Time: 2013-10-11 13:42:00, Price: $146.97, Fast SMA: $147.01, Slow SMA: $147.02
+2025-11-02T22:09:54.3600340Z TRACE:: Debug: BUY #147 - Time: 2013-10-11 13:49:00, Price: $146.99, Fast SMA: $147.01, Slow SMA: $147.01
+2025-11-02T22:09:54.3600612Z TRACE:: Debug: SELL #148 - Time: 2013-10-11 13:51:00, Price: $146.96, Fast SMA: $147.00, Slow SMA: $147.00
+2025-11-02T22:09:54.3601651Z TRACE:: Debug: BUY #149 - Time: 2013-10-11 13:58:00, Price: $146.99, Fast SMA: $146.98, Slow SMA: $146.98
+2025-11-02T22:09:54.3602108Z TRACE:: Debug: SELL #150 - Time: 2013-10-11 14:16:00, Price: $147.09, Fast SMA: $147.11, Slow SMA: $147.12
+2025-11-02T22:09:54.3602358Z TRACE:: Debug: BUY #151 - Time: 2013-10-11 14:21:00, Price: $147.14, Fast SMA: $147.13, Slow SMA: $147.13
+2025-11-02T22:09:54.3602579Z TRACE:: Debug: SELL #152 - Time: 2013-10-11 14:30:00, Price: $147.12, Fast SMA: $147.13, Slow SMA: $147.13
+2025-11-02T22:09:54.3603200Z TRACE:: Debug: BUY #153 - Time: 2013-10-11 14:48:00, Price: $147.05, Fast SMA: $147.06, Slow SMA: $147.05
+2025-11-02T22:09:54.3603423Z TRACE:: Debug: SELL #154 - Time: 2013-10-11 14:54:00, Price: $147.00, Fast SMA: $147.03, Slow SMA: $147.04
+2025-11-02T22:09:54.3604285Z TRACE:: Debug: BUY #155 - Time: 2013-10-11 15:12:00, Price: $147.00, Fast SMA: $146.98, Slow SMA: $146.98
+2025-11-02T22:09:54.3605093Z TRACE:: Debug: SELL #156 - Time: 2013-10-11 15:14:00, Price: $146.93, Fast SMA: $146.96, Slow SMA: $146.97
+2025-11-02T22:09:54.3606006Z TRACE:: Debug: BUY #157 - Time: 2013-10-11 15:26:00, Price: $146.88, Fast SMA: $146.90, Slow SMA: $146.89
+2025-11-02T22:09:54.3606735Z TRACE:: Debug: SELL #158 - Time: 2013-10-11 15:39:00, Price: $146.94, Fast SMA: $146.96, Slow SMA: $146.97
+2025-11-02T22:09:54.3607156Z TRACE:: Debug: BUY #159 - Time: 2013-10-11 15:56:00, Price: $146.99, Fast SMA: $146.92, Slow SMA: $146.91
+2025-11-02T22:09:54.3607261Z TRACE:: Debug: === FINAL ALGORITHM RESULTS ===
+2025-11-02T22:09:54.3607324Z TRACE:: Debug: Total Signals Generated: 159
+2025-11-02T22:09:54.3607382Z TRACE:: Debug: Final Portfolio Value: $99884.21
+2025-11-02T22:09:54.3607443Z TRACE:: Debug: Total Return: -0.12%
+2025-11-02T22:09:54.3607500Z TRACE:: Debug: Total Fees: $516.08
+2025-11-02T22:09:54.3607566Z TRACE:: Debug: Final Position: LONG 642.0 shares
+2025-11-02T22:09:54.3607635Z TRACE:: Debug: Algorithm Id:(5efc8390-9190-4ac7-abb8-b88d3dd891b7) completed in 0.93 seconds at 4k data points per second. Processing total of 3,943 data points.
+2025-11-02T22:09:54.3607735Z TRACE:: Debug: Your log was successfully created and can be retrieved from: /Results/5efc8390-9190-4ac7-abb8-b88d3dd891b7/5efc8390-9190-4ac7-abb8-b88d3dd891b7-log.txt
+2025-11-02T22:09:54.3607793Z TRACE:: BacktestingResultHandler.Run(): Ending Thread...
+2025-11-02T22:09:54.3616014Z TRACE:: StopSafely(): Waiting for 'Result Thread' thread to stop...
+2025-11-02T22:09:54.5992473Z TRACE:: 
+STATISTICS:: Total Orders 159
+STATISTICS:: Average Win 0.17%
+STATISTICS:: Average Loss -0.06%
+STATISTICS:: Compounding Annual Return -8.663%
+STATISTICS:: Drawdown 2.000%
+STATISTICS:: Expectancy -0.056
+STATISTICS:: Start Equity 100000
+STATISTICS:: End Equity 99884.21
+STATISTICS:: Net Profit -0.116%
+STATISTICS:: Sharpe Ratio 0.609
+STATISTICS:: Sortino Ratio 2.859
+STATISTICS:: Probabilistic Sharpe Ratio 48.287%
+STATISTICS:: Loss Rate 76%
+STATISTICS:: Win Rate 24%
+STATISTICS:: Profit-Loss Ratio 2.93
+STATISTICS:: Alpha -1.441
+STATISTICS:: Beta 0.785
+STATISTICS:: Annual Standard Deviation 0.18
+STATISTICS:: Annual Variance 0.032
+STATISTICS:: Information Ratio -28.891
+STATISTICS:: Tracking Error 0.065
+STATISTICS:: Treynor Ratio 0.14
+STATISTICS:: Total Fees $516.08
+STATISTICS:: Estimated Strategy Capacity $4300000.00
+STATISTICS:: Lowest Capacity Asset SPY R735QTJ8XC9X
+STATISTICS:: Portfolio Turnover 3014.43%
+STATISTICS:: Drawdown Recovery 0
+STATISTICS:: OrderListHash 2c9302e36391e3bc10750271d67a0f44
+2025-11-02T22:09:54.5995423Z TRACE:: BacktestingResultHandler.SendAnalysisResult(): Processed final packet
+2025-11-02T22:09:54.6001565Z TRACE:: Engine.Run(): Disconnecting from brokerage...
+2025-11-02T22:09:54.6003480Z TRACE:: Engine.Run(): Disposing of setup handler...
+2025-11-02T22:09:54.6004849Z TRACE:: Engine.Main(): Analysis Completed and Results Posted.
+2025-11-02T22:09:54.6008510Z TRACE:: DataMonitor.Exit(): start...
+2025-11-02T22:09:54.6010657Z TRACE:: StopSafely(): Waiting for '' thread to stop...
+2025-11-02T22:09:54.6031392Z TRACE:: DataMonitor.GenerateReport():
+DATA USAGE:: Total data requests 12
+DATA USAGE:: Succeeded data requests 12
+DATA USAGE:: Failed data requests 0
+DATA USAGE:: Failed data requests percentage 0%
+DATA USAGE:: Total universe data requests 0
+DATA USAGE:: Succeeded universe data requests 0
+DATA USAGE:: Failed universe data requests 0
+DATA USAGE:: Failed universe data requests percentage 0%
+2025-11-02T22:09:54.6106981Z TRACE:: DataMonitor.Exit(): end
+2025-11-02T22:09:54.6167445Z TRACE:: Engine.Main(): Packet removed from queue: 5efc8390-9190-4ac7-abb8-b88d3dd891b7
+2025-11-02T22:09:54.6172117Z TRACE:: LeanEngineSystemHandlers.Dispose(): start...
+2025-11-02T22:09:54.6181524Z TRACE:: LeanEngineSystemHandlers.Dispose(): Disposed of system handlers.
+2025-11-02T22:09:54.6183391Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): start...
+2025-11-02T22:09:54.6185140Z TRACE:: LocalObjectStore.Dispose(): start...
+2025-11-02T22:09:54.6187873Z TRACE:: LocalObjectStore.Dispose(): end
+2025-11-02T22:09:54.6189973Z TRACE:: LeanEngineAlgorithmHandlers.Dispose(): Disposed of algorithm handlers.

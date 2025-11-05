@@ -1,0 +1,18 @@
+{
+  "algorithm-language": "Python",
+  "algorithm-class-name": "MinutelyRSIStrategy",
+  "parameters": {
+    "rsi_period": 14,
+    "oversold_threshold": 30,
+    "overbought_threshold": 70,
+    "max_position_size": 0.95,
+    "stop_loss_pct": 0.02,
+    "take_profit_pct": 0.04,
+    "max_daily_loss": 0.05,
+    "min_signal_interval": 5
+  },
+  "description": "Minutely RSI Trading Strategy - RSI-based trading system for minute-level data",
+  "local-id": 123456789,
+  "name": "Minutely RSI Strategy",
+  "version": "1.0.0"
+}

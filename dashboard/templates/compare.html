@@ -1,0 +1,205 @@
+{% extends "base.html" %}
+
+{% block title %}Project Comparison - {{ config.title }}{% endblock %}
+
+{% block head %}
+<style>
+    .comparison-card {
+        transition: transform 0.2s;
+    }
+    .comparison-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .metric-better {
+        color: #28a745;
+        font-weight: bold;
+    }
+    .metric-worse {
+        color: #dc3545;
+        font-weight: bold;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- Header -->
+    <div class="col-12 mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Compare Projects</li>
+                    </ol>
+                </nav>
+                <h1 class="h3 mb-1">
+                    <i class="fas fa-balance-scale text-primary me-2"></i>
+                    Project Comparison
+                </h1>
+                <p class="text-muted mb-0">Compare performance metrics across multiple projects</p>
+            </div>
+            <div>
+                <button class="btn btn-primary" onclick="refreshComparison()">
+                    <i class="fas fa-sync-alt me-1"></i>Refresh
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Selection -->
+    <div class="col-12 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-list me-2"></i>Select Projects to Compare
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    {% for project in projects %}
+                    <div class="col-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input project-checkbox" type="checkbox" 
+                                   value="{{ project.name }}" id="project_{{ project.name }}">
+                            <label class="form-check-label" for="project_{{ project.name }}">
+                                <strong>{{ project.name|title }}</strong>
+                                <br>
+                                <small class="text-muted">{{ project.backtests_count }} backtest(s)</small>
+                            </label>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-success" onclick="compareSelected()">
+                        <i class="fas fa-chart-bar me-1"></i>Compare Selected Projects
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparison Results -->
+    <div class="col-12" id="comparisonResults">
+        <div class="text-center py-5">
+            <i class="fas fa-chart-line fa-3x text-muted mb-3"></i>
+            <p class="text-muted">Select projects above to see comparison</p>
+        </div>
+    </div>
+</div>
+
+<!-- Loading Overlay -->
+<div id="loadingOverlay" class="d-none">
+    <div class="text-center">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-2">Comparing projects...</p>
+    </div>
+</div>
+
+<script>
+function compareSelected() {
+    const selectedProjects = Array.from(document.querySelectorAll('.project-checkbox:checked'))
+        .map(cb => cb.value);
+    
+    if (selectedProjects.length < 2) {
+        alert('Please select at least 2 projects to compare');
+        return;
+    }
+
+    showLoading(true);
+    
+    fetch(`/api/projects/compare?projects=${selectedProjects.join(',')}`)
+        .then(response => response.json())
+        .then(data => {
+            displayComparison(data.projects);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Failed to load comparison data');
+        })
+        .finally(() => {
+            showLoading(false);
+        });
+}
+
+function displayComparison(projects) {
+    const resultsDiv = document.getElementById('comparisonResults');
+    
+    if (!projects || projects.length === 0) {
+        resultsDiv.innerHTML = '<div class="alert alert-warning">No comparison data available</div>';
+        return;
+    }
+
+    let html = '<div class="row g-4">';
+    
+    projects.forEach(project => {
+        html += `
+            <div class="col-lg-4 col-md-6">
+                <div class="card comparison-card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">${project.project_name}</h5>
+                        <small>${project.backtest_id}</small>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <small class="text-muted">Total Return</small>
+                                <div class="fw-bold ${project.total_return >= 0 ? 'text-success' : 'text-danger'}">
+                                    ${(project.total_return * 100).toFixed(2)}%
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <small class="text-muted">Sharpe Ratio</small>
+                                <div class="fw-bold">${project.sharpe_ratio.toFixed(2)}</div>
+                            </div>
+                            <div class="col-6">
+                                <small class="text-muted">Max Drawdown</small>
+                                <div class="fw-bold ${project.max_drawdown <= 0.1 ? 'text-success' : 'text-warning'}">
+                                    ${(project.max_drawdown * 100).toFixed(2)}%
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <small class="text-muted">Win Rate</small>
+                                <div class="fw-bold ${project.win_rate >= 0.5 ? 'text-success' : 'text-danger'}">
+                                    ${(project.win_rate * 100).toFixed(1)}%
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <small class="text-muted">Total Trades</small>
+                                <div class="fw-bold">${project.total_trades}</div>
+                            </div>
+                            <div class="col-6">
+                                <small class="text-muted">Profit Factor</small>
+                                <div class="fw-bold">${project.profit_factor.toFixed(2)}</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="/project/${project.project_name}" class="btn btn-sm btn-outline-primary w-100">
+                            View Details <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+    
+    html += '</div>';
+    resultsDiv.innerHTML = html;
+}
+
+function refreshComparison() {
+    location.reload();
+}
+
+function showLoading(show) {
+    const overlay = document.getElementById('loadingOverlay');
+    if (overlay) {
+        overlay.classList.toggle('d-none', !show);
+    }
+}
+</script>
+{% endblock %}

@@ -1,0 +1,89 @@
+2023-01-01 00:00:00 Launching analysis for 1983772575 with LEAN Engine v2.5.0.0
+2023-01-01 00:00:00 Minutely RSI Strategy initialized
+2023-01-01 00:00:00 RSI Period: 14
+2023-01-01 00:00:00 Oversold: 30, Overbought: 70
+2023-01-01 00:00:00 Stop Loss: 2.0%, Take Profit: 4.0%
+2023-01-01 00:00:00 Accurate daily end-times now enabled by default. See more at https://qnt.co/3YHaWHL. To disable it and use legacy daily bars set self.settings.daily_precise_end_time = False.
+2023-01-01 00:00:00 Usage of QCAlgorithm.OnEndOfDay() without a symbol will be deprecated August 2021. Always use a symbol when overriding this method: OnEndOfDay(symbol)
+2023-01-03 10:19:00 BUY #1 - Time: 2023-01-03 10:19:00, Price: $380.56, RSI: 29.5, Quantity: 249, Stop Loss: $372.95, Take Profit: $395.78
+2023-01-03 13:31:00 SELL #2 - Time: 2023-01-03 13:27:00, Price: $379.54, RSI: 71.2, Quantity: 249, P&L: $-253.98
+2023-01-03 14:43:00 BUY #3 - Time: 2023-01-03 14:33:00, Price: $378.32, RSI: 28.4, Quantity: 250, Stop Loss: $370.75, Take Profit: $393.45
+2023-01-03 14:55:00 SELL #4 - Time: 2023-01-03 14:46:00, Price: $380.45, RSI: 77.7, Quantity: 250, P&L: $532.50
+2023-01-04 09:31:00 End of Day - 2023-01-03 - Price: $380.84, RSI: 51.8, Portfolio: $100261.45, Daily P&L: 0.3%, Cash: $100261.45
+2023-01-04 13:07:00 BUY #5 - Time: 2023-01-04 12:58:00, Price: $384.56, RSI: 27.1, Quantity: 247, Stop Loss: $376.87, Take Profit: $399.95
+2023-01-04 15:07:00 SELL #6 - Time: 2023-01-04 15:02:00, Price: $383.84, RSI: 70.4, Quantity: 247, P&L: $-179.10
+2023-01-04 15:43:00 BUY #7 - Time: 2023-01-04 15:36:00, Price: $381.83, RSI: 28.0, Quantity: 248, Stop Loss: $374.20, Take Profit: $397.11
+2023-01-05 09:31:00 SELL #8 - Time: 2023-01-04 15:58:00, Price: $383.40, RSI: 71.1, Quantity: 248, P&L: $388.12
+2023-01-05 09:31:00 End of Day - 2023-01-04 - Price: $383.74, RSI: 74.9, Portfolio: $100455.65, Daily P&L: 0.2%, Cash: $100455.65
+2023-01-05 09:43:00 BUY #9 - Time: 2023-01-05 09:34:00, Price: $380.32, RSI: 29.3, Quantity: 250, Stop Loss: $372.71, Take Profit: $395.53
+2023-01-05 13:31:00 SELL #10 - Time: 2023-01-05 13:22:00, Price: $380.25, RSI: 73.0, Quantity: 250, P&L: $-17.50
+2023-01-05 15:07:00 BUY #11 - Time: 2023-01-05 15:03:00, Price: $380.44, RSI: 29.6, Quantity: 250, Stop Loss: $372.83, Take Profit: $395.66
+2023-01-06 09:31:00 End of Day - 2023-01-05 - Price: $379.40, RSI: 48.9, Portfolio: $100164.40, Daily P&L: -0.3%, Unrealized P&L: $-266.25
+2023-01-06 09:31:00 SELL #12 - Time: 2023-01-06 09:31:00, Price: $382.26, RSI: 80.6, Quantity: 250, P&L: $455.03
+2023-01-09 09:31:00 BUY #13 - Time: 2023-01-06 15:56:00, Price: $388.00, RSI: 29.4, Quantity: 246, Stop Loss: $380.24, Take Profit: $403.51
+2023-01-09 09:31:00 End of Day - 2023-01-06 - Price: $388.03, RSI: 36.4, Portfolio: $100884.30, Daily P&L: 0.7%, Unrealized P&L: $6.15
+2023-01-09 09:31:00 SELL #14 - Time: 2023-01-09 09:31:00, Price: $390.30, RSI: 77.9, Quantity: 246, P&L: $567.03
+2023-01-09 12:43:00 BUY #15 - Time: 2023-01-09 12:37:00, Price: $392.07, RSI: 29.2, Quantity: 245, Stop Loss: $384.23, Take Profit: $407.75
+2023-01-10 09:31:00 End of Day - 2023-01-09 - Price: $387.87, RSI: 41.3, Portfolio: $100407.76, Daily P&L: -0.5%, Unrealized P&L: $-1035.12
+2023-01-10 10:19:00 SELL #16 - Time: 2023-01-10 10:17:00, Price: $389.97, RSI: 70.9, Quantity: 245, P&L: $-514.50
+2023-01-10 10:43:00 BUY #17 - Time: 2023-01-10 10:32:00, Price: $387.15, RSI: 28.2, Quantity: 247, Stop Loss: $379.41, Take Profit: $402.64
+2023-01-10 12:43:00 SELL #18 - Time: 2023-01-10 12:40:00, Price: $389.17, RSI: 73.2, Quantity: 247, P&L: $498.94
+2023-01-10 15:07:00 BUY #19 - Time: 2023-01-10 15:07:00, Price: $388.89, RSI: 27.2, Quantity: 247, Stop Loss: $381.11, Take Profit: $404.45
+2023-01-10 15:55:00 SELL #20 - Time: 2023-01-10 15:52:00, Price: $390.22, RSI: 72.6, Quantity: 247, P&L: $328.51
+2023-01-11 09:31:00 End of Day - 2023-01-10 - Price: $390.63, RSI: 71.8, Portfolio: $101727.33, Daily P&L: 1.3%, Cash: $101727.33
+2023-01-12 09:31:00 End of Day - 2023-01-11 - Price: $395.50, RSI: 80.6, Portfolio: $101727.33, Daily P&L: 0.0%, Cash: $101727.33
+2023-01-12 09:55:00 BUY #21 - Time: 2023-01-12 09:45:00, Price: $393.35, RSI: 29.9, Quantity: 245, Stop Loss: $385.48, Take Profit: $409.08
+2023-01-12 10:19:00 SELL #22 - Time: 2023-01-12 10:13:00, Price: $396.64, RSI: 71.9, Quantity: 245, P&L: $806.05
+2023-01-12 13:31:00 BUY #23 - Time: 2023-01-12 13:27:00, Price: $397.15, RSI: 28.7, Quantity: 245, Stop Loss: $389.21, Take Profit: $413.04
+2023-01-12 13:55:00 SELL #24 - Time: 2023-01-12 13:55:00, Price: $398.22, RSI: 71.2, Quantity: 245, P&L: $262.15
+2023-01-13 09:31:00 End of Day - 2023-01-12 - Price: $396.94, RSI: 58.0, Portfolio: $102789.56, Daily P&L: 1.0%, Cash: $102789.56
+2023-01-13 09:31:00 BUY #25 - Time: 2023-01-13 09:31:00, Price: $394.09, RSI: 21.7, Quantity: 247, Stop Loss: $386.21, Take Profit: $409.85
+2023-01-13 13:43:00 SELL #26 - Time: 2023-01-13 13:41:00, Price: $397.14, RSI: 70.5, Quantity: 247, P&L: $753.35
+2023-01-17 09:31:00 End of Day - 2023-01-13 - Price: $398.47, RSI: 50.0, Portfolio: $103537.97, Daily P&L: 0.7%, Cash: $103537.97
+2023-01-17 10:43:00 BUY #27 - Time: 2023-01-17 10:41:00, Price: $398.25, RSI: 25.0, Quantity: 246, Stop Loss: $390.28, Take Profit: $414.18
+2023-01-17 13:43:00 SELL #28 - Time: 2023-01-17 13:40:00, Price: $398.71, RSI: 71.3, Quantity: 246, P&L: $113.16
+2023-01-17 14:19:00 BUY #29 - Time: 2023-01-17 14:16:00, Price: $397.77, RSI: 24.2, Quantity: 247, Stop Loss: $389.81, Take Profit: $413.68
+2023-01-18 09:31:00 End of Day - 2023-01-17 - Price: $397.76, RSI: 51.7, Portfolio: $103637.60, Daily P&L: 0.1%, Unrealized P&L: $-6.15
+2023-01-18 09:31:00 SELL #30 - Time: 2023-01-18 09:31:00, Price: $399.36, RSI: 80.2, Quantity: 247, P&L: $392.73
+2023-01-18 10:55:00 BUY #31 - Time: 2023-01-18 10:44:00, Price: $397.71, RSI: 27.5, Quantity: 248, Stop Loss: $389.76, Take Profit: $413.62
+2023-01-18 13:55:00 SELL #32 - Time: 2023-01-18 13:47:00, Price: $393.98, RSI: 70.9, Quantity: 248, P&L: $-925.04
+2023-01-18 15:07:00 BUY #33 - Time: 2023-01-18 15:02:00, Price: $392.89, RSI: 28.3, Quantity: 249, Stop Loss: $385.04, Take Profit: $408.61
+2023-01-19 09:31:00 End of Day - 2023-01-18 - Price: $391.54, RSI: 35.8, Portfolio: $102762.74, Daily P&L: -0.8%, Unrealized P&L: $-341.00
+2023-01-19 12:07:00 SELL #34 - Time: 2023-01-19 12:02:00, Price: $388.27, RSI: 70.0, Quantity: 249, P&L: $-1150.38
+2023-01-19 15:55:00 BUY #35 - Time: 2023-01-19 15:54:00, Price: $389.07, RSI: 27.5, Quantity: 248, Stop Loss: $381.29, Take Profit: $404.64
+2023-01-20 09:31:00 End of Day - 2023-01-19 - Price: $388.68, RSI: 24.1, Portfolio: $101850.10, Daily P&L: -0.9%, Unrealized P&L: $-100.44
+2023-01-20 10:19:00 SELL #36 - Time: 2023-01-20 10:09:00, Price: $390.72, RSI: 71.4, Quantity: 248, P&L: $407.96
+2023-01-20 13:19:00 BUY #37 - Time: 2023-01-20 13:12:00, Price: $391.39, RSI: 29.0, Quantity: 248, Stop Loss: $383.56, Take Profit: $407.05
+2023-01-20 13:43:00 SELL #38 - Time: 2023-01-20 13:38:00, Price: $392.84, RSI: 73.1, Quantity: 248, P&L: $358.53
+2023-01-23 09:31:00 End of Day - 2023-01-20 - Price: $395.83, RSI: 62.0, Portfolio: $102703.06, Daily P&L: 0.8%, Cash: $102703.06
+2023-01-23 12:19:00 BUY #39 - Time: 2023-01-23 12:10:00, Price: $400.41, RSI: 27.6, Quantity: 243, Stop Loss: $392.40, Take Profit: $416.43
+2023-01-23 13:07:00 SELL #40 - Time: 2023-01-23 13:01:00, Price: $401.59, RSI: 70.8, Quantity: 243, P&L: $286.72
+2023-01-23 14:07:00 BUY #41 - Time: 2023-01-23 14:04:00, Price: $401.40, RSI: 27.5, Quantity: 243, Stop Loss: $393.38, Take Profit: $417.46
+2023-01-24 09:31:00 End of Day - 2023-01-23 - Price: $400.59, RSI: 57.7, Portfolio: $102782.04, Daily P&L: 0.1%, Unrealized P&L: $-200.47
+2023-01-24 11:07:00 SELL #42 - Time: 2023-01-24 10:57:00, Price: $400.52, RSI: 71.5, Quantity: 243, P&L: $-215.05
+2023-01-24 14:07:00 BUY #43 - Time: 2023-01-24 14:02:00, Price: $400.07, RSI: 29.7, Quantity: 244, Stop Loss: $392.07, Take Profit: $416.07
+2023-01-25 09:31:00 End of Day - 2023-01-24 - Price: $400.17, RSI: 52.9, Portfolio: $102784.46, Daily P&L: 0.0%, Unrealized P&L: $23.09
+2023-01-25 11:31:00 SELL #44 - Time: 2023-01-25 11:20:00, Price: $395.88, RSI: 70.0, Quantity: 244, P&L: $-1022.36
+2023-01-26 09:31:00 End of Day - 2023-01-25 - Price: $400.36, RSI: 67.0, Portfolio: $101765.08, Daily P&L: -1.0%, Cash: $101765.08
+2023-01-26 10:55:00 BUY #45 - Time: 2023-01-26 10:55:00, Price: $400.68, RSI: 28.4, Quantity: 241, Stop Loss: $392.67, Take Profit: $416.71
+2023-01-26 12:19:00 SELL #46 - Time: 2023-01-26 12:10:00, Price: $402.45, RSI: 71.9, Quantity: 241, P&L: $426.57
+2023-01-27 09:31:00 End of Day - 2023-01-26 - Price: $404.71, RSI: 69.3, Portfolio: $102187.48, Daily P&L: 0.4%, Cash: $102187.48
+2023-01-27 10:55:00 BUY #47 - Time: 2023-01-27 10:47:00, Price: $404.56, RSI: 29.1, Quantity: 239, Stop Loss: $396.47, Take Profit: $420.74
+2023-01-27 11:43:00 SELL #48 - Time: 2023-01-27 11:33:00, Price: $405.47, RSI: 70.1, Quantity: 239, P&L: $217.49
+2023-01-27 13:19:00 BUY #49 - Time: 2023-01-27 13:18:00, Price: $405.71, RSI: 29.9, Quantity: 239, Stop Loss: $397.60, Take Profit: $421.94
+2023-01-27 14:31:00 SELL #50 - Time: 2023-01-27 14:20:00, Price: $407.08, RSI: 70.5, Quantity: 239, P&L: $327.43
+2023-01-27 15:55:00 BUY #51 - Time: 2023-01-27 15:48:00, Price: $406.68, RSI: 29.2, Quantity: 239, Stop Loss: $398.55, Take Profit: $422.95
+2023-01-30 09:31:00 End of Day - 2023-01-27 - Price: $405.68, RSI: 27.3, Portfolio: $102482.65, Daily P&L: 0.3%, Unrealized P&L: $-237.81
+2023-01-30 13:19:00 SELL #52 - Time: 2023-01-30 13:19:00, Price: $402.97, RSI: 71.1, Quantity: 239, P&L: $-886.69
+2023-01-31 09:31:00 End of Day - 2023-01-30 - Price: $400.63, RSI: 45.1, Portfolio: $101831.37, Daily P&L: -0.6%, Cash: $101831.37
+2023-01-31 16:00:00 === FINAL ALGORITHM RESULTS ===
+2023-01-31 16:00:00 Total Signals Generated: 52
+2023-01-31 16:00:00 Initial Portfolio Value: $100,000.00
+2023-01-31 16:00:00 Final Portfolio Value: $101831.37
+2023-01-31 16:00:00 Total Return: 1.83%
+2023-01-31 16:00:00 Total Fees Paid: $63.82
+2023-01-31 16:00:00 RSI Period Used: 14
+2023-01-31 16:00:00 Oversold/Overbought Thresholds: 30/70
+2023-01-31 16:00:00 Stop Loss/Take Profit: 2.0%/4.0%
+2023-01-31 16:00:00 Strategy execution completed.
+2023-01-31 16:00:00 Algorithm Id:(1983772575) completed in 1.08 seconds at 14k data points per second. Processing total of 15,601 data points.

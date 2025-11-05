@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView Lightweight Charts Test</title>
+    <script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        #chart { height: 400px; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <h1>TradingView Lightweight Charts Test</h1>
+
+    <div id="status" class="status">Loading...</div>
+
+    <h2>Sample Equity Curve</h2>
+    <div id="chart"></div>
+
+    <script>
+        // Check if library is loaded
+        const statusEl = document.getElementById('status');
+        if (typeof LightweightCharts !== 'undefined') {
+            statusEl.className = 'status success';
+            statusEl.innerHTML = '✅ TradingView Lightweight Charts v4.1.3 is loaded and working!';
+
+            // Create a sample chart
+            const chart = LightweightCharts.createChart(document.getElementById('chart'), {
+                width: 800,
+                height: 400,
+                layout: {
+                    background: { type: 'solid', color: 'rgba(255, 255, 255, 0)' },
+                    textColor: '#333',
+                },
+                grid: {
+                    vertLines: { color: 'rgba(197, 203, 206, 0.5)' },
+                    horzLines: { color: 'rgba(197, 203, 206, 0.5)' },
+                },
+                rightPriceScale: {
+                    borderColor: 'rgba(197, 203, 206, 0.4)',
+                },
+                timeScale: {
+                    borderColor: 'rgba(197, 203, 206, 0.4)',
+                    timeVisible: true,
+                    secondsVisible: false,
+                },
+            });
+
+            // Generate sample data
+            const sampleData = [];
+            const startDate = Math.floor(Date.now() / 1000) - (365 * 24 * 60 * 60);
+            let value = 100000;
+
+            for (let i = 0; i < 365; i++) {
+                value += (Math.random() - 0.45) * 1000;
+                sampleData.push({
+                    time: startDate + (i * 24 * 60 * 60),
+                    value: value
+                });
+            }
+
+            const lineSeries = chart.addLineSeries({
+                color: '#007bff',
+                lineWidth: 3,
+            });
+
+            lineSeries.setData(sampleData);
+
+            console.log('✅ Chart created successfully!');
+        } else {
+            statusEl.className = 'status error';
+            statusEl.innerHTML = '❌ TradingView Lightweight Charts library failed to load!';
+        }
+    </script>
+</body>
+</html>

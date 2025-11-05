@@ -1,0 +1,38 @@
+2025-11-02T22:09:43.3334291Z TRACE:: Config.Get(): Configuration key not found. Key: data-channel - Using default value: 
+2025-11-02T22:09:43.3359949Z TRACE:: Config.Get(): Configuration key not found. Key: optimization-id - Using default value: a98a1816-e657-4864-9fd6-4f4a7564f481
+2025-11-02T22:09:43.4282911Z TRACE:: Config.GetValue(): maximum-concurrent-backtests - Using default value: 8
+2025-11-02T22:09:43.4283800Z TRACE:: Config.Get(): Configuration key not found. Key: out-of-sample-max-end-date - Using default value: 
+2025-11-02T22:09:43.4284311Z TRACE:: Config.GetValue(): out-of-sample-days - Using default value: 0
+2025-11-02T22:09:43.4285214Z TRACE:: Config.Get(): Configuration key not found. Key: optimization-launcher - Using default value: ConsoleLeanOptimizer
+2025-11-02T22:09:43.4316482Z TRACE:: Config.GetValue(): optimization-update-interval - Using default value: 10
+2025-11-02T22:09:43.4337247Z TRACE:: Config.Get(): Configuration key not found. Key: lean-binaries-location - Using default value: /Lean/Optimizer.Launcher/bin/Debug/../../../Launcher/bin/Debug/QuantConnect.Lean.Launcher
+2025-11-02T22:09:43.4337707Z TRACE:: Config.Get(): Configuration key not found. Key: algorithm-type-name - Using default value: 
+2025-11-02T22:09:43.4337801Z TRACE:: Config.Get(): Configuration key not found. Key: algorithm-language - Using default value: 
+2025-11-02T22:09:43.4337918Z TRACE:: Config.Get(): Configuration key not found. Key: algorithm-location - Using default value: 
+2025-11-02T22:09:43.4338009Z TRACE:: Config.GetValue(): estimate - Using default value: False
+2025-11-02T22:09:43.4518111Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '5efc8390-9190-4ac7-abb8-b88d3dd891b7' with parameters 'fast_sma:5,slow_sma:10'
+2025-11-02T22:09:43.4532749Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '9f34ff2b-fd9a-4f34-8edb-675d3fcf6cd3' with parameters 'fast_sma:5,slow_sma:20'
+2025-11-02T22:09:43.4544849Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest 'f916fa9e-c33d-4644-9dd2-6d5b773b426a' with parameters 'fast_sma:5,slow_sma:30'
+2025-11-02T22:09:43.4555591Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '37e25bbc-7888-4eff-bc2d-93740134fc1e' with parameters 'fast_sma:5,slow_sma:40'
+2025-11-02T22:09:43.4566340Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '393633b1-dd03-421b-8c4f-8fff9e64f971' with parameters 'fast_sma:5,slow_sma:50'
+2025-11-02T22:09:43.4580005Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '8e65208a-153b-499b-a4de-1c6804b50599' with parameters 'fast_sma:10,slow_sma:10'
+2025-11-02T22:09:43.4589829Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '3f3d0ddc-dba6-4780-97e4-7739cae40522' with parameters 'fast_sma:10,slow_sma:20'
+2025-11-02T22:09:43.4599699Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '09444193-6acc-4f81-90bd-aec78012466a' with parameters 'fast_sma:10,slow_sma:30'
+2025-11-02T22:09:43.4604037Z TRACE:: LeanOptimizer.Start(OID a98a1816-e657-4864-9fd6-4f4a7564f481): start ended. Waiting on 20 backtests
+2025-11-02T22:09:43.4636815Z TRACE:: ConsoleLeanOptimizer.SendUpdate(): 20 Completed:0, Failed:0, Running:8, In Queue:12, Average Length:00:00:00, Total Runtime:00:00:00
+2025-11-02T22:10:05.2809960Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '76c15338-b795-4e39-9e36-cffc46caa890' with parameters 'fast_sma:10,slow_sma:40'
+2025-11-02T22:10:05.2814734Z TRACE:: ConsoleLeanOptimizer.SendUpdate(): 20 Completed:0, Failed:0, Running:8, In Queue:11, Average Length:00:00:00, Total Runtime:00:00:21
+2025-11-02T22:10:05.4805330Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '9317f60b-ad5f-4efd-ba08-1f30665a7d47' with parameters 'fast_sma:10,slow_sma:50'
+2025-11-02T22:10:05.6835392Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '6fa5a170-213c-4457-aa93-e1565d07e314' with parameters 'fast_sma:15,slow_sma:10'
+2025-11-02T22:10:05.8637135Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '540735ee-e7d1-4d66-844e-e106bcbdfb5b' with parameters 'fast_sma:15,slow_sma:20'
+2025-11-02T22:10:05.9291429Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '44edbad7-4b7f-49e1-b8b6-1365acda7124' with parameters 'fast_sma:15,slow_sma:30'
+2025-11-02T22:10:06.0091077Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '26a57dab-caa9-4791-ab8f-420a51c3ab4b' with parameters 'fast_sma:15,slow_sma:40'
+2025-11-02T22:10:06.0575065Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest 'fe6c420a-d590-43b4-9ceb-0e7917734117' with parameters 'fast_sma:15,slow_sma:50'
+2025-11-02T22:10:06.3619721Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '9dc58405-1bb2-4aad-9995-26d8988b9add' with parameters 'fast_sma:20,slow_sma:10'
+2025-11-02T22:10:26.0292356Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '2eb11b32-c8b2-4696-b5eb-9a5a0d18a8ae' with parameters 'fast_sma:20,slow_sma:20'
+2025-11-02T22:10:26.0323569Z TRACE:: ConsoleLeanOptimizer.SendUpdate(): 20 Completed:8, Failed:0, Running:8, In Queue:3, Average Length:00:00:05, Total Runtime:00:00:42. Best id:'37e25bbc-7888-4eff-bc2d-93740134fc1e'. Target: ['TotalPerformance'].['PortfolioStatistics'].['SharpeRatio'] at: 0.6091. Parameters (fast_sma:5,slow_sma:40)
+2025-11-02T22:10:26.4716657Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '54cb8781-6516-4dc6-8fde-3fe4f4c10464' with parameters 'fast_sma:20,slow_sma:30'
+2025-11-02T22:10:26.5818782Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest 'ecc813e1-01a7-4b79-8029-6bf007f19385' with parameters 'fast_sma:20,slow_sma:40'
+2025-11-02T22:10:26.6387113Z TRACE:: LeanOptimizer.LaunchLeanForParameterSet(OID a98a1816-e657-4864-9fd6-4f4a7564f481): launched backtest '3f8c63cb-b920-460f-a9b3-b0b6544d3274' with parameters 'fast_sma:20,slow_sma:50'
+2025-11-02T22:10:39.3525841Z TRACE:: ConsoleLeanOptimizer.SendUpdate(): 20 Completed:17, Failed:0, Running:3, In Queue:0, Average Length:00:00:03, Total Runtime:00:00:55. Best id:'37e25bbc-7888-4eff-bc2d-93740134fc1e'. Target: ['TotalPerformance'].['PortfolioStatistics'].['SharpeRatio'] at: 0.6091. Parameters (fast_sma:5,slow_sma:40)
+2025-11-02T22:10:39.5706218Z TRACE:: LeanOptimizer.TriggerOnEndEvent(OID a98a1816-e657-4864-9fd6-4f4a7564f481): Optimization has ended. Result for Target: ['TotalPerformance'].['PortfolioStatistics'].['SharpeRatio'] at: 0.6091: was reached using ParameterSet: (fast_sma:5,slow_sma:40) backtestId '37e25bbc-7888-4eff-bc2d-93740134fc1e'. Constraints: ()

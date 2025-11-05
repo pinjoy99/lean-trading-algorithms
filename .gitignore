@@ -1,0 +1,49 @@
+# Environment
+venv/
+.venv/
+env/
+
+# Credentials - NEVER commit API keys
+alpaca_credentials.txt
+
+# QuantConnect build artifacts
+*.pyc
+__pycache__/
+*.pdb
+*.log
+
+# Data directories (can be large)
+data/
+storage/
+backtests/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+*.egg-info/
+dist/
+build/
+
+# Backtest results (optional - you may want to keep these)
+*.csv
+backtests/
+optimizations/
+
+# QuantConnect log files
+*.log
+
+# API Keys - any file containing API keys
+*.key
+.env
+secrets.txt
+
+# Personal notes
+*.private.md

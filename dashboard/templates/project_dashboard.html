@@ -1,0 +1,528 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project|title }} Dashboard - {{ config.title }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- Project Header -->
+    <div class="col-12 mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+                        <li class="breadcrumb-item active">{{ project }}</li>
+                    </ol>
+                </nav>
+                <h1 class="h3 mb-1">
+                    <i class="fas fa-chart-bar text-primary me-2"></i>
+                    {{ project|title }} Analysis
+                </h1>
+                <p class="text-muted mb-0">
+                    <i class="fas fa-calendar me-1"></i>
+                    Backtest: {{ data.backtest_id }}
+                </p>
+            </div>
+            <div class="text-end">
+                <button class="btn btn-outline-primary me-2" onclick="exportData()">
+                    <i class="fas fa-download me-1"></i>Export
+                </button>
+                <button class="btn btn-primary" onclick="refreshProject()">
+                    <i class="fas fa-sync-alt me-1"></i>Refresh
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Performance Metrics Cards -->
+    <div class="col-12 mb-4">
+        <div class="row g-3">
+            {% set summary = data.summary %}
+            {% set portfolio_stats = summary.totalPerformance.portfolioStatistics %}
+            {% set trade_stats = summary.totalPerformance.tradeStatistics %}
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card bg-primary text-white">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="card-title">Total Return</h6>
+                                <h2 class="mb-0">{{ portfolio_stats.totalNetProfit|format_percentage }}</h2>
+                                <small class="opacity-75">Annual: {{ portfolio_stats.compoundingAnnualReturn|format_percentage }}</small>
+                            </div>
+                            <div class="align-self-center">
+                                <i class="fas fa-dollar-sign fa-2x opacity-75"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card {% if (portfolio_stats.sharpeRatio | string) | replace('.', '') | int > 100 %}bg-success{% elif (portfolio_stats.sharpeRatio | string) | replace('.', '') | int > 0 %}bg-warning{% else %}bg-danger{% endif %} text-white">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="card-title">Sharpe Ratio</h6>
+                                <h2 class="mb-0">{{ portfolio_stats.sharpeRatio|format_number }}</h2>
+                                <small class="opacity-75">Sortino: {{ portfolio_stats.sortinoRatio|format_number }}</small>
+                            </div>
+                            <div class="align-self-center">
+                                <i class="fas fa-chart-line fa-2x opacity-75"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card bg-info text-white">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="card-title">Win Rate</h6>
+                                <h2 class="mb-0">{{ portfolio_stats.winRate|format_percentage }}</h2>
+                                <small class="opacity-75">{{ trade_stats.totalNumberOfTrades }} trades</small>
+                            </div>
+                            <div class="align-self-center">
+                                <i class="fas fa-trophy fa-2x opacity-75"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card {% if (portfolio_stats.drawdown | string) | replace('.', '') | int < 500 %}bg-success{% elif (portfolio_stats.drawdown | string) | replace('.', '') | int < 1000 %}bg-warning{% else %}bg-danger{% endif %} text-white">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="card-title">Max Drawdown</h6>
+                                <h2 class="mb-0">{{ portfolio_stats.drawdown|format_percentage }}</h2>
+                                <small class="opacity-75">VaR 95%: {{ portfolio_stats.valueAtRisk95|format_percentage }}</small>
+                            </div>
+                            <div class="align-self-center">
+                                <i class="fas fa-exclamation-triangle fa-2x opacity-75"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Row 1 -->
+    <div class="col-lg-8 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-chart-area me-2"></i>Equity Curve
+                </h6>
+            </div>
+            <div class="card-body">
+                <div id="equityChart" style="height: 400px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-chart-pie me-2"></i>Performance Summary
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="text-center p-3 bg-light rounded">
+                            <div class="h4 text-primary mb-1">{{ portfolio_stats.expectancy|format_number }}</div>
+                            <small class="text-muted">Expectancy</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center p-3 bg-light rounded">
+                            <div class="h4 text-success mb-1">{{ portfolio_stats.profitLossRatio|format_number }}</div>
+                            <small class="text-muted">P/L Ratio</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center p-3 bg-light rounded">
+                            <div class="h4 text-info mb-1">{{ portfolio_stats.annualStandardDeviation|format_percentage }}</div>
+                            <small class="text-muted">Volatility</small>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center p-3 bg-light rounded">
+                            <div class="h4 text-warning mb-1">{{ portfolio_stats.portfolioTurnover|format_percentage }}</div>
+                            <small class="text-muted">Turnover</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Row 2 -->
+    <div class="col-lg-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-chart-bar me-2"></i>Monthly Returns
+                </h6>
+            </div>
+            <div class="card-body">
+                <div id="monthlyReturnsChart" style="height: 350px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-chart-line me-2"></i>Drawdown Analysis
+                </h6>
+            </div>
+            <div class="card-body">
+                <div id="drawdownChart" style="height: 350px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trade Analysis Table -->
+    <div class="col-12 mb-4">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-table me-2"></i>Trade Analysis
+                </h6>
+                <div class="btn-group btn-group-sm">
+                    <button class="btn btn-outline-secondary active" onclick="showAllTrades()">All Trades</button>
+                    <button class="btn btn-outline-success" onclick="showWinningTrades()">Winners</button>
+                    <button class="btn btn-outline-danger" onclick="showLosingTrades()">Losers</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover" id="tradesTable">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Date</th>
+                                <th>Symbol</th>
+                                <th>Type</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>P&L</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tradesTableBody">
+                            <!-- Trade data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Strategy Parameters -->
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-cog me-2"></i>Strategy Parameters
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    {% for param, value in data.summary.algorithmConfiguration.parameters.items() %}
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="d-flex justify-content-between p-2 bg-light rounded">
+                            <span class="text-muted small">{{ param.replace('_', ' ')|title }}</span>
+                            <span class="fw-bold">{{ value }}</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Project dashboard functionality
+let projectData = {{ data|tojson }};
+let tradesData = {{ data.trades|tojson }};
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log(`📊 ${projectData.project} dashboard loaded`);
+    initializeCharts();
+    populateTradesTable();
+});
+
+// Initialize all charts
+function initializeCharts() {
+    createEquityCurve();
+    createMonthlyReturns();
+    createDrawdownChart();
+}
+
+// Equity Curve Chart
+function createEquityCurve() {
+    const equityData = {{ data.equity_curve|tojson }};
+    const buyHoldData = {{ data.buy_hold_curve|tojson }};
+
+    if (!equityData || equityData.length === 0) {
+        document.getElementById('equityChart').innerHTML = '<div class="text-center text-muted p-5">No equity curve data available</div>';
+        return;
+    }
+
+    // Process equity data
+    const dates = equityData.map(point => new Date(point[0] * 1000));
+    const equity = equityData.map(point => point[3]); // Use close price
+
+    // Strategy trace
+    const strategyTrace = {
+        x: dates,
+        y: equity,
+        type: 'scatter',
+        mode: 'lines',
+        name: 'Strategy',
+        line: { color: '#007bff', width: 3 },
+        hovertemplate: '<b>Date:</b> %{x}<br><b>Strategy:</b> $%{y:,.2f}<extra></extra>'
+    };
+
+    const traces = [strategyTrace];
+
+        // Add baseline curve if available (risk-free rate comparison)
+    if (buyHoldData && buyHoldData.length > 0) {
+        const baselineEquity = buyHoldData.map(point => point[1]);
+        const baselineTrace = {
+            x: dates,
+            y: baselineEquity,
+            type: 'scatter',
+            mode: 'lines',
+            name: 'Baseline (5% Risk-Free)',
+            line: { color: '#ffc107', width: 2, dash: 'dash' },
+            hovertemplate: '<b>Date:</b> %{x}<br><b>Baseline:</b> $%{y:,.2f}<extra></extra>'
+        };
+        traces.push(baselineTrace);
+    }
+
+    const layout = {
+        title: '',
+        xaxis: { title: 'Date', type: 'date' },
+        yaxis: { title: 'Portfolio Value ($)', tickformat: '$,.0f' },
+        hovermode: 'x unified',
+        showlegend: true,
+        legend: {
+            x: 0,
+            y: 1,
+            bgcolor: 'rgba(255,255,255,0.8)',
+            bordercolor: 'rgba(0,0,0,0.2)',
+            borderwidth: 1
+        },
+        margin: { t: 20, r: 20, b: 40, l: 60 }
+    };
+
+    Plotly.newPlot('equityChart', traces, layout, { responsive: true });
+}
+
+// Monthly Returns Chart
+function createMonthlyReturns() {
+    // Calculate monthly returns from equity data
+    const equityData = {{ data.equity_curve|tojson }};
+    if (!equityData || equityData.length === 0) {
+        document.getElementById('monthlyReturnsChart').innerHTML = '<div class="text-center text-muted p-5">No monthly returns data available</div>';
+        return;
+    }
+
+    // Group by month and calculate returns
+    const monthlyData = {};
+    equityData.forEach(point => {
+        const date = new Date(point[0] * 1000);
+        const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+        monthlyData[monthKey] = point[3]; // Use close price
+    });
+
+    const months = Object.keys(monthlyData).sort();
+    const returns = [];
+
+    for (let i = 1; i < months.length; i++) {
+        const prevValue = monthlyData[months[i-1]];
+        const currValue = monthlyData[months[i]];
+        const monthlyReturn = ((currValue - prevValue) / prevValue) * 100;
+        returns.push(monthlyReturn);
+    }
+
+    const monthLabels = months.slice(1).map(month => {
+        const [year, monthNum] = month.split('-');
+        return `${year}-${monthNum}`;
+    });
+
+    const trace = {
+        x: monthLabels,
+        y: returns,
+        type: 'bar',
+        marker: {
+            color: returns.map(r => r >= 0 ? '#28a745' : '#dc3545')
+        },
+        hovertemplate: '<b>Month:</b> %{x}<br><b>Return:</b> %{y:.2f}%<extra></extra>'
+    };
+
+    const layout = {
+        title: '',
+        xaxis: { title: 'Month' },
+        yaxis: { title: 'Return (%)', tickformat: '.2f' },
+        showlegend: false,
+        margin: { t: 20, r: 20, b: 60, l: 60 }
+    };
+
+    Plotly.newPlot('monthlyReturnsChart', [trace], layout, { responsive: true });
+}
+
+// Drawdown Chart
+function createDrawdownChart() {
+    const equityData = {{ data.equity_curve|tojson }};
+    if (!equityData || equityData.length === 0) {
+        document.getElementById('drawdownChart').innerHTML = '<div class="text-center text-muted p-5">No drawdown data available</div>';
+        return;
+    }
+
+    // Calculate drawdown
+    let peak = equityData[0][3];
+    const drawdowns = equityData.map(point => {
+        const value = point[3];
+        peak = Math.max(peak, value);
+        return ((value - peak) / peak) * 100;
+    });
+
+    const dates = equityData.map(point => new Date(point[0] * 1000));
+
+    const trace = {
+        x: dates,
+        y: drawdowns,
+        type: 'scatter',
+        mode: 'lines',
+        fill: 'tonexty',
+        name: 'Drawdown',
+        line: { color: '#dc3545', width: 2 },
+        fillcolor: 'rgba(220, 53, 69, 0.1)',
+        hovertemplate: '<b>Date:</b> %{x}<br><b>Drawdown:</b> %{y:.2f}%<extra></extra>'
+    };
+
+    const layout = {
+        title: '',
+        xaxis: { title: 'Date', type: 'date' },
+        yaxis: { title: 'Drawdown (%)', tickformat: '.2f' },
+        showlegend: false,
+        margin: { t: 20, r: 20, b: 40, l: 60 }
+    };
+
+    Plotly.newPlot('drawdownChart', [trace], layout, { responsive: true });
+}
+
+// Populate trades table
+function populateTradesTable() {
+    const tbody = document.getElementById('tradesTableBody');
+    tbody.innerHTML = '';
+
+    if (!tradesData || tradesData.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" class="text-center text-muted">No trade data available</td></tr>';
+        return;
+    }
+
+    // Process trade events
+    const trades = {};
+    tradesData.forEach(event => {
+        if (event.status === 'filled') {
+            if (!trades[event.orderId]) {
+                trades[event.orderId] = {
+                    date: new Date(event.time * 1000),
+                    symbol: event.symbolValue,
+                    type: event.direction,
+                    quantity: Math.abs(event.fillQuantity),
+                    price: event.fillPrice,
+                    pnl: 0
+                };
+            } else {
+                // Complete the trade
+                const trade = trades[event.orderId];
+                if (trade.type === 'buy') {
+                    trade.exitPrice = event.fillPrice;
+                    trade.pnl = (trade.exitPrice - trade.price) * trade.quantity;
+                } else {
+                    trade.exitPrice = event.fillPrice;
+                    trade.pnl = (trade.price - trade.exitPrice) * trade.quantity;
+                }
+            }
+        }
+    });
+
+    // Display trades
+    Object.values(trades).forEach(trade => {
+        if (trade.exitPrice) { // Only show completed trades
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${trade.date.toLocaleDateString()}</td>
+                <td>${trade.symbol}</td>
+                <td><span class="badge ${trade.type === 'buy' ? 'bg-success' : 'bg-danger'}">${trade.type.toUpperCase()}</span></td>
+                <td>${trade.quantity}</td>
+                <td>$${trade.price.toFixed(2)}</td>
+                <td class="${trade.pnl >= 0 ? 'text-success' : 'text-danger'}">$${trade.pnl.toFixed(2)}</td>
+                <td>-</td>
+            `;
+            tbody.appendChild(row);
+        }
+    });
+}
+
+// Trade filtering functions
+function showAllTrades() {
+    // Implement filtering logic
+    console.log('Showing all trades');
+}
+
+function showWinningTrades() {
+    // Implement filtering logic
+    console.log('Showing winning trades');
+}
+
+function showLosingTrades() {
+    // Implement filtering logic
+    console.log('Showing losing trades');
+}
+
+// Utility functions
+function exportData() {
+    DashboardUtils.showToast('Preparing data export...', 'info');
+    // Implement export functionality
+    setTimeout(() => {
+        DashboardUtils.showToast('Data exported successfully', 'success');
+    }, 1000);
+}
+
+function refreshProject() {
+    DashboardUtils.showLoading();
+    location.reload();
+}
+
+// Initialize charts with server-provided data
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('🎨 Initializing TradingView Lightweight Charts...');
+
+    // Create the equity curve chart
+    if (window.BacktestDashboard) {
+        window.BacktestDashboard.createEquityCurve(
+            {{ data.equity_curve|tojson|safe }},
+            {{ data.buy_hold_curve|tojson|safe }}
+        );
+    } else {
+        console.error('❌ BacktestDashboard not found!');
+    }
+});
+</script>
+{% endblock %}

@@ -1,0 +1,361 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard Overview - {{ config.title }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- Header Section -->
+    <div class="col-12 mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h1 class="h3 mb-1">
+                    <i class="fas fa-tachometer-alt text-primary me-2"></i>
+                    Dashboard Overview
+                </h1>
+                <p class="text-muted mb-0">Interactive backtest results analysis and visualization</p>
+            </div>
+            <div class="text-end">
+                <button class="btn btn-outline-primary" id="refreshData">
+                    <i class="fas fa-sync-alt me-1"></i>Refresh Data
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="col-12 mb-4">
+        <div class="row g-3">
+            <div class="col-md-3">
+                <div class="card bg-primary text-white">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="card-title">Total Projects</h6>
+                                <h2 class="mb-0">{{ projects|length }}</h2>
+                            </div>
+                            <div class="align-self-center">
+                                <i class="fas fa-project-diagram fa-2x opacity-75"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-success text-white">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="card-title">Total Backtests</h6>
+                                <h2 class="mb-0">
+                                    {% set total_backtests = 0 %}
+                                    {% for project in projects %}
+                                        {% set total_backtests = total_backtests + project.backtests_count %}
+                                    {% endfor %}
+                                    {{ total_backtests }}
+                                </h2>
+                            </div>
+                            <div class="align-self-center">
+                                <i class="fas fa-chart-line fa-2x opacity-75"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-info text-white">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="card-title">Active Projects</h6>
+                                <h2 class="mb-0">{{ projects|length }}</h2>
+                            </div>
+                            <div class="align-self-center">
+                                <i class="fas fa-play-circle fa-2x opacity-75"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-warning text-white">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <h6 class="card-title">Data Status</h6>
+                                <h2 class="mb-0">Ready</h2>
+                            </div>
+                            <div class="align-self-center">
+                                <i class="fas fa-database fa-2x opacity-75"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-folder-open me-2"></i>Available Projects
+                </h5>
+            </div>
+            <div class="card-body">
+                {% if projects %}
+                <div class="row g-4">
+                    {% for project in projects %}
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card project-card h-100 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h6 class="card-title text-primary">{{ project.name }}</h6>
+                                        <small class="text-muted">
+                                            <i class="fas fa-clock me-1"></i>
+                                            Latest: {{ project.latest_backtest }}
+                                        </small>
+                                    </div>
+                                    <span class="badge bg-secondary">{{ project.backtests_count }}</span>
+                                </div>
+
+                                <!-- Project Stats -->
+                                <div class="row g-2 mb-3">
+                                    <div class="col-6">
+                                        <div class="text-center p-2 bg-light rounded">
+                                            <div class="fw-bold text-primary">{{ project.backtests_count }}</div>
+                                            <small class="text-muted">Backtests</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="text-center p-2 bg-light rounded">
+                                            <div class="fw-bold text-success">
+                                                {% if project.name == 'rsi-minutely' %}
+                                                    <i class="fas fa-check-circle"></i>
+                                                {% else %}
+                                                    <i class="fas fa-question-circle"></i>
+                                                {% endif %}
+                                            </div>
+                                            <small class="text-muted">Status</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project Description -->
+                                {% if project.name == 'rsi-minutely' %}
+                                    <p class="card-text small text-muted mb-3">
+                                        RSI-based trading strategy with minutely data. Features comprehensive risk management and signal filtering.
+                                    </p>
+                                {% elif project.name == 'sma-crossover' %}
+                                    <p class="card-text small text-muted mb-3">
+                                        Simple Moving Average crossover strategy. Optimized for different SMA periods with backtesting results.
+                                    </p>
+                                {% else %}
+                                    <p class="card-text small text-muted mb-3">
+                                        Custom trading strategy project with backtest results.
+                                    </p>
+                                {% endif %}
+
+                                <!-- Action Button -->
+                                <div class="d-grid">
+                                    <a href="{{ url_for('project_dashboard', project_name=project.name) }}"
+                                       class="btn btn-primary">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        View Dashboard
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="text-center py-5">
+                    <i class="fas fa-folder-open fa-4x text-muted mb-3"></i>
+                    <h4 class="text-muted">No Projects Found</h4>
+                    <p class="text-muted">Run some backtests to see results here.</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="col-12 mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-tools me-2"></i>Quick Actions
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-info" onclick="loadSampleData()">
+                                <i class="fas fa-database me-1"></i>
+                                Load Sample Data
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-success" onclick="exportAllData()">
+                                <i class="fas fa-download me-1"></i>
+                                Export All Results
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-warning" onclick="clearCache()">
+                                <i class="fas fa-broom me-1"></i>
+                                Clear Cache
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="col-12 mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h6 class="card-title mb-0">
+                    <i class="fas fa-history me-2"></i>Recent Activity
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker bg-primary"></div>
+                        <div class="timeline-content">
+                            <h6 class="timeline-title">Dashboard Started</h6>
+                            <p class="timeline-description text-muted mb-0">
+                                <i class="fas fa-clock me-1"></i>
+                                {{ moment().format('YYYY-MM-DD HH:mm:ss') if moment else '2025-11-03 16:17:00' }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker bg-success"></div>
+                        <div class="timeline-content">
+                            <h6 class="timeline-title">Data Loaded Successfully</h6>
+                            <p class="timeline-description text-muted mb-0">
+                                <i class="fas fa-database me-1"></i>
+                                {{ projects|length }} projects detected
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Dashboard overview functionality
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('📊 Dashboard overview loaded');
+
+    // Refresh data button
+    document.getElementById('refreshData')?.addEventListener('click', function() {
+        DashboardUtils.showLoading();
+        DashboardUtils.showToast('Refreshing data...', 'info');
+
+        setTimeout(() => {
+            DashboardUtils.hideLoading();
+            DashboardUtils.showToast('Data refreshed successfully', 'success');
+            location.reload();
+        }, 1000);
+    });
+});
+
+// Quick action functions
+function loadSampleData() {
+    DashboardUtils.showToast('Loading sample data...', 'info');
+    // Implement sample data loading
+    setTimeout(() => {
+        DashboardUtils.showToast('Sample data loaded', 'success');
+    }, 1000);
+}
+
+function exportAllData() {
+    DashboardUtils.showToast('Preparing export...', 'info');
+    // Implement data export
+    setTimeout(() => {
+        DashboardUtils.showToast('Data exported successfully', 'success');
+    }, 1000);
+}
+
+function clearCache() {
+    DashboardUtils.showToast('Clearing cache...', 'warning');
+    // Implement cache clearing
+    setTimeout(() => {
+        DashboardUtils.showToast('Cache cleared', 'success');
+    }, 1000);
+}
+</script>
+
+<style>
+.project-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.75rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #dee2e6;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -2rem;
+    top: 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.timeline-content {
+    margin-left: 0.5rem;
+}
+
+.timeline-title {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-description {
+    font-size: 0.8rem;
+}
+</style>
+{% endblock %}

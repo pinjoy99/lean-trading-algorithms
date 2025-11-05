@@ -1,0 +1,20 @@
+{
+    "description": "Bitcoin Supertrend Minute-Level Trading Strategy",
+    "algorithm-language": "Python",
+    "parameters": {
+        "atr_period": "10",
+        "multiplier": "3",
+        "risk_percent": "0.02",
+        "max_position_size": "0.1",
+        "max_daily_trades": "10",
+        "min_trade_interval": "5",
+        "start_date": "2024-01-01",
+        "end_date": "2024-12-31"
+    },
+    "cloud-id": "12345",
+    "organization-id": "67890",
+    "version": "1.0.0",
+    "author": "Claude Code",
+    "created": "2024",
+    "local-id": 635344033
+}
