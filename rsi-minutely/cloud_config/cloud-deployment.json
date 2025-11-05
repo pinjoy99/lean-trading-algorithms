@@ -1,0 +1,56 @@
+{
+  "projectName": "Minutely RSI Strategy",
+  "algorithmClassName": "MinutelyRSIStrategy",
+  "description": "RSI-based trading strategy using minute-level data with comprehensive risk management",
+  "language": "Python",
+  "startDate": "2023-01-01",
+  "endDate": "2024-01-01",
+  "parameters": {
+    "rsi_period": 14,
+    "oversold_threshold": 30,
+    "overbought_threshold": 70,
+    "max_position_size": 0.95,
+    "stop_loss_pct": 0.02,
+    "take_profit_pct": 0.04,
+    "max_daily_loss": 0.05,
+    "min_signal_interval": 5
+  },
+  "brokerage": "Alpaca",
+  "accountType": "Equity",
+  "dataFeeds": {
+    "US Equities": " Fundamentals, Daily Trade, Daily Quote, Trade, Quote, Corporate Delistings, Delistings"
+  },
+  "deploymentTargets": {
+    "backtest": true,
+    "paper_trading": true,
+    "live_trading": true
+  },
+  "optimizationSettings": {
+    "enabled": true,
+    "parameters": [
+      {
+        "name": "rsi_period",
+        "min": 10,
+        "max": 28,
+        "step": 2
+      },
+      {
+        "name": "oversold_threshold",
+        "min": 20,
+        "max": 35,
+        "step": 2
+      },
+      {
+        "name": "overbought_threshold",
+        "min": 65,
+        "max": 80,
+        "step": 2
+      }
+    ]
+  },
+  "notifications": {
+    "enabled": true,
+    "email": true,
+    "webhook": false
+  }
+}
