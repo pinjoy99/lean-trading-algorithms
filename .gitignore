@@ -17,6 +17,9 @@ data/
 storage/
 backtests/
 
+# Backtest results archive (latest results only)
+# Backtest results are stored in backtest-results/ directory
+
 # IDE
 .vscode/
 .idea/

@@ -1,0 +1,2926 @@
+{
+  "rollingWindow": {
+    "M1_20230131": {
+      "tradeStatistics": {
+        "startDateTime": "2023-01-03T15:19:00Z",
+        "endDateTime": "2023-01-30T18:19:00Z",
+        "totalNumberOfTrades": 26,
+        "numberOfWinningTrades": 17,
+        "numberOfLosingTrades": 9,
+        "totalProfitLoss": "1895.19",
+        "totalProfit": "7052.49",
+        "totalLoss": "-5157.30",
+        "largestProfit": "803.60",
+        "largestLoss": "-1148.24",
+        "averageProfitLoss": "72.8919",
+        "averageProfit": "414.8524",
+        "averageLoss": "-573.0333",
+        "averageTradeDuration": "11:41:11.5384616",
+        "averageWinningTradeDuration": "08:05:03.5294120",
+        "averageLosingTradeDuration": "18:29:26.6666666",
+        "medianTradeDuration": "03:03:00",
+        "medianWinningTradeDuration": "01:02:00",
+        "medianLosingTradeDuration": "20:53:00",
+        "maxConsecutiveWinningTrades": 7,
+        "maxConsecutiveLosingTrades": 2,
+        "profitLossRatio": "0.7240",
+        "winLossRatio": "1.8889",
+        "winRate": "0.6538",
+        "lossRate": "0.3462",
+        "averageMAE": "-441.1969",
+        "averageMFE": "326.1085",
+        "largestMAE": "-1535.76",
+        "largestMFE": "803.60",
+        "maximumClosedTradeDrawdown": "-2245.24",
+        "maximumIntraTradeDrawdown": "-2843.94",
+        "profitLossStandardDeviation": "553.4190",
+        "profitLossDownsideDeviation": "420.0915",
+        "profitFactor": "1.3675",
+        "sharpeRatio": "0.1317",
+        "sortinoRatio": "0.1735",
+        "profitToMaxDrawdownRatio": "0.8441",
+        "maximumEndTradeDrawdown": "-1289.60",
+        "averageEndTradeDrawdown": "-253.2165",
+        "maximumDrawdownDuration": "1.17:33:00",
+        "totalFees": "63.820"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0041",
+        "averageLossRate": "-0.0056",
+        "profitLossRatio": "0.7238",
+        "winRate": "0.6538",
+        "lossRate": "0.3462",
+        "expectancy": "0.1271",
+        "startEquity": "100000",
+        "endEquity": "101831.37",
+        "compoundingAnnualReturn": "0.2411",
+        "drawdown": "0.026",
+        "totalNetProfit": "0.0183",
+        "sharpeRatio": "1.4803",
+        "probabilisticSharpeRatio": "0.6169",
+        "sortinoRatio": "2.8841",
+        "alpha": "0",
+        "beta": "0",
+        "annualStandardDeviation": "0.0835",
+        "annualVariance": "0.0070",
+        "informationRatio": "2.0192",
+        "trackingError": "0.0835",
+        "treynorRatio": "0",
+        "portfolioTurnover": "1.5869",
+        "valueAtRisk99": "-0.012",
+        "valueAtRisk95": "-0.008",
+        "drawdownRecovery": "1"
+      },
+      "closedTrades": []
+    },
+    "M3_20230131": {
+      "tradeStatistics": {
+        "startDateTime": "2023-01-03T15:19:00Z",
+        "endDateTime": "2023-01-30T18:19:00Z",
+        "totalNumberOfTrades": 26,
+        "numberOfWinningTrades": 17,
+        "numberOfLosingTrades": 9,
+        "totalProfitLoss": "1895.19",
+        "totalProfit": "7052.49",
+        "totalLoss": "-5157.30",
+        "largestProfit": "803.60",
+        "largestLoss": "-1148.24",
+        "averageProfitLoss": "72.8919",
+        "averageProfit": "414.8524",
+        "averageLoss": "-573.0333",
+        "averageTradeDuration": "11:41:11.5384616",
+        "averageWinningTradeDuration": "08:05:03.5294120",
+        "averageLosingTradeDuration": "18:29:26.6666666",
+        "medianTradeDuration": "03:03:00",
+        "medianWinningTradeDuration": "01:02:00",
+        "medianLosingTradeDuration": "20:53:00",
+        "maxConsecutiveWinningTrades": 7,
+        "maxConsecutiveLosingTrades": 2,
+        "profitLossRatio": "0.7240",
+        "winLossRatio": "1.8889",
+        "winRate": "0.6538",
+        "lossRate": "0.3462",
+        "averageMAE": "-441.1969",
+        "averageMFE": "326.1085",
+        "largestMAE": "-1535.76",
+        "largestMFE": "803.60",
+        "maximumClosedTradeDrawdown": "-2245.24",
+        "maximumIntraTradeDrawdown": "-2843.94",
+        "profitLossStandardDeviation": "553.4190",
+        "profitLossDownsideDeviation": "420.0915",
+        "profitFactor": "1.3675",
+        "sharpeRatio": "0.1317",
+        "sortinoRatio": "0.1735",
+        "profitToMaxDrawdownRatio": "0.8441",
+        "maximumEndTradeDrawdown": "-1289.60",
+        "averageEndTradeDrawdown": "-253.2165",
+        "maximumDrawdownDuration": "1.17:33:00",
+        "totalFees": "63.820"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0041",
+        "averageLossRate": "-0.0056",
+        "profitLossRatio": "0.7238",
+        "winRate": "0.6538",
+        "lossRate": "0.3462",
+        "expectancy": "0.1271",
+        "startEquity": "100000",
+        "endEquity": "101831.37",
+        "compoundingAnnualReturn": "0.2411",
+        "drawdown": "0.026",
+        "totalNetProfit": "0.0183",
+        "sharpeRatio": "1.4803",
+        "probabilisticSharpeRatio": "0.6169",
+        "sortinoRatio": "2.8841",
+        "alpha": "0",
+        "beta": "0",
+        "annualStandardDeviation": "0.0835",
+        "annualVariance": "0.0070",
+        "informationRatio": "2.0192",
+        "trackingError": "0.0835",
+        "treynorRatio": "0",
+        "portfolioTurnover": "1.5869",
+        "valueAtRisk99": "-0.012",
+        "valueAtRisk95": "-0.008",
+        "drawdownRecovery": "1"
+      },
+      "closedTrades": []
+    },
+    "M6_20230131": {
+      "tradeStatistics": {
+        "startDateTime": "2023-01-03T15:19:00Z",
+        "endDateTime": "2023-01-30T18:19:00Z",
+        "totalNumberOfTrades": 26,
+        "numberOfWinningTrades": 17,
+        "numberOfLosingTrades": 9,
+        "totalProfitLoss": "1895.19",
+        "totalProfit": "7052.49",
+        "totalLoss": "-5157.30",
+        "largestProfit": "803.60",
+        "largestLoss": "-1148.24",
+        "averageProfitLoss": "72.8919",
+        "averageProfit": "414.8524",
+        "averageLoss": "-573.0333",
+        "averageTradeDuration": "11:41:11.5384616",
+        "averageWinningTradeDuration": "08:05:03.5294120",
+        "averageLosingTradeDuration": "18:29:26.6666666",
+        "medianTradeDuration": "03:03:00",
+        "medianWinningTradeDuration": "01:02:00",
+        "medianLosingTradeDuration": "20:53:00",
+        "maxConsecutiveWinningTrades": 7,
+        "maxConsecutiveLosingTrades": 2,
+        "profitLossRatio": "0.7240",
+        "winLossRatio": "1.8889",
+        "winRate": "0.6538",
+        "lossRate": "0.3462",
+        "averageMAE": "-441.1969",
+        "averageMFE": "326.1085",
+        "largestMAE": "-1535.76",
+        "largestMFE": "803.60",
+        "maximumClosedTradeDrawdown": "-2245.24",
+        "maximumIntraTradeDrawdown": "-2843.94",
+        "profitLossStandardDeviation": "553.4190",
+        "profitLossDownsideDeviation": "420.0915",
+        "profitFactor": "1.3675",
+        "sharpeRatio": "0.1317",
+        "sortinoRatio": "0.1735",
+        "profitToMaxDrawdownRatio": "0.8441",
+        "maximumEndTradeDrawdown": "-1289.60",
+        "averageEndTradeDrawdown": "-253.2165",
+        "maximumDrawdownDuration": "1.17:33:00",
+        "totalFees": "63.820"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0041",
+        "averageLossRate": "-0.0056",
+        "profitLossRatio": "0.7238",
+        "winRate": "0.6538",
+        "lossRate": "0.3462",
+        "expectancy": "0.1271",
+        "startEquity": "100000",
+        "endEquity": "101831.37",
+        "compoundingAnnualReturn": "0.2411",
+        "drawdown": "0.026",
+        "totalNetProfit": "0.0183",
+        "sharpeRatio": "1.4803",
+        "probabilisticSharpeRatio": "0.6169",
+        "sortinoRatio": "2.8841",
+        "alpha": "0",
+        "beta": "0",
+        "annualStandardDeviation": "0.0835",
+        "annualVariance": "0.0070",
+        "informationRatio": "2.0192",
+        "trackingError": "0.0835",
+        "treynorRatio": "0",
+        "portfolioTurnover": "1.5869",
+        "valueAtRisk99": "-0.012",
+        "valueAtRisk95": "-0.008",
+        "drawdownRecovery": "1"
+      },
+      "closedTrades": []
+    },
+    "M12_20230131": {
+      "tradeStatistics": {
+        "startDateTime": "2023-01-03T15:19:00Z",
+        "endDateTime": "2023-01-30T18:19:00Z",
+        "totalNumberOfTrades": 26,
+        "numberOfWinningTrades": 17,
+        "numberOfLosingTrades": 9,
+        "totalProfitLoss": "1895.19",
+        "totalProfit": "7052.49",
+        "totalLoss": "-5157.30",
+        "largestProfit": "803.60",
+        "largestLoss": "-1148.24",
+        "averageProfitLoss": "72.8919",
+        "averageProfit": "414.8524",
+        "averageLoss": "-573.0333",
+        "averageTradeDuration": "11:41:11.5384616",
+        "averageWinningTradeDuration": "08:05:03.5294120",
+        "averageLosingTradeDuration": "18:29:26.6666666",
+        "medianTradeDuration": "03:03:00",
+        "medianWinningTradeDuration": "01:02:00",
+        "medianLosingTradeDuration": "20:53:00",
+        "maxConsecutiveWinningTrades": 7,
+        "maxConsecutiveLosingTrades": 2,
+        "profitLossRatio": "0.7240",
+        "winLossRatio": "1.8889",
+        "winRate": "0.6538",
+        "lossRate": "0.3462",
+        "averageMAE": "-441.1969",
+        "averageMFE": "326.1085",
+        "largestMAE": "-1535.76",
+        "largestMFE": "803.60",
+        "maximumClosedTradeDrawdown": "-2245.24",
+        "maximumIntraTradeDrawdown": "-2843.94",
+        "profitLossStandardDeviation": "553.4190",
+        "profitLossDownsideDeviation": "420.0915",
+        "profitFactor": "1.3675",
+        "sharpeRatio": "0.1317",
+        "sortinoRatio": "0.1735",
+        "profitToMaxDrawdownRatio": "0.8441",
+        "maximumEndTradeDrawdown": "-1289.60",
+        "averageEndTradeDrawdown": "-253.2165",
+        "maximumDrawdownDuration": "1.17:33:00",
+        "totalFees": "63.820"
+      },
+      "portfolioStatistics": {
+        "averageWinRate": "0.0041",
+        "averageLossRate": "-0.0056",
+        "profitLossRatio": "0.7238",
+        "winRate": "0.6538",
+        "lossRate": "0.3462",
+        "expectancy": "0.1271",
+        "startEquity": "100000",
+        "endEquity": "101831.37",
+        "compoundingAnnualReturn": "0.2411",
+        "drawdown": "0.026",
+        "totalNetProfit": "0.0183",
+        "sharpeRatio": "1.4803",
+        "probabilisticSharpeRatio": "0.6169",
+        "sortinoRatio": "2.8841",
+        "alpha": "0",
+        "beta": "0",
+        "annualStandardDeviation": "0.0835",
+        "annualVariance": "0.0070",
+        "informationRatio": "2.0192",
+        "trackingError": "0.0835",
+        "treynorRatio": "0",
+        "portfolioTurnover": "1.5869",
+        "valueAtRisk99": "-0.012",
+        "valueAtRisk95": "-0.008",
+        "drawdownRecovery": "1"
+      },
+      "closedTrades": []
+    }
+  },
+  "totalPerformance": {
+    "tradeStatistics": {
+      "startDateTime": "2023-01-03T15:19:00Z",
+      "endDateTime": "2023-01-30T18:19:00Z",
+      "totalNumberOfTrades": 26,
+      "numberOfWinningTrades": 17,
+      "numberOfLosingTrades": 9,
+      "totalProfitLoss": "1895.19",
+      "totalProfit": "7052.49",
+      "totalLoss": "-5157.30",
+      "largestProfit": "803.60",
+      "largestLoss": "-1148.24",
+      "averageProfitLoss": "72.8919",
+      "averageProfit": "414.8524",
+      "averageLoss": "-573.0333",
+      "averageTradeDuration": "11:41:11.5384616",
+      "averageWinningTradeDuration": "08:05:03.5294120",
+      "averageLosingTradeDuration": "18:29:26.6666666",
+      "medianTradeDuration": "03:03:00",
+      "medianWinningTradeDuration": "01:02:00",
+      "medianLosingTradeDuration": "20:53:00",
+      "maxConsecutiveWinningTrades": 7,
+      "maxConsecutiveLosingTrades": 2,
+      "profitLossRatio": "0.7240",
+      "winLossRatio": "1.8889",
+      "winRate": "0.6538",
+      "lossRate": "0.3462",
+      "averageMAE": "-441.1969",
+      "averageMFE": "326.1085",
+      "largestMAE": "-1535.76",
+      "largestMFE": "803.60",
+      "maximumClosedTradeDrawdown": "-2245.24",
+      "maximumIntraTradeDrawdown": "-2843.94",
+      "profitLossStandardDeviation": "553.4190",
+      "profitLossDownsideDeviation": "420.0915",
+      "profitFactor": "1.3675",
+      "sharpeRatio": "0.1317",
+      "sortinoRatio": "0.1735",
+      "profitToMaxDrawdownRatio": "0.8441",
+      "maximumEndTradeDrawdown": "-1289.60",
+      "averageEndTradeDrawdown": "-253.2165",
+      "maximumDrawdownDuration": "1.17:33:00",
+      "totalFees": "63.820"
+    },
+    "portfolioStatistics": {
+      "averageWinRate": "0.0041",
+      "averageLossRate": "-0.0056",
+      "profitLossRatio": "0.7238",
+      "winRate": "0.6538",
+      "lossRate": "0.3462",
+      "expectancy": "0.1271",
+      "startEquity": "100000",
+      "endEquity": "101831.37",
+      "compoundingAnnualReturn": "0.2411",
+      "drawdown": "0.026",
+      "totalNetProfit": "0.0183",
+      "sharpeRatio": "1.4803",
+      "probabilisticSharpeRatio": "0.6169",
+      "sortinoRatio": "2.8841",
+      "alpha": "0",
+      "beta": "0",
+      "annualStandardDeviation": "0.0835",
+      "annualVariance": "0.0070",
+      "informationRatio": "2.0192",
+      "trackingError": "0.0835",
+      "treynorRatio": "0",
+      "portfolioTurnover": "1.5869",
+      "valueAtRisk99": "-0.012",
+      "valueAtRisk95": "-0.008",
+      "drawdownRecovery": "1"
+    },
+    "closedTrades": [
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-03T15:19:00Z",
+        "entryPrice": 380.57,
+        "direction": 0,
+        "quantity": 249.0,
+        "exitTime": "2023-01-03T18:27:00Z",
+        "exitPrice": 379.55,
+        "profitLoss": -253.98,
+        "totalFees": 2.490,
+        "mae": -632.46,
+        "mfe": 420.81,
+        "duration": "03:08:00",
+        "endTradeDrawdown": -674.79,
+        "isWin": false,
+        "orderIds": [
+          1,
+          2
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-03T19:33:00Z",
+        "entryPrice": 378.35,
+        "direction": 0,
+        "quantity": 249.0,
+        "exitTime": "2023-01-03T19:46:00Z",
+        "exitPrice": 380.44,
+        "profitLoss": 520.41,
+        "totalFees": 2.490,
+        "mae": -14.62,
+        "mfe": 522.90,
+        "duration": "00:13:00",
+        "endTradeDrawdown": -2.49,
+        "isWin": true,
+        "orderIds": [
+          3,
+          4
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-04T17:58:00Z",
+        "entryPrice": 384.57,
+        "direction": 0,
+        "quantity": 247.0,
+        "exitTime": "2023-01-04T20:02:00Z",
+        "exitPrice": 383.82,
+        "profitLoss": -185.25,
+        "totalFees": 2.470,
+        "mae": -780.52,
+        "mfe": 177.84,
+        "duration": "02:04:00",
+        "endTradeDrawdown": -363.09,
+        "isWin": false,
+        "orderIds": [
+          5,
+          6
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-04T20:36:00Z",
+        "entryPrice": 381.84,
+        "direction": 0,
+        "quantity": 248.0,
+        "exitTime": "2023-01-04T20:58:00Z",
+        "exitPrice": 383.39,
+        "profitLoss": 384.40,
+        "totalFees": 2.48,
+        "mae": -112.84,
+        "mfe": 386.88,
+        "duration": "00:22:00",
+        "endTradeDrawdown": -2.48,
+        "isWin": true,
+        "orderIds": [
+          7,
+          8
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-05T14:34:00Z",
+        "entryPrice": 380.33,
+        "direction": 0,
+        "quantity": 250.0,
+        "exitTime": "2023-01-05T18:22:00Z",
+        "exitPrice": 380.23,
+        "profitLoss": -25.00,
+        "totalFees": 2.50,
+        "mae": -355.08,
+        "mfe": 262.50,
+        "duration": "03:48:00",
+        "endTradeDrawdown": -287.50,
+        "isWin": false,
+        "orderIds": [
+          9,
+          10
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-05T20:03:00Z",
+        "entryPrice": 380.45,
+        "direction": 0,
+        "quantity": 250.0,
+        "exitTime": "2023-01-06T14:31:00Z",
+        "exitPrice": 382.26,
+        "profitLoss": 452.50,
+        "totalFees": 2.50,
+        "mae": -382.50,
+        "mfe": 452.52,
+        "duration": "18:28:00",
+        "endTradeDrawdown": -0.02,
+        "isWin": true,
+        "orderIds": [
+          11,
+          12
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-06T20:56:00Z",
+        "entryPrice": 388.0,
+        "direction": 0,
+        "quantity": 246.0,
+        "exitTime": "2023-01-09T14:31:00Z",
+        "exitPrice": 390.3,
+        "profitLoss": 565.8,
+        "totalFees": 2.46,
+        "mae": -38.13,
+        "mfe": 565.80,
+        "duration": "2.17:35:00",
+        "endTradeDrawdown": 0.00,
+        "isWin": true,
+        "orderIds": [
+          13,
+          14
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-09T17:37:00Z",
+        "entryPrice": 392.08,
+        "direction": 0,
+        "quantity": 245.0,
+        "exitTime": "2023-01-10T15:17:00Z",
+        "exitPrice": 389.96,
+        "profitLoss": -519.40,
+        "totalFees": 2.450,
+        "mae": -1146.60,
+        "mfe": 75.95,
+        "duration": "21:40:00",
+        "endTradeDrawdown": -595.35,
+        "isWin": false,
+        "orderIds": [
+          15,
+          16
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-10T15:32:00Z",
+        "entryPrice": 387.17,
+        "direction": 0,
+        "quantity": 247.0,
+        "exitTime": "2023-01-10T17:40:00Z",
+        "exitPrice": 389.15,
+        "profitLoss": 489.06,
+        "totalFees": 2.470,
+        "mae": -166.72,
+        "mfe": 494.00,
+        "duration": "02:08:00",
+        "endTradeDrawdown": -4.94,
+        "isWin": true,
+        "orderIds": [
+          17,
+          18
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-10T20:07:00Z",
+        "entryPrice": 388.9,
+        "direction": 0,
+        "quantity": 247.0,
+        "exitTime": "2023-01-10T20:52:00Z",
+        "exitPrice": 390.21,
+        "profitLoss": 323.57,
+        "totalFees": 2.470,
+        "mae": 0.0,
+        "mfe": 326.04,
+        "duration": "00:45:00",
+        "endTradeDrawdown": -2.47,
+        "isWin": true,
+        "orderIds": [
+          19,
+          20
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-12T14:45:00Z",
+        "entryPrice": 393.36,
+        "direction": 0,
+        "quantity": 245.0,
+        "exitTime": "2023-01-12T15:13:00Z",
+        "exitPrice": 396.64,
+        "profitLoss": 803.60,
+        "totalFees": 2.450,
+        "mae": -196.00,
+        "mfe": 803.60,
+        "duration": "00:28:00",
+        "endTradeDrawdown": 0.00,
+        "isWin": true,
+        "orderIds": [
+          21,
+          22
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-12T18:27:00Z",
+        "entryPrice": 397.14,
+        "direction": 0,
+        "quantity": 244.0,
+        "exitTime": "2023-01-12T18:55:00Z",
+        "exitPrice": 398.22,
+        "profitLoss": 263.52,
+        "totalFees": 2.44,
+        "mae": -329.40,
+        "mfe": 263.52,
+        "duration": "00:28:00",
+        "endTradeDrawdown": 0.00,
+        "isWin": true,
+        "orderIds": [
+          23,
+          24
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-13T14:31:00Z",
+        "entryPrice": 394.1,
+        "direction": 0,
+        "quantity": 247.0,
+        "exitTime": "2023-01-13T18:41:00Z",
+        "exitPrice": 397.14,
+        "profitLoss": 750.88,
+        "totalFees": 2.470,
+        "mae": -148.20,
+        "mfe": 750.88,
+        "duration": "04:10:00",
+        "endTradeDrawdown": 0.00,
+        "isWin": true,
+        "orderIds": [
+          25,
+          26
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-17T15:41:00Z",
+        "entryPrice": 398.25,
+        "direction": 0,
+        "quantity": 246.0,
+        "exitTime": "2023-01-17T18:40:00Z",
+        "exitPrice": 398.69,
+        "profitLoss": 108.24,
+        "totalFees": 2.46,
+        "mae": -277.44,
+        "mfe": 113.16,
+        "duration": "02:59:00",
+        "endTradeDrawdown": -4.92,
+        "isWin": true,
+        "orderIds": [
+          27,
+          28
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-17T19:16:00Z",
+        "entryPrice": 397.78,
+        "direction": 0,
+        "quantity": 246.0,
+        "exitTime": "2023-01-18T14:31:00Z",
+        "exitPrice": 399.35,
+        "profitLoss": 386.22,
+        "totalFees": 2.46,
+        "mae": -127.92,
+        "mfe": 388.68,
+        "duration": "19:15:00",
+        "endTradeDrawdown": -2.46,
+        "isWin": true,
+        "orderIds": [
+          29,
+          30
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-18T15:44:00Z",
+        "entryPrice": 397.72,
+        "direction": 0,
+        "quantity": 247.0,
+        "exitTime": "2023-01-18T18:47:00Z",
+        "exitPrice": 393.98,
+        "profitLoss": -923.78,
+        "totalFees": 2.470,
+        "mae": -1267.13,
+        "mfe": 56.81,
+        "duration": "03:03:00",
+        "endTradeDrawdown": -980.59,
+        "isWin": false,
+        "orderIds": [
+          31,
+          32
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-18T20:02:00Z",
+        "entryPrice": 392.9,
+        "direction": 0,
+        "quantity": 248.0,
+        "exitTime": "2023-01-19T17:02:00Z",
+        "exitPrice": 388.27,
+        "profitLoss": -1148.24,
+        "totalFees": 2.48,
+        "mae": -1378.88,
+        "mfe": 141.36,
+        "duration": "21:00:00",
+        "endTradeDrawdown": -1289.60,
+        "isWin": false,
+        "orderIds": [
+          33,
+          34
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-19T20:54:00Z",
+        "entryPrice": 389.08,
+        "direction": 0,
+        "quantity": 248.0,
+        "exitTime": "2023-01-20T15:09:00Z",
+        "exitPrice": 390.73,
+        "profitLoss": 409.20,
+        "totalFees": 2.48,
+        "mae": -99.20,
+        "mfe": 409.20,
+        "duration": "18:15:00",
+        "endTradeDrawdown": 0.00,
+        "isWin": true,
+        "orderIds": [
+          35,
+          36
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-20T18:12:00Z",
+        "entryPrice": 391.42,
+        "direction": 0,
+        "quantity": 247.0,
+        "exitTime": "2023-01-20T18:38:00Z",
+        "exitPrice": 392.83,
+        "profitLoss": 348.27,
+        "totalFees": 2.470,
+        "mae": -49.38,
+        "mfe": 349.68,
+        "duration": "00:26:00",
+        "endTradeDrawdown": -1.41,
+        "isWin": true,
+        "orderIds": [
+          37,
+          38
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-23T17:10:00Z",
+        "entryPrice": 400.42,
+        "direction": 0,
+        "quantity": 243.0,
+        "exitTime": "2023-01-23T18:01:00Z",
+        "exitPrice": 401.58,
+        "profitLoss": 281.88,
+        "totalFees": 2.430,
+        "mae": 0.00,
+        "mfe": 284.29,
+        "duration": "00:51:00",
+        "endTradeDrawdown": -2.41,
+        "isWin": true,
+        "orderIds": [
+          39,
+          40
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-23T19:04:00Z",
+        "entryPrice": 401.41,
+        "direction": 0,
+        "quantity": 243.0,
+        "exitTime": "2023-01-24T15:57:00Z",
+        "exitPrice": 400.51,
+        "profitLoss": -218.70,
+        "totalFees": 2.430,
+        "mae": -899.10,
+        "mfe": 29.16,
+        "duration": "20:53:00",
+        "endTradeDrawdown": -247.86,
+        "isWin": false,
+        "orderIds": [
+          41,
+          42
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-24T19:02:00Z",
+        "entryPrice": 400.07,
+        "direction": 0,
+        "quantity": 243.0,
+        "exitTime": "2023-01-25T16:20:00Z",
+        "exitPrice": 395.98,
+        "profitLoss": -993.87,
+        "totalFees": 2.430,
+        "mae": -1535.76,
+        "mfe": 225.99,
+        "duration": "21:18:00",
+        "endTradeDrawdown": -1219.86,
+        "isWin": false,
+        "orderIds": [
+          43,
+          44
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-26T15:55:00Z",
+        "entryPrice": 400.69,
+        "direction": 0,
+        "quantity": 240.0,
+        "exitTime": "2023-01-26T17:10:00Z",
+        "exitPrice": 402.46,
+        "profitLoss": 424.80,
+        "totalFees": 2.4,
+        "mae": -132.70,
+        "mfe": 424.80,
+        "duration": "01:15:00",
+        "endTradeDrawdown": 0.00,
+        "isWin": true,
+        "orderIds": [
+          45,
+          46
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-27T15:47:00Z",
+        "entryPrice": 404.58,
+        "direction": 0,
+        "quantity": 239.0,
+        "exitTime": "2023-01-27T16:33:00Z",
+        "exitPrice": 405.48,
+        "profitLoss": 215.10,
+        "totalFees": 2.390,
+        "mae": -222.27,
+        "mfe": 215.10,
+        "duration": "00:46:00",
+        "endTradeDrawdown": 0.00,
+        "isWin": true,
+        "orderIds": [
+          47,
+          48
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-27T18:18:00Z",
+        "entryPrice": 405.72,
+        "direction": 0,
+        "quantity": 239.0,
+        "exitTime": "2023-01-27T19:20:00Z",
+        "exitPrice": 407.08,
+        "profitLoss": 325.04,
+        "totalFees": 2.390,
+        "mae": 0.00,
+        "mfe": 325.04,
+        "duration": "01:02:00",
+        "endTradeDrawdown": 0.00,
+        "isWin": true,
+        "orderIds": [
+          49,
+          50
+        ]
+      },
+      {
+        "symbol": {
+          "value": "SPY",
+          "id": "SPY R735QTJ8XC9X",
+          "permtick": "SPY"
+        },
+        "entryTime": "2023-01-27T20:48:00Z",
+        "entryPrice": 406.68,
+        "direction": 0,
+        "quantity": 239.0,
+        "exitTime": "2023-01-30T18:19:00Z",
+        "exitPrice": 402.96,
+        "profitLoss": -889.08,
+        "totalFees": 2.390,
+        "mae": -1178.27,
+        "mfe": 12.31,
+        "duration": "2.21:31:00",
+        "endTradeDrawdown": -901.39,
+        "isWin": false,
+        "orderIds": [
+          51,
+          52
+        ]
+      }
+    ]
+  },
+  "charts": {
+    "Drawdown": {
+      "name": "Drawdown",
+      "chartType": 0,
+      "series": {
+        "Equity Drawdown": {"name":"Equity Drawdown","unit":"%","index":0,"seriesType":0,"values":[[1672549200,0.0],[1672635600,0.0],[1672722000,0.0],[1672808400,0.0],[1672894800,0.0],[1672981200,-0.29],[1673067600,0.0],[1673154000,0.0],[1673240400,0.0],[1673326800,-0.47],[1673413200,0.0],[1673499600,0.0],[1673586000,0.0],[1673672400,0.0],[1673758800,0.0],[1673845200,0.0],[1673931600,0.0],[1674018000,0.0],[1674104400,-0.84],[1674190800,-1.72],[1674277200,-0.9],[1674363600,-0.9],[1674450000,-0.9],[1674536400,-0.83],[1674622800,-0.82],[1674709200,-1.81],[1674795600,-1.4],[1674882000,-1.11],[1674968400,-1.11],[1675054800,-1.11],[1675141200,-1.74],[1675198800,-1.74]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Portfolio Turnover": {
+      "name": "Portfolio Turnover",
+      "chartType": 0,
+      "series": {
+        "Portfolio Turnover": {"name":"Portfolio Turnover","unit":"%","index":0,"seriesType":0,"values":[[1672635600,0.0],[1672722000,0.0],[1672808400,3.772223],[1672894800,3.778477],[1672981200,2.847843],[1673067600,1.893387],[1673154000,0.0],[1673240400,0.0],[1673326800,1.912934],[1673413200,4.715856],[1673499600,0.0],[1673586000,3.770985],[1673672400,1.887581],[1673758800,0.0],[1673845200,0.0],[1673931600,0.0],[1674018000,2.835854],[1674104400,3.807111],[1674190800,1.892809],[1674277200,2.829622],[1674363600,0.0],[1674450000,0.0],[1674536400,2.845134],[1674622800,1.892708],[1674709200,0.9455418],[1674795600,1.886298],[1674882000,4.733095],[1674968400,0.0],[1675054800,0.0],[1675141200,0.9457541],[1675198800,0.0]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Exposure": {
+      "name": "Exposure",
+      "chartType": 0,
+      "series": {
+        "Equity - Short Ratio": {"name":"Equity - Short Ratio","unit":"","index":0,"seriesType":0,"values":[[1672549200,0.0],[1672635600,0.0],[1672722000,0.0],[1672808400,0.0],[1672894800,0.0],[1672981200,0.0],[1673067600,0.0],[1673154000,0.0],[1673240400,0.0],[1673326800,0.0],[1673413200,0.0],[1673499600,0.0],[1673586000,0.0],[1673672400,0.0],[1673758800,0.0],[1673845200,0.0],[1673931600,0.0],[1674018000,0.0],[1674104400,0.0],[1674190800,0.0],[1674277200,0.0],[1674363600,0.0],[1674450000,0.0],[1674536400,0.0],[1674622800,0.0],[1674709200,0.0],[1674795600,0.0],[1674882000,0.0],[1674968400,0.0],[1675054800,0.0],[1675141200,0.0],[1675198800,0.0]],"color":"","scatterMarkerSymbol":"none"},
+        "Equity - Long Ratio": {"name":"Equity - Long Ratio","unit":"","index":0,"seriesType":0,"values":[[1672549200,0.0],[1672635600,0.0],[1672722000,0.0],[1672808400,0.0],[1672894800,0.0],[1672981200,0.9469],[1673067600,0.9462],[1673154000,0.9462],[1673240400,0.9462],[1673326800,0.9464],[1673413200,0.0],[1673499600,0.0],[1673586000,0.0],[1673672400,0.0],[1673758800,0.0],[1673845200,0.0],[1673931600,0.0],[1674018000,0.9441],[1674104400,0.9449],[1674190800,0.9464],[1674277200,0.0],[1674363600,0.0],[1674450000,0.0],[1674536400,0.9471],[1674622800,0.9461],[1674709200,0.0],[1674795600,0.0],[1674882000,0.9461],[1674968400,0.9461],[1675054800,0.9461],[1675141200,0.0],[1675198800,0.0]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Strategy Equity": {
+      "name": "Strategy Equity",
+      "chartType": 0,
+      "series": {
+        "Equity": {"name":"Equity","unit":"$","index":0,"seriesType":2,"values":[[1672549200,100000.0,100000.0,100000.0,100000.0],[1672635600,100000.0,100000.0,100000.0,100000.0],[1672722000,100000.0,100000.0,100000.0,100000.0],[1672756260,100000.0,100000.0,100000.0,100000.0],[1672756980,100000.0,100000.0,100000.0,100000.0],[1672757700,100000.0,100000.0,100000.0,100000.0],[1672758420,100000.0,100000.0,100000.0,100000.0],[1672759140,100000.0,100000.0,99996.265,99996.265],[1672759860,99920.32,100090.885,99896.665,99896.665],[1672760580,100016.185,100187.995,99981.325,100165.585],[1672761300,100143.175,100271.41,100093.3501,100093.3501],[1672762020,100170.565,100419.565,100170.565,100235.305],[1672762740,100200.445,100220.365,99751.0,99883.5178],[1672763460,99851.845,99936.505,99744.775,99782.125],[1672764180,99682.525,99767.185,99654.886,99654.886],[1672764900,99672.565,99672.565,99551.8,99603.3679],[1672765620,99589.15,99665.095,99560.515,99665.095],[1672766340,99772.165,99779.635,99655.135,99670.075],[1672767060,99658.2724,99699.955,99513.205,99590.395],[1672767780,99680.0599,99843.13,99590.395,99590.395],[1672768500,99563.005,99567.9601,99366.295,99413.605],[1672769220,99388.705,99563.6524,99388.705,99493.285],[1672769940,99514.45,99582.925,99460.915,99483.325],[1672770660,99483.5491,99743.53,99448.8883,99743.53],[1672771380,99743.53,99743.53,99743.53,99743.53],[1672772100,99743.53,99743.53,99743.53,99743.53],[1672772820,99743.53,99743.53,99743.53,99743.53],[1672773540,99743.53,99743.53,99743.53,99743.53],[1672774260,99743.53,99743.53,99743.53,99743.53],[1672774980,99743.53,99875.2759,99727.6687,99869.275],[1672775700,99970.0204,100261.45,99970.0204,100261.45],[1672776420,100261.45,100261.45,100261.45,100261.45],[1672777140,100261.45,100261.45,100261.45,100261.45],[1672777860,100261.45,100261.45,100261.45,100261.45],[1672778580,100261.45,100261.45,100261.45,100261.45],[1672779300,100261.45,100261.45,100261.45,100261.45],[1672808400,100261.45,100261.45,100261.45,100261.45],[1672842660,100261.45,100261.45,100261.45,100261.45],[1672843380,100261.45,100261.45,100261.45,100261.45],[1672844100,100261.45,100261.45,100261.45,100261.45],[1672844820,100261.45,100261.45,100261.45,100261.45],[1672845540,100261.45,100261.45,100261.45,100261.45],[1672846260,100261.45,100261.45,100261.45,100261.45],[1672846980,100261.45,100261.45,100261.45,100261.45],[1672847700,100261.45,100261.45,100261.45,100261.45],[1672848420,100261.45,100261.45,100261.45,100261.45],[1672849140,100261.45,100261.45,100261.45,100261.45],[1672849860,100261.45,100261.45,100261.45,100261.45],[1672850580,100261.45,100261.45,100261.45,100261.45],[1672851300,100261.45,100261.45,100261.45,100261.45],[1672852020,100261.45,100261.45,100261.45,100261.45],[1672852740,100261.45,100261.45,100261.45,100261.45],[1672853460,100261.45,100261.45,100261.45,100261.45],[1672854180,100261.45,100261.45,100261.45,100261.45],[1672854900,100261.45,100261.45,100261.45,100261.45],[1672855620,100261.45,100261.45,100092.255,100131.775],[1672856340,100184.88,100356.5203,100154.005,100347.9],[1672857060,100366.425,100381.245,100324.435,100326.8062],[1672857780,100340.49,100438.055,100340.49,100378.775],[1672858500,100362.72,100366.425,100260.215,100320.73],[1672859220,100242.925,100371.365,99808.205,100151.535],[1672859940,100093.49,100203.405,99851.43,100171.295],[1672860660,100226.0549,100226.0549,99499.455,99583.4103],[1672861380,99524.155,99746.455,99479.695,99694.585],[1672862100,99650.125,99729.165,99576.025,99689.645],[1672862820,99778.5897,100073.73,99778.5897,100073.73],[1672863540,100073.73,100073.73,100073.73,100073.73],[1672864260,100073.73,100073.73,100073.73,100073.73],[1672864980,100073.73,100087.37,99973.29,99973.29],[1672865700,99998.09,100280.81,99959.65,100280.81],[1672894800,100402.33,100455.65,100402.33,100455.65],[1672929060,100455.65,100455.65,100455.65,100455.65],[1672929780,100455.65,100539.4,100209.4,100209.4],[1672930500,100229.875,100341.9,100131.875,100336.9],[1672931220,100307.9,100471.9,100306.925,100374.4],[1672931940,100461.9,100716.9,100449.4,100456.9],[1672932660,100481.9,100481.9,100324.4,100414.4],[1672933380,100404.4,100434.4,100271.175,100434.4],[1672934100,100494.975,100531.9,100246.9,100246.9],[1672934820,100269.4,100296.9,100166.875,100296.9],[1672935540,100269.4,100369.4,100259.4,100290.65],[1672936260,100235.975,100244.4,100099.325,100199.4],[1672936980,100249.425,100261.9,100186.9,100259.4],[1672937700,100321.9,100374.4,100233.15,100233.15],[1672938420,100244.4,100311.875,100173.15,100304.4],[1672939140,100375.65,100384.4,100246.9,100246.9],[1672939860,100174.4,100349.4,100169.4,100349.4],[1672940580,100366.9,100439.425,100309.4,100309.4],[1672941300,100279.025,100311.9,100244.425,100246.925],[1672942020,100246.9,100246.9,100179.4,100241.9],[1672942740,100271.9,100286.9,100152.775,100169.4],[1672943460,100161.9,100428.15,100161.9,100428.15],[1672944180,100428.15,100428.15,100428.15,100428.15],[1672944900,100428.15,100428.15,100428.15,100428.15],[1672945620,100428.15,100428.15,100428.15,100428.15],[1672946340,100428.15,100428.15,100428.15,100428.15],[1672947060,100428.15,100428.15,100428.15,100428.15],[1672947780,100428.15,100428.15,100428.15,100428.15],[1672948500,100428.15,100428.15,100428.15,100428.15],[1672949220,100428.15,100446.9,100386.9,100386.9],[1672949940,100391.9,100399.4,100304.4,100305.65],[1672950660,100286.9,100291.9,100153.15,100153.15],[1672951380,100119.4,100296.9,100119.4,100206.9],[1672952100,100151.9,100254.4,100044.4,100044.4],[1672981200,100111.9,100176.9,100111.9,100164.4],[1673015460,100878.15,100878.15,100878.15,100878.15],[1673016180,100878.15,100878.15,100878.15,100878.15],[1673016900,100878.15,100878.15,100878.15,100878.15],[1673017620,100878.15,100878.15,100878.15,100878.15],[1673018340,100878.15,100878.15,100878.15,100878.15],[1673019060,100878.15,100878.15,100878.15,100878.15],[1673019780,100878.15,100878.15,100878.15,100878.15],[1673020500,100878.15,100878.15,100878.15,100878.15],[1673021220,100878.15,100878.15,100878.15,100878.15],[1673021940,100878.15,100878.15,100878.15,100878.15],[1673022660,100878.15,100878.15,100878.15,100878.15],[1673023380,100878.15,100878.15,100878.15,100878.15],[1673024100,100878.15,100878.15,100878.15,100878.15],[1673024820,100878.15,100878.15,100878.15,100878.15],[1673025540,100878.15,100878.15,100878.15,100878.15],[1673026260,100878.15,100878.15,100878.15,100878.15],[1673026980,100878.15,100878.15,100878.15,100878.15],[1673027700,100878.15,100878.15,100878.15,100878.15],[1673028420,100878.15,100878.15,100878.15,100878.15],[1673029140,100878.15,100878.15,100878.15,100878.15],[1673029860,100878.15,100878.15,100878.15,100878.15],[1673030580,100878.15,100878.15,100878.15,100878.15],[1673031300,100878.15,100878.15,100878.15,100878.15],[1673032020,100878.15,100878.15,100878.15,100878.15],[1673032740,100878.15,100878.15,100878.15,100878.15],[1673033460,100878.15,100878.15,100878.15,100878.15],[1673034180,100878.15,100878.15,100878.15,100878.15],[1673034900,100878.15,100878.15,100878.15,100878.15],[1673035620,100878.15,100878.15,100878.15,100878.15],[1673036340,100878.15,100878.15,100878.15,100878.15],[1673037060,100878.15,100878.15,100878.15,100878.15],[1673037780,100878.15,100878.15,100878.15,100878.15],[1673038500,100878.15,100878.15,100878.15,100878.15],[1673067600,100875.69,100884.3,100838.79,100884.3],[1673154000,100884.3,100884.3,100884.3,100884.3],[1673240400,100884.3,100884.3,100884.3,100884.3],[1673274660,101441.49,101441.49,101441.49,101441.49],[1673275380,101441.49,101441.49,101441.49,101441.49],[1673276100,101441.49,101441.49,101441.49,101441.49],[1673276820,101441.49,101441.49,101441.49,101441.49],[1673277540,101441.49,101441.49,101441.49,101441.49],[1673278260,101441.49,101441.49,101441.49,101441.49],[1673278980,101441.49,101441.49,101441.49,101441.49],[1673279700,101441.49,101441.49,101441.49,101441.49],[1673280420,101441.49,101441.49,101441.49,101441.49],[1673281140,101441.49,101441.49,101441.49,101441.49],[1673281860,101441.49,101441.49,101441.49,101441.49],[1673282580,101441.49,101441.49,101441.49,101441.49],[1673283300,101441.49,101441.49,101441.49,101441.49],[1673284020,101441.49,101441.49,101441.49,101441.49],[1673284740,101441.49,101441.49,101441.49,101441.49],[1673285460,101441.49,101441.49,101441.49,101441.49],[1673286180,101441.49,101464.765,101405.965,101437.815],[1673286900,101416.99,101513.765,101393.715,101496.615],[1673287620,101481.915,101516.215,101364.315,101364.315],[1673288340,101376.565,101432.915,101332.465,101397.39],[1673289060,101423.115,101496.615,101374.115,101405.965],[1673289780,101375.34,101375.34,101072.765,101131.565],[1673290500,101056.84,101056.84,100940.465,101036.015],[1673291220,101023.765,101197.715,100972.315,101006.615],[1673291940,101047.04,101094.815,101006.615,101040.9395],[1673292660,101058.065,101122.1815,101040.915,101055.615],[1673293380,101094.815,101094.815,100901.265,100901.265],[1673294100,100893.915,100977.215,100876.765,100880.44],[1673294820,100864.515,100864.515,100661.165,100690.565],[1673295540,100663.615,100695.906,100521.515,100599.915],[1673296260,100599.915,100700.365,100484.765,100484.765],[1673296980,100462.715,100541.115,100422.29,100541.115],[1673297700,100522.74,100563.165,100375.74,100482.315],[1673326800,100401.465,100433.315,100399.015,100407.7615],[1673361060,100315.715,100315.715,100315.715,100315.715],[1673361780,100462.715,100690.565,100462.715,100489.665],[1673362500,100546.015,100599.915,100293.665,100599.915],[1673363220,100675.865,100675.865,100425.083,100560.715],[1673363940,100570.515,100919.64,100546.015,100919.64],[1673364660,100919.64,100919.64,100919.64,100919.64],[1673365380,100913.465,100987.565,100864.6578,100873.945],[1673366100,100824.545,101090.07,100751.68,101081.425],[1673366820,101072.78,101270.9975,101072.78,101224.685],[1673367540,101232.095,101264.205,101182.695,101188.87],[1673368260,101190.599,101270.38,101116.0297,101135.765],[1673368980,101097.48,101135.765,101012.265,101044.375],[1673369700,101069.075,101116.005,101002.385,101116.005],[1673370420,101140.705,101195.045,100923.345,101054.2303],[1673371140,101077.72,101283.965,101077.72,101123.415],[1673371860,101111.065,101170.345,101082.66,101138.235],[1673372580,101172.815,101406.23,101167.875,101406.23],[1673373300,101406.23,101406.23,101406.23,101406.23],[1673374020,101406.23,101406.23,101406.23,101406.23],[1673374740,101406.23,101406.23,101406.23,101406.23],[1673375460,101406.23,101406.23,101406.23,101406.23],[1673376180,101406.23,101406.23,101406.23,101406.23],[1673376900,101406.23,101406.23,101406.23,101406.23],[1673377620,101406.23,101406.23,101406.23,101406.23],[1673378340,101406.23,101406.23,101406.23,101406.23],[1673379060,101406.23,101406.23,101406.23,101406.23],[1673379780,101406.23,101406.23,101406.23,101406.23],[1673380500,101406.23,101406.23,101406.23,101406.23],[1673381220,101406.23,101406.23,101402.525,101402.525],[1673381940,101437.105,101611.24,101434.635,101611.24],[1673382660,101612.4503,101612.4503,101533.435,101572.955],[1673383380,101561.84,101602.595,101548.255,101560.605],[1673384100,101565.545,101727.33,101565.545,101727.33],[1673413200,101727.33,101727.33,101727.33,101727.33],[1673447460,101727.33,101727.33,101727.33,101727.33],[1673448180,101727.33,101727.33,101727.33,101727.33],[1673448900,101727.33,101727.33,101727.33,101727.33],[1673449620,101727.33,101727.33,101727.33,101727.33],[1673450340,101727.33,101727.33,101727.33,101727.33],[1673451060,101727.33,101727.33,101727.33,101727.33],[1673451780,101727.33,101727.33,101727.33,101727.33],[1673452500,101727.33,101727.33,101727.33,101727.33],[1673453220,101727.33,101727.33,101727.33,101727.33],[1673453940,101727.33,101727.33,101727.33,101727.33],[1673454660,101727.33,101727.33,101727.33,101727.33],[1673455380,101727.33,101727.33,101727.33,101727.33],[1673456100,101727.33,101727.33,101727.33,101727.33],[1673456820,101727.33,101727.33,101727.33,101727.33],[1673457540,101727.33,101727.33,101727.33,101727.33],[1673458260,101727.33,101727.33,101727.33,101727.33],[1673458980,101727.33,101727.33,101727.33,101727.33],[1673459700,101727.33,101727.33,101727.33,101727.33],[1673460420,101727.33,101727.33,101727.33,101727.33],[1673461140,101727.33,101727.33,101727.33,101727.33],[1673461860,101727.33,101727.33,101727.33,101727.33],[1673462580,101727.33,101727.33,101727.33,101727.33],[1673463300,101727.33,101727.33,101727.33,101727.33],[1673464020,101727.33,101727.33,101727.33,101727.33],[1673464740,101727.33,101727.33,101727.33,101727.33],[1673465460,101727.33,101727.33,101727.33,101727.33],[1673466180,101727.33,101727.33,101727.33,101727.33],[1673466900,101727.33,101727.33,101727.33,101727.33],[1673467620,101727.33,101727.33,101727.33,101727.33],[1673468340,101727.33,101727.33,101727.33,101727.33],[1673469060,101727.33,101727.33,101727.33,101727.33],[1673469780,101727.33,101727.33,101727.33,101727.33],[1673470500,101727.33,101727.33,101727.33,101727.33],[1673499600,101727.33,101727.33,101727.33,101727.33],[1673533860,101727.33,101727.33,101727.33,101727.33],[1673534580,101727.33,101727.33,101727.33,101727.33],[1673535300,101727.33,101727.33,101530.105,101569.305],[1673536020,101646.48,102127.905,101640.355,102127.905],[1673536740,101978.455,102528.48,101900.055,102528.48],[1673537460,102528.48,102528.48,102528.48,102528.48],[1673538180,102528.48,102528.48,102528.48,102528.48],[1673538900,102528.48,102528.48,102528.48,102528.48],[1673539620,102528.48,102528.48,102528.48,102528.48],[1673540340,102528.48,102528.48,102528.48,102528.48],[1673541060,102528.48,102528.48,102528.48,102528.48],[1673541780,102528.48,102528.48,102528.48,102528.48],[1673542500,102528.48,102528.48,102528.48,102528.48],[1673543220,102528.48,102528.48,102528.48,102528.48],[1673543940,102528.48,102528.48,102528.48,102528.48],[1673544660,102528.48,102528.48,102528.48,102528.48],[1673545380,102528.48,102528.48,102528.48,102528.48],[1673546100,102528.48,102528.48,102528.48,102528.48],[1673546820,102528.48,102528.48,102528.48,102528.48],[1673547540,102528.48,102528.48,102528.48,102528.48],[1673548260,102528.48,102529.7,102239.34,102253.98],[1673548980,102197.86,102548.0,102197.86,102548.0],[1673549700,102568.74,102789.56,102554.344,102789.56],[1673550420,102789.56,102789.56,102789.56,102789.56],[1673551140,102789.56,102789.56,102789.56,102789.56],[1673551860,102789.56,102789.56,102789.56,102789.56],[1673552580,102789.56,102789.56,102789.56,102789.56],[1673553300,102789.56,102789.56,102789.56,102789.56],[1673554020,102789.56,102789.56,102789.56,102789.56],[1673554740,102789.56,102789.56,102789.56,102789.56],[1673555460,102789.56,102789.56,102789.56,102789.56],[1673556180,102789.56,102789.56,102789.56,102789.56],[1673556900,102789.56,102789.56,102789.56,102789.56],[1673586000,102789.56,102789.56,102789.56,102789.56],[1673620260,102785.855,102785.855,102785.855,102785.855],[1673620980,102810.5303,102810.555,102640.125,102640.125],[1673621700,102756.6102,103001.5848,102756.6102,102993.2609],[1673622420,103003.1903,103153.885,102943.935,103146.475],[1673623140,103109.425,103247.745,103052.615,103144.005],[1673623860,103179.82,103400.885,103179.82,103400.885],[1673624580,103319.375,103356.425,103223.045,103334.195],[1673625300,103329.2303,103420.645,103258.86,103366.305],[1673626020,103405.825,103405.825,103262.565,103282.325],[1673626740,103311.965,103316.9297,103126.715,103126.715],[1673627460,103171.175,103344.075,103171.175,103193.405],[1673628180,103187.23,103202.05,103136.595,103156.355],[1673628900,103200.815,103205.755,103091.6657,103195.8997],[1673629620,103171.175,103257.625,103119.305,103242.805],[1673630340,103230.455,103358.154,103230.455,103341.605],[1673631060,103346.7179,103389.77,103316.905,103334.2197],[1673631780,103314.435,103366.305,103272.445,103292.205],[1673632500,103316.905,103391.005,103316.905,103383.595],[1673633220,103393.475,103477.455,103390.017,103393.4997],[1673633940,103388.535,103450.285,103319.375,103358.895],[1673634660,103321.845,103396.439,103299.615,103396.439],[1673635380,103388.535,103537.97,103388.535,103537.97],[1673636100,103537.97,103537.97,103537.97,103537.97],[1673636820,103537.97,103537.97,103537.97,103537.97],[1673637540,103537.97,103537.97,103537.97,103537.97],[1673638260,103537.97,103537.97,103537.97,103537.97],[1673638980,103537.97,103537.97,103537.97,103537.97],[1673639700,103537.97,103537.97,103537.97,103537.97],[1673640420,103537.97,103537.97,103537.97,103537.97],[1673641140,103537.97,103537.97,103537.97,103537.97],[1673641860,103537.97,103537.97,103537.97,103537.97],[1673642580,103537.97,103537.97,103537.97,103537.97],[1673643300,103537.97,103537.97,103537.97,103537.97],[1673672400,103537.97,103537.97,103537.97,103537.97],[1673758800,103537.97,103537.97,103537.97,103537.97],[1673845200,103537.97,103537.97,103537.97,103537.97],[1673931600,103537.97,103537.97,103537.97,103537.97],[1673965860,103537.97,103537.97,103537.97,103537.97],[1673966580,103537.97,103537.97,103537.97,103537.97],[1673967300,103537.97,103537.97,103537.97,103537.97],[1673968020,103537.97,103537.97,103537.97,103537.97],[1673968740,103537.97,103537.97,103537.97,103537.97],[1673969460,103537.97,103537.97,103537.97,103537.97],[1673970180,103537.97,103573.64,103453.1,103453.1],[1673970900,103507.22,103610.54,103507.22,103560.11],[1673971620,103512.14,103544.12,103436.372,103436.372],[1673972340,103428.5,103428.5,103298.12,103320.26],[1673973060,103349.78,103453.1,103259.3012,103453.1],[1673973780,103494.9446,103519.52,103413.74,103519.52],[1673974500,103521.2912,103544.5136,103477.7,103492.46],[1673975220,103459.25,103603.16,103459.25,103574.87],[1673975940,103534.28,103534.28,103437.11,103437.11],[1673976660,103432.19,103445.72,103367.0,103395.29],[1673977380,103455.56,103504.76,103448.2046,103480.16],[1673978100,103480.16,103536.7154,103423.58,103531.82],[1673978820,103514.6,103568.72,103485.08,103546.58],[1673979540,103563.8246,103563.8246,103456.79,103551.5],[1673980260,103541.66,103541.66,103472.78,103499.84],[1673980980,103531.82,103643.75,103529.36,103643.75],[1673981700,103643.75,103643.75,103643.75,103643.75],[1673982420,103643.75,103643.75,103643.75,103643.75],[1673983140,103643.75,103681.88,103627.76,103659.74],[1673983860,103686.8,103717.55,103610.54,103717.55],[1673984580,103735.9754,103863.9446,103728.62,103814.72],[1673985300,103834.4,103856.54,103765.52,103790.12],[1673986020,103767.98,103827.0446,103721.24,103790.12],[1673986740,103790.12,103790.12,103669.58,103740.92],[1673987460,103722.47,103722.47,103648.67,103678.19],[1673988180,103657.28,103726.16,103657.28,103718.7554],[1673988900,103700.33,103700.33,103514.6,103544.12],[1674018000,103610.54,103637.6,103610.54,103637.6],[1674052260,104027.51,104027.51,104027.51,104027.51],[1674052980,104027.51,104027.51,104027.51,104027.51],[1674053700,104027.51,104027.51,104027.51,104027.51],[1674054420,104027.51,104027.51,104027.51,104027.51],[1674055140,104027.51,104027.51,104027.51,104027.51],[1674055860,104027.51,104027.51,104027.51,104027.51],[1674056580,104027.51,104027.51,104027.51,104027.51],[1674057300,104023.805,104083.085,103836.085,103836.085],[1674058020,103763.22,103946.0,103650.835,103650.835],[1674058740,103629.0496,103669.36,103566.855,103577.97],[1674059460,103542.155,103542.155,103358.14,103371.3545],[1674060180,103386.545,103386.545,103223.525,103223.525],[1674060900,103193.885,103305.035,103184.005,103221.055],[1674061620,103181.535,103320.6207,103181.535,103243.2603],[1674062340,103206.235,103303.0343,103181.535,103198.825],[1674063060,103168.8639,103168.8639,103016.045,103027.16],[1674063780,102987.64,103113.61,102987.64,103098.79],[1674064500,103060.505,103060.505,102933.3,102941.945],[1674065220,102927.125,102992.58,102830.795,102830.795],[1674065940,102818.445,102818.445,102759.1403,102761.635],[1674066660,102788.805,102941.9203,102788.805,102929.842],[1674067380,102971.585,102998.755,102883.9,102974.055],[1674068100,103011.105,103101.26,103011.105,103101.26],[1674068820,103101.26,103101.26,103101.26,103101.26],[1674069540,103101.26,103101.26,103101.26,103101.26],[1674070260,103101.26,103101.26,103101.26,103101.26],[1674070980,103101.26,103101.26,103101.26,103101.26],[1674071700,103101.26,103101.26,103101.26,103101.26],[1674072420,103101.26,103118.62,103076.46,103088.86],[1674073140,103114.9,103241.38,103082.66,103107.46],[1674073860,103114.28,103144.6848,103072.74,103072.74],[1674074580,103020.66,103020.66,102840.86,102840.86],[1674075300,102812.34,102866.9,102792.5,102825.98],[1674104400,102797.46,102797.46,102723.0848,102762.74],[1674138660,102311.38,102311.38,102311.38,102311.38],[1674139380,102236.98,102435.008,102236.98,102341.14],[1674140100,102239.46,102239.46,102073.3,102073.3],[1674140820,102142.74,102279.8096,102137.78,102279.8096],[1674141540,102296.5,102318.82,102048.5,102274.2048],[1674142260,102234.5,102234.5,102080.74,102080.74],[1674142980,102062.14,102080.74,101951.8048,102080.74],[1674143700,101993.94,102011.8952,101864.98,101864.98],[1674144420,101822.82,101924.5,101778.18,101855.06],[1674145140,101938.14,102110.5,101938.14,101946.1504],[1674145860,101946.82,101946.82,101825.3,101859.9952],[1674146580,101850.1,101884.82,101807.94,101807.94],[1674147300,101726.1,101802.98,101721.14,101775.7],[1674148020,101779.42,101950.54,101779.42,101950.54],[1674148740,101950.54,101950.54,101950.54,101950.54],[1674149460,101950.54,101950.54,101950.54,101950.54],[1674150180,101950.54,101950.54,101950.54,101950.54],[1674150900,101950.54,101950.54,101950.54,101950.54],[1674151620,101950.54,101950.54,101950.54,101950.54],[1674152340,101950.54,101950.54,101950.54,101950.54],[1674153060,101950.54,101950.54,101950.54,101950.54],[1674153780,101950.54,101950.54,101950.54,101950.54],[1674154500,101950.54,101950.54,101950.54,101950.54],[1674155220,101950.54,101950.54,101950.54,101950.54],[1674155940,101950.54,101950.54,101950.54,101950.54],[1674156660,101950.54,101950.54,101950.54,101950.54],[1674157380,101950.54,101950.54,101950.54,101950.54],[1674158100,101950.54,101950.54,101950.54,101950.54],[1674158820,101950.54,101950.54,101950.54,101950.54],[1674159540,101950.54,101950.54,101950.54,101950.54],[1674160260,101950.54,101950.54,101950.54,101950.54],[1674160980,101950.54,101950.54,101950.54,101950.54],[1674161700,101950.54,101980.3,101948.06,101980.3],[1674190800,101909.3968,101909.3968,101850.1,101850.1],[1674225060,102088.18,102088.18,102088.18,102088.18],[1674225780,102048.5,102048.5,101860.02,101979.06],[1674226500,102068.34,102155.14,102013.78,102065.86],[1674227220,102088.18,102321.3,102043.044,102321.3],[1674227940,102328.74,102357.26,102328.74,102357.26],[1674228660,102357.26,102357.26,102357.26,102357.26],[1674229380,102357.26,102357.26,102357.26,102357.26],[1674230100,102357.26,102357.26,102357.26,102357.26],[1674230820,102357.26,102357.26,102357.26,102357.26],[1674231540,102357.26,102357.26,102357.26,102357.26],[1674232260,102357.26,102357.26,102357.26,102357.26],[1674232980,102357.26,102357.26,102357.26,102357.26],[1674233700,102357.26,102357.26,102357.26,102357.26],[1674234420,102357.26,102357.26,102357.26,102357.26],[1674235140,102357.26,102357.26,102357.26,102357.26],[1674235860,102357.26,102357.26,102357.26,102357.26],[1674236580,102357.26,102357.26,102357.26,102357.26],[1674237300,102357.26,102357.26,102357.26,102357.26],[1674238020,102357.26,102357.26,102357.26,102357.26],[1674238740,102357.26,102514.105,102348.615,102484.465],[1674239460,102306.6497,102474.585,102306.6497,102474.585],[1674240180,102494.345,102703.06,102494.345,102703.06],[1674240900,102703.06,102703.06,102703.06,102703.06],[1674241620,102703.06,102703.06,102703.06,102703.06],[1674242340,102703.06,102703.06,102703.06,102703.06],[1674243060,102703.06,102703.06,102703.06,102703.06],[1674243780,102703.06,102703.06,102703.06,102703.06],[1674244500,102703.06,102703.06,102703.06,102703.06],[1674245220,102703.06,102703.06,102703.06,102703.06],[1674245940,102703.06,102703.06,102703.06,102703.06],[1674246660,102703.06,102703.06,102703.06,102703.06],[1674247380,102703.06,102703.06,102703.06,102703.06],[1674248100,102703.06,102703.06,102703.06,102703.06],[1674277200,102703.06,102703.06,102703.06,102703.06],[1674363600,102703.06,102703.06,102703.06,102703.06],[1674450000,102703.06,102703.06,102703.06,102703.06],[1674484260,102703.06,102703.06,102703.06,102703.06],[1674484980,102703.06,102703.06,102703.06,102703.06],[1674485700,102703.06,102703.06,102703.06,102703.06],[1674486420,102703.06,102703.06,102703.06,102703.06],[1674487140,102703.06,102703.06,102703.06,102703.06],[1674487860,102703.06,102703.06,102703.06,102703.06],[1674488580,102703.06,102703.06,102703.06,102703.06],[1674489300,102703.06,102703.06,102703.06,102703.06],[1674490020,102703.06,102703.06,102703.06,102703.06],[1674490740,102703.06,102703.06,102703.06,102703.06],[1674491460,102703.06,102703.06,102703.06,102703.06],[1674492180,102703.06,102703.06,102703.06,102703.06],[1674492900,102703.06,102703.06,102703.06,102703.06],[1674493620,102703.06,102703.06,102703.06,102703.06],[1674494340,102703.06,102792.97,102699.415,102786.895],[1674495060,102813.625,102857.365,102793.5775,102830.635],[1674495780,102823.345,102903.535,102823.345,102850.075],[1674496500,102864.655,102949.705,102840.355,102949.705],[1674497220,102935.125,102982.51,102935.125,102982.51],[1674497940,102982.51,102982.51,102982.51,102982.51],[1674498660,102982.51,102982.51,102982.51,102982.51],[1674499380,102982.51,102982.51,102982.51,102982.51],[1674500100,102982.51,102982.51,102982.51,102982.51],[1674500820,102982.51,103010.455,102980.08,103003.1407],[1674501540,102988.585,103003.165,102920.545,102983.725],[1674502260,102987.37,102993.4693,102789.5437,102864.6307],[1674502980,102854.935,102854.935,102633.805,102677.5207],[1674503700,102662.965,102662.965,102378.655,102410.2207],[1674504420,102539.3023,102539.3023,102435.76,102468.565],[1674505140,102473.425,102677.545,102473.425,102653.245],[1674505860,102625.3,102667.825,102512.305,102531.745],[1674506580,102597.355,102650.815,102539.035,102582.775],[1674507300,102602.215,102818.485,102602.215,102792.97],[1674536400,102816.055,102870.73,102774.7693,102782.035],[1674570660,102237.715,102237.715,102237.715,102237.715],[1674571380,102337.345,102416.32,102206.125,102322.765],[1674572100,102356.8093,102665.395,102349.495,102665.395],[1674572820,102565.765,102565.765,102082.195,102101.635],[1674573540,102108.9007,102527.7841,102108.9007,102419.9407],[1674574260,102337.6609,102468.565,102325.195,102444.2893],[1674574980,102495.295,102502.6336,102310.615,102453.985],[1674575700,102553.615,102679.975,102541.465,102679.975],[1674576420,102729.79,102761.38,102729.79,102761.38],[1674577140,102761.38,102761.38,102761.38,102761.38],[1674577860,102761.38,102761.38,102761.38,102761.38],[1674578580,102761.38,102761.38,102761.38,102761.38],[1674579300,102761.38,102761.38,102761.38,102761.38],[1674580020,102761.38,102761.38,102761.38,102761.38],[1674580740,102761.38,102761.38,102761.38,102761.38],[1674581460,102761.38,102761.38,102761.38,102761.38],[1674582180,102761.38,102761.38,102761.38,102761.38],[1674582900,102761.38,102761.38,102761.38,102761.38],[1674583620,102761.38,102761.38,102761.38,102761.38],[1674584340,102761.38,102761.38,102761.38,102761.38],[1674585060,102761.38,102761.38,102761.38,102761.38],[1674585780,102761.38,102761.38,102761.38,102761.38],[1674586500,102761.38,102761.38,102761.38,102761.38],[1674587220,102761.38,102818.485,102760.165,102767.455],[1674587940,102806.335,102840.355,102769.5691,102806.335],[1674588660,102782.035,102847.645,102780.82,102842.785],[1674589380,102884.095,102918.115,102871.945,102898.675],[1674590100,102910.825,102952.135,102867.085,102937.5793],[1674590820,102970.8703,102986.155,102903.535,102903.535],[1674591540,102920.545,102931.48,102837.925,102847.645],[1674592260,102870.73,102896.245,102835.495,102835.495],[1674592980,102791.755,102791.755,102570.8437,102570.8437],[1674593700,102585.205,102811.195,102585.205,102811.195],[1674622800,102862.7353,102867.085,102784.465,102784.465],[1674657060,101688.535,101688.535,101688.535,101688.535],[1674657780,101712.835,101875.6693,101605.915,101851.6366],[1674658500,101783.305,101795.455,101505.07,101505.07],[1674659220,101488.06,101710.405,101368.99,101710.405],[1674659940,101683.6993,101683.6993,101430.955,101562.175],[1674660660,101525.725,101525.725,101409.085,101501.425],[1674661380,101554.885,101554.885,101224.405,101326.465],[1674662100,101367.775,101412.73,101292.4207,101360.4607],[1674662820,101417.59,101557.315,101417.59,101498.995],[1674663540,101498.995,101628.271,101464.975,101571.895],[1674664260,101765.08,101765.08,101765.08,101765.08],[1674664980,101765.08,101765.08,101765.08,101765.08],[1674665700,101765.08,101765.08,101765.08,101765.08],[1674666420,101765.08,101765.08,101765.08,101765.08],[1674667140,101765.08,101765.08,101765.08,101765.08],[1674667860,101765.08,101765.08,101765.08,101765.08],[1674668580,101765.08,101765.08,101765.08,101765.08],[1674669300,101765.08,101765.08,101765.08,101765.08],[1674670020,101765.08,101765.08,101765.08,101765.08],[1674670740,101765.08,101765.08,101765.08,101765.08],[1674671460,101765.08,101765.08,101765.08,101765.08],[1674672180,101765.08,101765.08,101765.08,101765.08],[1674672900,101765.08,101765.08,101765.08,101765.08],[1674673620,101765.08,101765.08,101765.08,101765.08],[1674674340,101765.08,101765.08,101765.08,101765.08],[1674675060,101765.08,101765.08,101765.08,101765.08],[1674675780,101765.08,101765.08,101765.08,101765.08],[1674676500,101765.08,101765.08,101765.08,101765.08],[1674677220,101765.08,101765.08,101765.08,101765.08],[1674677940,101765.08,101765.08,101765.08,101765.08],[1674678660,101765.08,101765.08,101765.08,101765.08],[1674679380,101765.08,101765.08,101765.08,101765.08],[1674680100,101765.08,101765.08,101765.08,101765.08],[1674709200,101765.08,101765.08,101765.08,101765.08],[1674743460,101765.08,101765.08,101765.08,101765.08],[1674744180,101765.08,101765.08,101765.08,101765.08],[1674744900,101765.08,101765.08,101765.08,101765.08],[1674745620,101765.08,101765.08,101765.08,101765.08],[1674746340,101765.08,101765.08,101765.08,101765.08],[1674747060,101765.08,101765.08,101765.08,101765.08],[1674747780,101765.08,101765.08,101765.08,101765.08],[1674748500,101765.08,101765.08,101761.48,101761.48],[1674749220,101735.464,101811.88,101639.08,101761.936],[1674749940,101708.68,101961.16,101708.68,101927.08],[1674750660,101879.08,101886.28,101631.184,101886.28],[1674751380,101912.68,101957.08,101840.68,101931.88],[1674752100,101949.64,102003.904,101915.92,101943.88],[1674752820,101917.504,102114.28,101917.504,102109.96],[1674753540,102126.304,102187.48,102126.28,102187.48],[1674754260,102187.48,102187.48,102187.48,102187.48],[1674754980,102187.48,102187.48,102187.48,102187.48],[1674755700,102187.48,102187.48,102187.48,102187.48],[1674756420,102187.48,102187.48,102187.48,102187.48],[1674757140,102187.48,102187.48,102187.48,102187.48],[1674757860,102187.48,102187.48,102187.48,102187.48],[1674758580,102187.48,102187.48,102187.48,102187.48],[1674759300,102187.48,102187.48,102187.48,102187.48],[1674760020,102187.48,102187.48,102187.48,102187.48],[1674760740,102187.48,102187.48,102187.48,102187.48],[1674761460,102187.48,102187.48,102187.48,102187.48],[1674762180,102187.48,102187.48,102187.48,102187.48],[1674762900,102187.48,102187.48,102187.48,102187.48],[1674763620,102187.48,102187.48,102187.48,102187.48],[1674764340,102187.48,102187.48,102187.48,102187.48],[1674765060,102187.48,102187.48,102187.48,102187.48],[1674765780,102187.48,102187.48,102187.48,102187.48],[1674766500,102187.48,102187.48,102187.48,102187.48],[1674795600,102187.48,102187.48,102187.48,102187.48],[1674829860,102187.48,102187.48,102187.48,102187.48],[1674830580,102187.48,102187.48,102187.48,102187.48],[1674831300,102187.48,102187.48,102187.48,102187.48],[1674832020,102187.48,102187.48,102187.48,102187.48],[1674832740,102187.48,102187.48,102187.48,102187.48],[1674833460,102187.48,102187.48,102187.48,102187.48],[1674834180,102187.48,102187.48,102187.48,102187.48],[1674834900,102187.48,102187.48,102021.375,102021.375],[1674835620,101964.015,102159.995,101964.015,102159.995],[1674836340,102102.635,102212.6467,102019.3196,102212.6467],[1674837060,102200.625,102308.175,102200.625,102289.055],[1674837780,102382.2411,102400.19,102382.2411,102400.19],[1674838500,102400.19,102400.19,102400.19,102400.19],[1674839220,102400.19,102400.19,102400.19,102400.19],[1674839940,102400.19,102400.19,102400.19,102400.19],[1674840660,102400.19,102400.19,102400.19,102400.19],[1674841380,102400.19,102400.19,102400.19,102400.19],[1674842100,102400.19,102400.19,102400.19,102400.19],[1674842820,102400.19,102400.19,102400.19,102400.19],[1674843540,102400.19,102439.625,102396.605,102439.625],[1674844260,102447.1057,102520.885,102443.449,102520.885],[1674844980,102523.275,102592.585,102470.7189,102470.7189],[1674845700,102475.475,102572.27,102475.475,102518.495],[1674846420,102523.275,102640.385,102523.275,102603.34],[1674847140,102575.855,102710.173,102542.395,102710.173],[1674847860,102722.84,102722.84,102722.84,102722.84],[1674848580,102722.84,102722.84,102722.84,102722.84],[1674849300,102722.84,102722.84,102722.84,102722.84],[1674850020,102722.84,102722.84,102722.84,102722.84],[1674850740,102722.84,102722.84,102722.84,102722.84],[1674851460,102722.84,102722.84,102722.84,102722.84],[1674852180,102722.84,102722.84,102722.84,102722.84],[1674852900,102722.84,102733.9535,102506.545,102587.805],[1674882000,102531.64,102531.64,102475.475,102482.645],[1674968400,102482.645,102482.645,102482.645,102482.645],[1675054800,102482.645,102482.645,102482.645,102482.645],[1675089060,101913.6816,101913.6816,101913.6816,101913.6816],[1675089780,101892.9125,102038.0811,101877.975,101961.625],[1675090500,101924.58,102193.5506,101924.58,101973.097],[1675091220,102021.375,102329.685,102021.375,102310.565],[1675091940,102320.125,102320.125,102093.8159,102093.8159],[1675092660,102107.415,102148.045,101952.065,101985.525],[1675093380,101944.895,101961.625,101691.555,101691.555],[1675094100,101684.385,101796.715,101603.125,101705.9667],[1675094820,101732.185,101862.44,101730.99,101809.86],[1675095540,101765.6211,102038.105,101765.6211,102015.639],[1675096260,102002.255,102002.255,101813.445,101954.455],[1675096980,101947.285,101947.285,101811.0311,101811.0311],[1675097700,101783.57,101834.955,101689.1411,101689.1411],[1675098420,101665.265,101909.045,101665.265,101882.755],[1675099140,101916.215,101934.14,101779.985,101779.985],[1675099860,101791.935,101816.8388,101670.045,101806.275],[1675100580,101789.5689,101803.885,101750.349,101796.715],[1675101300,101768.035,101768.035,101586.395,101653.315],[1675102020,101670.045,101670.045,101543.375,101660.485],[1675102740,101643.755,101831.37,101617.465,101831.37],[1675103460,101831.37,101831.37,101831.37,101831.37],[1675104180,101831.37,101831.37,101831.37,101831.37],[1675104900,101831.37,101831.37,101831.37,101831.37],[1675105620,101831.37,101831.37,101831.37,101831.37],[1675106340,101831.37,101831.37,101831.37,101831.37],[1675107060,101831.37,101831.37,101831.37,101831.37],[1675107780,101831.37,101831.37,101831.37,101831.37],[1675108500,101831.37,101831.37,101831.37,101831.37],[1675109220,101831.37,101831.37,101831.37,101831.37],[1675109940,101831.37,101831.37,101831.37,101831.37],[1675110660,101831.37,101831.37,101831.37,101831.37],[1675111380,101831.37,101831.37,101831.37,101831.37],[1675112100,101831.37,101831.37,101831.37,101831.37],[1675141200,101831.37,101831.37,101831.37,101831.37],[1675175460,101831.37,101831.37,101831.37,101831.37],[1675176180,101831.37,101831.37,101831.37,101831.37],[1675176900,101831.37,101831.37,101831.37,101831.37],[1675177620,101831.37,101831.37,101831.37,101831.37],[1675178340,101831.37,101831.37,101831.37,101831.37],[1675179060,101831.37,101831.37,101831.37,101831.37],[1675179780,101831.37,101831.37,101831.37,101831.37],[1675180500,101831.37,101831.37,101831.37,101831.37],[1675181220,101831.37,101831.37,101831.37,101831.37],[1675181940,101831.37,101831.37,101831.37,101831.37],[1675182660,101831.37,101831.37,101831.37,101831.37],[1675183380,101831.37,101831.37,101831.37,101831.37],[1675184100,101831.37,101831.37,101831.37,101831.37],[1675184820,101831.37,101831.37,101831.37,101831.37],[1675185540,101831.37,101831.37,101831.37,101831.37],[1675186260,101831.37,101831.37,101831.37,101831.37],[1675186980,101831.37,101831.37,101831.37,101831.37],[1675187700,101831.37,101831.37,101831.37,101831.37],[1675188420,101831.37,101831.37,101831.37,101831.37],[1675189140,101831.37,101831.37,101831.37,101831.37],[1675189860,101831.37,101831.37,101831.37,101831.37],[1675190580,101831.37,101831.37,101831.37,101831.37],[1675191300,101831.37,101831.37,101831.37,101831.37],[1675192020,101831.37,101831.37,101831.37,101831.37],[1675192740,101831.37,101831.37,101831.37,101831.37],[1675193460,101831.37,101831.37,101831.37,101831.37],[1675194180,101831.37,101831.37,101831.37,101831.37],[1675194900,101831.37,101831.37,101831.37,101831.37],[1675195620,101831.37,101831.37,101831.37,101831.37],[1675196340,101831.37,101831.37,101831.37,101831.37],[1675197060,101831.37,101831.37,101831.37,101831.37],[1675197780,101831.37,101831.37,101831.37,101831.37],[1675198500,101831.37,101831.37,101831.37,101831.37],[1675198800,101831.37,101831.37,101831.37,101831.37]]},
+        "Return": {"name":"Return","unit":"%","index":1,"seriesType":3,"values":[[1672549200,0.0],[1672635600,0.0],[1672722000,0.0],[1672808400,0.26145],[1672894800,0.1936936],[1672981200,-0.2899289],[1673067600,0.7187184],[1673154000,0.0],[1673240400,0.0],[1673326800,-0.4723614],[1673413200,1.31421],[1673499600,0.0],[1673586000,1.044193],[1673672400,0.7280992],[1673758800,0.0],[1673845200,0.0],[1673931600,0.0],[1674018000,0.09622557],[1674104400,-0.8441531],[1674190800,-0.888104],[1674277200,0.837466],[1674363600,0.0],[1674450000,0.0],[1674536400,0.07689644],[1674622800,0.002364226],[1674709200,-0.9917695],[1674795600,0.4150736],[1674882000,0.2888465],[1674968400,0.0],[1675054800,0.0],[1675141200,-0.6354978],[1675198800,0.0]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Capacity": {
+      "name": "Capacity",
+      "chartType": 0,
+      "series": {
+        "Strategy Capacity": {"name":"Strategy Capacity","unit":"$","index":0,"seriesType":0,"values":[[1672549200,0.0],[1672635600,0.0],[1672722000,0.0],[1672808400,0.0],[1672894800,0.0],[1672981200,0.0],[1673067600,0.0],[1673154000,0.0],[1673240400,0.0],[1673326800,39451000.0],[1673413200,39451000.0],[1673499600,39451000.0],[1673586000,39451000.0],[1673672400,39451000.0],[1673758800,39451000.0],[1673845200,39451000.0],[1673931600,39451000.0],[1674018000,36928000.0],[1674104400,36928000.0],[1674190800,36928000.0],[1674277200,36928000.0],[1674363600,36928000.0],[1674450000,36928000.0],[1674536400,36928000.0],[1674622800,34188000.0],[1674709200,34188000.0],[1674795600,34188000.0],[1674882000,34188000.0],[1674968400,34188000.0],[1675054800,34188000.0],[1675141200,34188000.0],[1675198800,30659000.0]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Assets Sales Volume": {
+      "name": "Assets Sales Volume",
+      "chartType": 0,
+      "series": {
+        "SPY": {"name":"SPY","unit":"$","index":0,"seriesType":7,"values":[[1672808400,378208.59],[1672894800,757777.96],[1672981200,1043030.46],[1673067600,1234043.46],[1673154000,1234043.46],[1673240400,1234043.46],[1673326800,1426116.86],[1673413200,1905848.27],[1673499600,1905848.27],[1673586000,2293466.11],[1673672400,2488902.39],[1673758800,2488902.39],[1673845200,2488902.39],[1673931600,2488902.39],[1674018000,2782803.51],[1674104400,3174032.71],[1674190800,3366815.51],[1674277200,3657426.3],[1674363600,3657426.3],[1674450000,3657426.3],[1674536400,3949854.93],[1674622800,4144395.87],[1674709200,4240619.01],[1674795600,4433375.01],[1674882000,4918435.07],[1674968400,4918435.07],[1675054800,4918435.07],[1675141200,5014742.51],[1675198800,5014742.51]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    },
+    "Portfolio Margin": {
+      "name": "Portfolio Margin",
+      "chartType": 0,
+      "series": {
+        "SPY": {"name":"SPY","unit":"%","index":0,"seriesType":3,"indexName":"Margin Used (%)","tooltip":"{SERIES_NAME}: {VALUE}%","values":[[1672981200,47.35],[1673067600,47.31],[1673154000,47.31],[1673240400,47.31],[1673326800,47.32],[1674018000,47.21],[1674104400,47.25],[1674190800,47.32],[1674536400,47.35],[1674622800,47.3],[1674882000,47.3],[1674968400,47.3],[1675054800,47.3]],"color":"","scatterMarkerSymbol":"none"}
+      },
+      "legendDisabled": true
+    },
+    "Benchmark": {
+      "name": "Benchmark",
+      "chartType": 0,
+      "series": {
+        "Benchmark": {"name":"Benchmark","unit":"$","index":0,"seriesType":0,"values":[[1672549200,0.0],[1672635600,0.0],[1672722000,0.0],[1672808400,0.0],[1672894800,0.0],[1672981200,0.0],[1673067600,0.0],[1673154000,0.0],[1673240400,0.0],[1673326800,0.0],[1673413200,0.0],[1673499600,0.0],[1673586000,0.0],[1673672400,0.0],[1673758800,0.0],[1673845200,0.0],[1673931600,0.0],[1674018000,0.0],[1674104400,0.0],[1674190800,0.0],[1674277200,0.0],[1674363600,0.0],[1674450000,0.0],[1674536400,0.0],[1674622800,0.0],[1674709200,0.0],[1674795600,0.0],[1674882000,0.0],[1674968400,0.0],[1675054800,0.0],[1675141200,0.0],[1675198800,0.0]],"color":"","scatterMarkerSymbol":"none"}
+      }
+    }
+  },
+  "orders": {
+    "1": {
+      "type": 0,
+      "id": 1,
+      "contingentId": 0,
+      "brokerId": [
+        "1"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 380.57,
+      "priceCurrency": "USD",
+      "time": "2023-01-03T15:19:00Z",
+      "createdTime": "2023-01-03T15:19:00Z",
+      "lastFillTime": "2023-01-03T15:19:00Z",
+      "quantity": 249.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 94761.93,
+      "orderSubmissionData": {
+        "bidPrice": 380.5600,
+        "askPrice": 380.5700,
+        "lastPrice": 380.5600
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "2": {
+      "type": 0,
+      "id": 2,
+      "contingentId": 0,
+      "brokerId": [
+        "2"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 379.55,
+      "priceCurrency": "USD",
+      "time": "2023-01-03T18:27:00Z",
+      "createdTime": "2023-01-03T18:27:00Z",
+      "lastFillTime": "2023-01-03T18:27:00Z",
+      "quantity": -249.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -94507.95,
+      "orderSubmissionData": {
+        "bidPrice": 379.5500,
+        "askPrice": 379.5800,
+        "lastPrice": 379.5400
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "3": {
+      "type": 0,
+      "id": 3,
+      "contingentId": 0,
+      "brokerId": [
+        "3"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 378.35,
+      "priceCurrency": "USD",
+      "time": "2023-01-03T19:33:00Z",
+      "createdTime": "2023-01-03T19:33:00Z",
+      "lastFillTime": "2023-01-03T19:33:00Z",
+      "quantity": 249.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 94209.15,
+      "orderSubmissionData": {
+        "bidPrice": 378.3300,
+        "askPrice": 378.3500,
+        "lastPrice": 378.3200
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "4": {
+      "type": 0,
+      "id": 4,
+      "contingentId": 0,
+      "brokerId": [
+        "4"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 380.44,
+      "priceCurrency": "USD",
+      "time": "2023-01-03T19:46:00Z",
+      "createdTime": "2023-01-03T19:46:00Z",
+      "lastFillTime": "2023-01-03T19:46:00Z",
+      "quantity": -249.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -94729.56,
+      "orderSubmissionData": {
+        "bidPrice": 380.4400,
+        "askPrice": 380.4500,
+        "lastPrice": 380.4500
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "5": {
+      "type": 0,
+      "id": 5,
+      "contingentId": 0,
+      "brokerId": [
+        "5"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 384.57,
+      "priceCurrency": "USD",
+      "time": "2023-01-04T17:58:00Z",
+      "createdTime": "2023-01-04T17:58:00Z",
+      "lastFillTime": "2023-01-04T17:58:00Z",
+      "quantity": 247.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 94988.79,
+      "orderSubmissionData": {
+        "bidPrice": 384.5600,
+        "askPrice": 384.5700,
+        "lastPrice": 384.5650
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "6": {
+      "type": 0,
+      "id": 6,
+      "contingentId": 0,
+      "brokerId": [
+        "6"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 383.82,
+      "priceCurrency": "USD",
+      "time": "2023-01-04T20:02:00Z",
+      "createdTime": "2023-01-04T20:02:00Z",
+      "lastFillTime": "2023-01-04T20:02:00Z",
+      "quantity": -247.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -94803.54,
+      "orderSubmissionData": {
+        "bidPrice": 383.8200,
+        "askPrice": 383.8300,
+        "lastPrice": 383.8399
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "7": {
+      "type": 0,
+      "id": 7,
+      "contingentId": 0,
+      "brokerId": [
+        "7"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 381.84,
+      "priceCurrency": "USD",
+      "time": "2023-01-04T20:36:00Z",
+      "createdTime": "2023-01-04T20:36:00Z",
+      "lastFillTime": "2023-01-04T20:36:00Z",
+      "quantity": 248.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 94696.32,
+      "orderSubmissionData": {
+        "bidPrice": 381.8300,
+        "askPrice": 381.8400,
+        "lastPrice": 381.8350
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "8": {
+      "type": 0,
+      "id": 8,
+      "contingentId": 0,
+      "brokerId": [
+        "8"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 383.39,
+      "priceCurrency": "USD",
+      "time": "2023-01-04T20:58:00Z",
+      "createdTime": "2023-01-04T20:58:00Z",
+      "lastFillTime": "2023-01-04T20:58:00Z",
+      "quantity": -248.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -95080.72,
+      "orderSubmissionData": {
+        "bidPrice": 383.3900,
+        "askPrice": 383.4000,
+        "lastPrice": 383.4000
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "9": {
+      "type": 0,
+      "id": 9,
+      "contingentId": 0,
+      "brokerId": [
+        "9"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 380.33,
+      "priceCurrency": "USD",
+      "time": "2023-01-05T14:34:00Z",
+      "createdTime": "2023-01-05T14:34:00Z",
+      "lastFillTime": "2023-01-05T14:34:00Z",
+      "quantity": 250.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 95082.50,
+      "orderSubmissionData": {
+        "bidPrice": 380.3200,
+        "askPrice": 380.3300,
+        "lastPrice": 380.3200
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "10": {
+      "type": 0,
+      "id": 10,
+      "contingentId": 0,
+      "brokerId": [
+        "10"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 380.23,
+      "priceCurrency": "USD",
+      "time": "2023-01-05T18:22:00Z",
+      "createdTime": "2023-01-05T18:22:00Z",
+      "lastFillTime": "2023-01-05T18:22:00Z",
+      "quantity": -250.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -95057.50,
+      "orderSubmissionData": {
+        "bidPrice": 380.2300,
+        "askPrice": 380.2500,
+        "lastPrice": 380.2500
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "11": {
+      "type": 0,
+      "id": 11,
+      "contingentId": 0,
+      "brokerId": [
+        "11"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 380.45,
+      "priceCurrency": "USD",
+      "time": "2023-01-05T20:03:00Z",
+      "createdTime": "2023-01-05T20:03:00Z",
+      "lastFillTime": "2023-01-05T20:03:00Z",
+      "quantity": 250.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 95112.50,
+      "orderSubmissionData": {
+        "bidPrice": 380.4300,
+        "askPrice": 380.4500,
+        "lastPrice": 380.4400
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "12": {
+      "type": 0,
+      "id": 12,
+      "contingentId": 0,
+      "brokerId": [
+        "12"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 382.26,
+      "priceCurrency": "USD",
+      "time": "2023-01-06T14:31:00Z",
+      "createdTime": "2023-01-06T14:31:00Z",
+      "lastFillTime": "2023-01-06T14:31:00Z",
+      "quantity": -250.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -95565.00,
+      "orderSubmissionData": {
+        "bidPrice": 382.2600,
+        "askPrice": 382.2800,
+        "lastPrice": 382.2601
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "13": {
+      "type": 0,
+      "id": 13,
+      "contingentId": 0,
+      "brokerId": [
+        "13"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 388.0,
+      "priceCurrency": "USD",
+      "time": "2023-01-06T20:56:00Z",
+      "createdTime": "2023-01-06T20:56:00Z",
+      "lastFillTime": "2023-01-06T20:56:00Z",
+      "quantity": 246.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 95448.0,
+      "orderSubmissionData": {
+        "bidPrice": 387.9900,
+        "askPrice": 388.0000,
+        "lastPrice": 387.9950
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "14": {
+      "type": 0,
+      "id": 14,
+      "contingentId": 0,
+      "brokerId": [
+        "14"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 390.3,
+      "priceCurrency": "USD",
+      "time": "2023-01-09T14:31:00Z",
+      "createdTime": "2023-01-09T14:31:00Z",
+      "lastFillTime": "2023-01-09T14:31:00Z",
+      "quantity": -246.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -96013.8,
+      "orderSubmissionData": {
+        "bidPrice": 390.3000,
+        "askPrice": 390.3100,
+        "lastPrice": 390.3000
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "15": {
+      "type": 0,
+      "id": 15,
+      "contingentId": 0,
+      "brokerId": [
+        "15"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 392.08,
+      "priceCurrency": "USD",
+      "time": "2023-01-09T17:37:00Z",
+      "createdTime": "2023-01-09T17:37:00Z",
+      "lastFillTime": "2023-01-09T17:37:00Z",
+      "quantity": 245.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 96059.60,
+      "orderSubmissionData": {
+        "bidPrice": 392.0600,
+        "askPrice": 392.0800,
+        "lastPrice": 392.0700
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "16": {
+      "type": 0,
+      "id": 16,
+      "contingentId": 0,
+      "brokerId": [
+        "16"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 389.96,
+      "priceCurrency": "USD",
+      "time": "2023-01-10T15:17:00Z",
+      "createdTime": "2023-01-10T15:17:00Z",
+      "lastFillTime": "2023-01-10T15:17:00Z",
+      "quantity": -245.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -95540.20,
+      "orderSubmissionData": {
+        "bidPrice": 389.9600,
+        "askPrice": 389.9700,
+        "lastPrice": 389.9700
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "17": {
+      "type": 0,
+      "id": 17,
+      "contingentId": 0,
+      "brokerId": [
+        "17"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 387.17,
+      "priceCurrency": "USD",
+      "time": "2023-01-10T15:32:00Z",
+      "createdTime": "2023-01-10T15:32:00Z",
+      "lastFillTime": "2023-01-10T15:32:00Z",
+      "quantity": 247.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 95630.99,
+      "orderSubmissionData": {
+        "bidPrice": 387.1500,
+        "askPrice": 387.1700,
+        "lastPrice": 387.1500
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "18": {
+      "type": 0,
+      "id": 18,
+      "contingentId": 0,
+      "brokerId": [
+        "18"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 389.15,
+      "priceCurrency": "USD",
+      "time": "2023-01-10T17:40:00Z",
+      "createdTime": "2023-01-10T17:40:00Z",
+      "lastFillTime": "2023-01-10T17:40:00Z",
+      "quantity": -247.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -96120.05,
+      "orderSubmissionData": {
+        "bidPrice": 389.1500,
+        "askPrice": 389.1700,
+        "lastPrice": 389.1700
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "19": {
+      "type": 0,
+      "id": 19,
+      "contingentId": 0,
+      "brokerId": [
+        "19"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 388.9,
+      "priceCurrency": "USD",
+      "time": "2023-01-10T20:07:00Z",
+      "createdTime": "2023-01-10T20:07:00Z",
+      "lastFillTime": "2023-01-10T20:07:00Z",
+      "quantity": 247.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 96058.3,
+      "orderSubmissionData": {
+        "bidPrice": 388.8800,
+        "askPrice": 388.9000,
+        "lastPrice": 388.8900
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "20": {
+      "type": 0,
+      "id": 20,
+      "contingentId": 0,
+      "brokerId": [
+        "20"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 390.21,
+      "priceCurrency": "USD",
+      "time": "2023-01-10T20:52:00Z",
+      "createdTime": "2023-01-10T20:52:00Z",
+      "lastFillTime": "2023-01-10T20:52:00Z",
+      "quantity": -247.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -96381.87,
+      "orderSubmissionData": {
+        "bidPrice": 390.2100,
+        "askPrice": 390.2200,
+        "lastPrice": 390.2200
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "21": {
+      "type": 0,
+      "id": 21,
+      "contingentId": 0,
+      "brokerId": [
+        "21"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 393.36,
+      "priceCurrency": "USD",
+      "time": "2023-01-12T14:45:00Z",
+      "createdTime": "2023-01-12T14:45:00Z",
+      "lastFillTime": "2023-01-12T14:45:00Z",
+      "quantity": 245.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 96373.20,
+      "orderSubmissionData": {
+        "bidPrice": 393.3500,
+        "askPrice": 393.3600,
+        "lastPrice": 393.3500
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "22": {
+      "type": 0,
+      "id": 22,
+      "contingentId": 0,
+      "brokerId": [
+        "22"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 396.64,
+      "priceCurrency": "USD",
+      "time": "2023-01-12T15:13:00Z",
+      "createdTime": "2023-01-12T15:13:00Z",
+      "lastFillTime": "2023-01-12T15:13:00Z",
+      "quantity": -245.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -97176.80,
+      "orderSubmissionData": {
+        "bidPrice": 396.6400,
+        "askPrice": 396.6500,
+        "lastPrice": 396.6400
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "23": {
+      "type": 0,
+      "id": 23,
+      "contingentId": 0,
+      "brokerId": [
+        "23"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 397.14,
+      "priceCurrency": "USD",
+      "time": "2023-01-12T18:27:00Z",
+      "createdTime": "2023-01-12T18:27:00Z",
+      "lastFillTime": "2023-01-12T18:27:00Z",
+      "quantity": 244.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 96902.16,
+      "orderSubmissionData": {
+        "bidPrice": 397.1300,
+        "askPrice": 397.1400,
+        "lastPrice": 397.1500
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "24": {
+      "type": 0,
+      "id": 24,
+      "contingentId": 0,
+      "brokerId": [
+        "24"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 398.22,
+      "priceCurrency": "USD",
+      "time": "2023-01-12T18:55:00Z",
+      "createdTime": "2023-01-12T18:55:00Z",
+      "lastFillTime": "2023-01-12T18:55:00Z",
+      "quantity": -244.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -97165.68,
+      "orderSubmissionData": {
+        "bidPrice": 398.2200,
+        "askPrice": 398.2300,
+        "lastPrice": 398.2200
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "25": {
+      "type": 0,
+      "id": 25,
+      "contingentId": 0,
+      "brokerId": [
+        "25"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 394.1,
+      "priceCurrency": "USD",
+      "time": "2023-01-13T14:31:00Z",
+      "createdTime": "2023-01-13T14:31:00Z",
+      "lastFillTime": "2023-01-13T14:31:00Z",
+      "quantity": 247.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 97342.7,
+      "orderSubmissionData": {
+        "bidPrice": 394.0700,
+        "askPrice": 394.1000,
+        "lastPrice": 394.0900
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "26": {
+      "type": 0,
+      "id": 26,
+      "contingentId": 0,
+      "brokerId": [
+        "26"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 397.14,
+      "priceCurrency": "USD",
+      "time": "2023-01-13T18:41:00Z",
+      "createdTime": "2023-01-13T18:41:00Z",
+      "lastFillTime": "2023-01-13T18:41:00Z",
+      "quantity": -247.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -98093.58,
+      "orderSubmissionData": {
+        "bidPrice": 397.1400,
+        "askPrice": 397.1500,
+        "lastPrice": 397.1400
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "27": {
+      "type": 0,
+      "id": 27,
+      "contingentId": 0,
+      "brokerId": [
+        "27"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 398.25,
+      "priceCurrency": "USD",
+      "time": "2023-01-17T15:41:00Z",
+      "createdTime": "2023-01-17T15:41:00Z",
+      "lastFillTime": "2023-01-17T15:41:00Z",
+      "quantity": 246.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 97969.50,
+      "orderSubmissionData": {
+        "bidPrice": 398.2400,
+        "askPrice": 398.2500,
+        "lastPrice": 398.2500
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "28": {
+      "type": 0,
+      "id": 28,
+      "contingentId": 0,
+      "brokerId": [
+        "28"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 398.69,
+      "priceCurrency": "USD",
+      "time": "2023-01-17T18:40:00Z",
+      "createdTime": "2023-01-17T18:40:00Z",
+      "lastFillTime": "2023-01-17T18:40:00Z",
+      "quantity": -246.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -98077.74,
+      "orderSubmissionData": {
+        "bidPrice": 398.6900,
+        "askPrice": 398.7100,
+        "lastPrice": 398.7100
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "29": {
+      "type": 0,
+      "id": 29,
+      "contingentId": 0,
+      "brokerId": [
+        "29"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 397.78,
+      "priceCurrency": "USD",
+      "time": "2023-01-17T19:16:00Z",
+      "createdTime": "2023-01-17T19:16:00Z",
+      "lastFillTime": "2023-01-17T19:16:00Z",
+      "quantity": 246.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 97853.88,
+      "orderSubmissionData": {
+        "bidPrice": 397.7700,
+        "askPrice": 397.7800,
+        "lastPrice": 397.7700
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "30": {
+      "type": 0,
+      "id": 30,
+      "contingentId": 0,
+      "brokerId": [
+        "30"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 399.35,
+      "priceCurrency": "USD",
+      "time": "2023-01-18T14:31:00Z",
+      "createdTime": "2023-01-18T14:31:00Z",
+      "lastFillTime": "2023-01-18T14:31:00Z",
+      "quantity": -246.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -98240.10,
+      "orderSubmissionData": {
+        "bidPrice": 399.3500,
+        "askPrice": 399.3600,
+        "lastPrice": 399.3600
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "31": {
+      "type": 0,
+      "id": 31,
+      "contingentId": 0,
+      "brokerId": [
+        "31"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 397.72,
+      "priceCurrency": "USD",
+      "time": "2023-01-18T15:44:00Z",
+      "createdTime": "2023-01-18T15:44:00Z",
+      "lastFillTime": "2023-01-18T15:44:00Z",
+      "quantity": 247.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 98236.84,
+      "orderSubmissionData": {
+        "bidPrice": 397.7100,
+        "askPrice": 397.7200,
+        "lastPrice": 397.7100
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "32": {
+      "type": 0,
+      "id": 32,
+      "contingentId": 0,
+      "brokerId": [
+        "32"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 393.98,
+      "priceCurrency": "USD",
+      "time": "2023-01-18T18:47:00Z",
+      "createdTime": "2023-01-18T18:47:00Z",
+      "lastFillTime": "2023-01-18T18:47:00Z",
+      "quantity": -247.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -97313.06,
+      "orderSubmissionData": {
+        "bidPrice": 393.9800,
+        "askPrice": 393.9900,
+        "lastPrice": 393.9800
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "33": {
+      "type": 0,
+      "id": 33,
+      "contingentId": 0,
+      "brokerId": [
+        "33"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 392.9,
+      "priceCurrency": "USD",
+      "time": "2023-01-18T20:02:00Z",
+      "createdTime": "2023-01-18T20:02:00Z",
+      "lastFillTime": "2023-01-18T20:02:00Z",
+      "quantity": 248.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 97439.2,
+      "orderSubmissionData": {
+        "bidPrice": 392.8900,
+        "askPrice": 392.9000,
+        "lastPrice": 392.8950
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "34": {
+      "type": 0,
+      "id": 34,
+      "contingentId": 0,
+      "brokerId": [
+        "34"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 388.27,
+      "priceCurrency": "USD",
+      "time": "2023-01-19T17:02:00Z",
+      "createdTime": "2023-01-19T17:02:00Z",
+      "lastFillTime": "2023-01-19T17:02:00Z",
+      "quantity": -248.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -96290.96,
+      "orderSubmissionData": {
+        "bidPrice": 388.2700,
+        "askPrice": 388.2800,
+        "lastPrice": 388.2750
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "35": {
+      "type": 0,
+      "id": 35,
+      "contingentId": 0,
+      "brokerId": [
+        "35"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 389.08,
+      "priceCurrency": "USD",
+      "time": "2023-01-19T20:54:00Z",
+      "createdTime": "2023-01-19T20:54:00Z",
+      "lastFillTime": "2023-01-19T20:54:00Z",
+      "quantity": 248.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 96491.84,
+      "orderSubmissionData": {
+        "bidPrice": 389.0700,
+        "askPrice": 389.0800,
+        "lastPrice": 389.0750
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "36": {
+      "type": 0,
+      "id": 36,
+      "contingentId": 0,
+      "brokerId": [
+        "36"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 390.73,
+      "priceCurrency": "USD",
+      "time": "2023-01-20T15:09:00Z",
+      "createdTime": "2023-01-20T15:09:00Z",
+      "lastFillTime": "2023-01-20T15:09:00Z",
+      "quantity": -248.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -96901.04,
+      "orderSubmissionData": {
+        "bidPrice": 390.7300,
+        "askPrice": 390.7400,
+        "lastPrice": 390.7200
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "37": {
+      "type": 0,
+      "id": 37,
+      "contingentId": 0,
+      "brokerId": [
+        "37"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 391.42,
+      "priceCurrency": "USD",
+      "time": "2023-01-20T18:12:00Z",
+      "createdTime": "2023-01-20T18:12:00Z",
+      "lastFillTime": "2023-01-20T18:12:00Z",
+      "quantity": 247.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 96680.74,
+      "orderSubmissionData": {
+        "bidPrice": 391.4000,
+        "askPrice": 391.4200,
+        "lastPrice": 391.3900
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "38": {
+      "type": 0,
+      "id": 38,
+      "contingentId": 0,
+      "brokerId": [
+        "38"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 392.83,
+      "priceCurrency": "USD",
+      "time": "2023-01-20T18:38:00Z",
+      "createdTime": "2023-01-20T18:38:00Z",
+      "lastFillTime": "2023-01-20T18:38:00Z",
+      "quantity": -247.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -97029.01,
+      "orderSubmissionData": {
+        "bidPrice": 392.8300,
+        "askPrice": 392.8400,
+        "lastPrice": 392.8357
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "39": {
+      "type": 0,
+      "id": 39,
+      "contingentId": 0,
+      "brokerId": [
+        "39"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 400.42,
+      "priceCurrency": "USD",
+      "time": "2023-01-23T17:10:00Z",
+      "createdTime": "2023-01-23T17:10:00Z",
+      "lastFillTime": "2023-01-23T17:10:00Z",
+      "quantity": 243.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 97302.06,
+      "orderSubmissionData": {
+        "bidPrice": 400.4000,
+        "askPrice": 400.4200,
+        "lastPrice": 400.4100
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "40": {
+      "type": 0,
+      "id": 40,
+      "contingentId": 0,
+      "brokerId": [
+        "40"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 401.58,
+      "priceCurrency": "USD",
+      "time": "2023-01-23T18:01:00Z",
+      "createdTime": "2023-01-23T18:01:00Z",
+      "lastFillTime": "2023-01-23T18:01:00Z",
+      "quantity": -243.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -97583.94,
+      "orderSubmissionData": {
+        "bidPrice": 401.5800,
+        "askPrice": 401.6000,
+        "lastPrice": 401.5899
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "41": {
+      "type": 0,
+      "id": 41,
+      "contingentId": 0,
+      "brokerId": [
+        "41"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 401.41,
+      "priceCurrency": "USD",
+      "time": "2023-01-23T19:04:00Z",
+      "createdTime": "2023-01-23T19:04:00Z",
+      "lastFillTime": "2023-01-23T19:04:00Z",
+      "quantity": 243.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 97542.63,
+      "orderSubmissionData": {
+        "bidPrice": 401.4000,
+        "askPrice": 401.4100,
+        "lastPrice": 401.4050
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "42": {
+      "type": 0,
+      "id": 42,
+      "contingentId": 0,
+      "brokerId": [
+        "42"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 400.51,
+      "priceCurrency": "USD",
+      "time": "2023-01-24T15:57:00Z",
+      "createdTime": "2023-01-24T15:57:00Z",
+      "lastFillTime": "2023-01-24T15:57:00Z",
+      "quantity": -243.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -97323.93,
+      "orderSubmissionData": {
+        "bidPrice": 400.5100,
+        "askPrice": 400.5200,
+        "lastPrice": 400.5200
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "43": {
+      "type": 0,
+      "id": 43,
+      "contingentId": 0,
+      "brokerId": [
+        "43"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 400.07,
+      "priceCurrency": "USD",
+      "time": "2023-01-24T19:02:00Z",
+      "createdTime": "2023-01-24T19:02:00Z",
+      "lastFillTime": "2023-01-24T19:02:00Z",
+      "quantity": 243.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 97217.01,
+      "orderSubmissionData": {
+        "bidPrice": 400.0600,
+        "askPrice": 400.0700,
+        "lastPrice": 400.0700
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "44": {
+      "type": 0,
+      "id": 44,
+      "contingentId": 0,
+      "brokerId": [
+        "44"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 395.98,
+      "priceCurrency": "USD",
+      "time": "2023-01-25T16:20:00Z",
+      "createdTime": "2023-01-25T16:20:00Z",
+      "lastFillTime": "2023-01-25T16:20:00Z",
+      "quantity": -243.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -96223.14,
+      "orderSubmissionData": {
+        "bidPrice": 395.9800,
+        "askPrice": 395.9900,
+        "lastPrice": 395.8800
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "45": {
+      "type": 0,
+      "id": 45,
+      "contingentId": 0,
+      "brokerId": [
+        "45"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 400.69,
+      "priceCurrency": "USD",
+      "time": "2023-01-26T15:55:00Z",
+      "createdTime": "2023-01-26T15:55:00Z",
+      "lastFillTime": "2023-01-26T15:55:00Z",
+      "quantity": 240.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 96165.60,
+      "orderSubmissionData": {
+        "bidPrice": 400.6800,
+        "askPrice": 400.6900,
+        "lastPrice": 400.6800
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "46": {
+      "type": 0,
+      "id": 46,
+      "contingentId": 0,
+      "brokerId": [
+        "46"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 402.46,
+      "priceCurrency": "USD",
+      "time": "2023-01-26T17:10:00Z",
+      "createdTime": "2023-01-26T17:10:00Z",
+      "lastFillTime": "2023-01-26T17:10:00Z",
+      "quantity": -240.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -96590.40,
+      "orderSubmissionData": {
+        "bidPrice": 402.4600,
+        "askPrice": 402.4700,
+        "lastPrice": 402.4500
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "47": {
+      "type": 0,
+      "id": 47,
+      "contingentId": 0,
+      "brokerId": [
+        "47"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 404.58,
+      "priceCurrency": "USD",
+      "time": "2023-01-27T15:47:00Z",
+      "createdTime": "2023-01-27T15:47:00Z",
+      "lastFillTime": "2023-01-27T15:47:00Z",
+      "quantity": 239.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 96694.62,
+      "orderSubmissionData": {
+        "bidPrice": 404.5600,
+        "askPrice": 404.5800,
+        "lastPrice": 404.5600
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "48": {
+      "type": 0,
+      "id": 48,
+      "contingentId": 0,
+      "brokerId": [
+        "48"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 405.48,
+      "priceCurrency": "USD",
+      "time": "2023-01-27T16:33:00Z",
+      "createdTime": "2023-01-27T16:33:00Z",
+      "lastFillTime": "2023-01-27T16:33:00Z",
+      "quantity": -239.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -96909.72,
+      "orderSubmissionData": {
+        "bidPrice": 405.4800,
+        "askPrice": 405.4900,
+        "lastPrice": 405.4700
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "49": {
+      "type": 0,
+      "id": 49,
+      "contingentId": 0,
+      "brokerId": [
+        "49"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 405.72,
+      "priceCurrency": "USD",
+      "time": "2023-01-27T18:18:00Z",
+      "createdTime": "2023-01-27T18:18:00Z",
+      "lastFillTime": "2023-01-27T18:18:00Z",
+      "quantity": 239.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 96967.08,
+      "orderSubmissionData": {
+        "bidPrice": 405.7000,
+        "askPrice": 405.7200,
+        "lastPrice": 405.7100
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "50": {
+      "type": 0,
+      "id": 50,
+      "contingentId": 0,
+      "brokerId": [
+        "50"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 407.08,
+      "priceCurrency": "USD",
+      "time": "2023-01-27T19:20:00Z",
+      "createdTime": "2023-01-27T19:20:00Z",
+      "lastFillTime": "2023-01-27T19:20:00Z",
+      "quantity": -239.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -97292.12,
+      "orderSubmissionData": {
+        "bidPrice": 407.0800,
+        "askPrice": 407.0900,
+        "lastPrice": 407.0800
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "51": {
+      "type": 0,
+      "id": 51,
+      "contingentId": 0,
+      "brokerId": [
+        "51"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 406.68,
+      "priceCurrency": "USD",
+      "time": "2023-01-27T20:48:00Z",
+      "createdTime": "2023-01-27T20:48:00Z",
+      "lastFillTime": "2023-01-27T20:48:00Z",
+      "quantity": 239.0,
+      "status": 3,
+      "tag": "",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 0,
+      "value": 97196.52,
+      "orderSubmissionData": {
+        "bidPrice": 406.6700,
+        "askPrice": 406.6800,
+        "lastPrice": 406.6800
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    },
+    "52": {
+      "type": 0,
+      "id": 52,
+      "contingentId": 0,
+      "brokerId": [
+        "52"
+      ],
+      "symbol": {
+        "value": "SPY",
+        "id": "SPY R735QTJ8XC9X",
+        "permtick": "SPY"
+      },
+      "price": 402.96,
+      "priceCurrency": "USD",
+      "time": "2023-01-30T18:19:00Z",
+      "createdTime": "2023-01-30T18:19:00Z",
+      "lastFillTime": "2023-01-30T18:19:00Z",
+      "quantity": -239.0,
+      "status": 3,
+      "tag": "Liquidated",
+      "properties": {
+        "timeInForce": {}
+      },
+      "securityType": 1,
+      "direction": 1,
+      "value": -96307.44,
+      "orderSubmissionData": {
+        "bidPrice": 402.9600,
+        "askPrice": 402.9800,
+        "lastPrice": 402.9700
+      },
+      "isMarketable": true,
+      "priceAdjustmentMode": 1
+    }
+  },
+  "profitLoss": {
+    "2023-01-03T18:27:00Z": -256.470,
+    "2023-01-03T19:46:00Z": 517.920,
+    "2023-01-04T20:02:00Z": -187.720,
+    "2023-01-04T20:58:00Z": 381.92,
+    "2023-01-05T18:22:00Z": -27.50,
+    "2023-01-06T14:31:00Z": 450.00,
+    "2023-01-09T14:31:00Z": 563.34,
+    "2023-01-10T15:17:00Z": -521.850,
+    "2023-01-10T17:40:00Z": 486.590,
+    "2023-01-10T20:52:00Z": 321.100,
+    "2023-01-12T15:13:00Z": 801.150,
+    "2023-01-12T18:55:00Z": 261.08,
+    "2023-01-13T18:41:00Z": 748.410,
+    "2023-01-17T18:40:00Z": 105.78,
+    "2023-01-18T14:31:00Z": 383.76,
+    "2023-01-18T18:47:00Z": -926.250,
+    "2023-01-19T17:02:00Z": -1150.72,
+    "2023-01-20T15:09:00Z": 406.72,
+    "2023-01-20T18:38:00Z": 345.800,
+    "2023-01-23T18:01:00Z": 279.450,
+    "2023-01-24T15:57:00Z": -221.130,
+    "2023-01-25T16:20:00Z": -996.300,
+    "2023-01-26T17:10:00Z": 422.40,
+    "2023-01-27T16:33:00Z": 212.710,
+    "2023-01-27T19:20:00Z": 322.650,
+    "2023-01-30T18:19:00Z": -891.470
+  },
+  "statistics": {
+    "Total Orders": "52",
+    "Average Win": "0.41%",
+    "Average Loss": "-0.56%",
+    "Compounding Annual Return": "24.110%",
+    "Drawdown": "2.600%",
+    "Expectancy": "0.127",
+    "Start Equity": "100000",
+    "End Equity": "101831.37",
+    "Net Profit": "1.831%",
+    "Sharpe Ratio": "1.48",
+    "Sortino Ratio": "2.884",
+    "Probabilistic Sharpe Ratio": "61.689%",
+    "Loss Rate": "35%",
+    "Win Rate": "65%",
+    "Profit-Loss Ratio": "0.72",
+    "Alpha": "0",
+    "Beta": "0",
+    "Annual Standard Deviation": "0.083",
+    "Annual Variance": "0.007",
+    "Information Ratio": "2.019",
+    "Tracking Error": "0.083",
+    "Treynor Ratio": "0",
+    "Total Fees": "$63.82",
+    "Estimated Strategy Capacity": "$30000000.00",
+    "Lowest Capacity Asset": "SPY R735QTJ8XC9X",
+    "Portfolio Turnover": "158.69%",
+    "Drawdown Recovery": "1"
+  },
+  "runtimeStatistics": {
+    "Equity": "$101,831.37",
+    "Fees": "-$63.82",
+    "Holdings": "$0.00",
+    "Net Profit": "$1,831.37",
+    "Probabilistic Sharpe Ratio": "61.689%",
+    "Return": "1.83 %",
+    "Unrealized": "$0.00",
+    "Volume": "$5,014,742.51"
+  },
+  "state": {
+    "StartTime": "2025-11-03T20:21:39Z",
+    "EndTime": "2025-11-03T20:21:44Z",
+    "RuntimeError": "",
+    "StackTrace": "",
+    "LogCount": "90",
+    "OrderCount": "52",
+    "InsightCount": "0",
+    "Name": "local",
+    "Hostname": "ASUS",
+    "Status": "Completed"
+  },
+  "algorithmConfiguration": {
+    "name": "local",
+    "tags": [],
+    "accountCurrency": "USD",
+    "brokerage": 0,
+    "accountType": 0,
+    "parameters": {
+      "rsi_period": "14",
+      "oversold_threshold": "30",
+      "overbought_threshold": "70",
+      "max_position_size": "0.95",
+      "stop_loss_pct": "0.02",
+      "take_profit_pct": "0.04",
+      "max_daily_loss": "0.05",
+      "min_signal_interval": "5"
+    },
+    "outOfSampleMaxEndDate": null,
+    "outOfSampleDays": 0,
+    "startDate": "2023-01-01T00:00:00Z",
+    "endDate": "2023-01-31T23:59:59Z",
+    "tradingDaysPerYear": 252
+  }
+}

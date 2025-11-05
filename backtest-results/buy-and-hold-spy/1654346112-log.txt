@@ -1,0 +1,5 @@
+2023-01-01 00:00:00 Launching analysis for 1654346112 with LEAN Engine v2.5.0.0
+2023-01-01 00:00:00 📊 Exporting 1-minute data to: buyhold_minute_equity_data.csv
+2023-01-01 00:00:00 Accurate daily end-times now enabled by default. See more at https://qnt.co/3YHaWHL. To disable it and use legacy daily bars set self.settings.daily_precise_end_time = False.
+2023-01-03 09:31:00 Purchased Stock
+2023-01-31 16:00:00 Algorithm Id:(1654346112) completed in 1.41 seconds at 11k data points per second. Processing total of 15,601 data points.
